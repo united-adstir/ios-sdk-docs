@@ -1,6 +1,6 @@
 # adstir Integration Guide for iOS
 
-adstirのインテグレーションガイドです。iOS環境に対応しています。Androidのインテグレーションガイドはこちらからご覧いただけます。adstirSDKは管理画面から入手することができます。
+adstirのインテグレーションガイドです。iOS環境に対応しています。Androidのインテグレーションガイドは[こちら](https://united-adstir.github.io/android-sdk-docs)からご覧いただけます。adstirSDKは管理画面から入手することができます。
 
 ## サンプルアプリ
 
