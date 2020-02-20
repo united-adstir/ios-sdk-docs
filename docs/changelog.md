@@ -2,6 +2,7 @@
 
 ## v2.15.0 (2020/01/22)
 
+* 対応OSバージョンをiOS 9以上に変更
 * bundle SDKの更新
     * AdColony 4.1.2
     * AdCorsa 2.1.0
