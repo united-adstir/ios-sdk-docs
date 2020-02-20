@@ -1,7 +1,7 @@
 # nend広告の導入
 
 ## 対応OS
-iOS 8.1以降
+iOS 9.0以降
 
 ## SDKの準備
 NendのSDKは、VideoAdSDKBundledのパッケージに同梱されております。  

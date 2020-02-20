@@ -14,7 +14,7 @@
 [Nend](nend.md)        |{{config.version.nend}}    |8.1〜|400 | - | - | - | ○ | ○
 [TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |9.0〜|400 | - | - | - | ○ | ○
 [TikTok](tiktok.md)    |{{config.version.tiktok}}  |9.0〜|580| - | - | - | ○ | ○
-[UnityAds](unityads.md)|{{config.version.unityads}}|9.0〜[^3]|250 | - | - | - | ○ | -
+[UnityAds](unityads.md)|{{config.version.unityads}}|9.0〜|250 | - | - | - | ○ | -
 [Zucks](zucks.md)      |{{config.version.zucks}}   |8.0〜|  150| - | ○ | - | - | -
 
 
@@ -24,4 +24,3 @@
 
 [^1]: adstir SDK {{config.version.adstir}}の対応状況です。
 [^2]: 容量は、対応提携ネットワークのSDKと、メディエーションアダプタを追加したときに増加する概算容量です。
-[^3]: UnityAds SDKを組み込んだアプリをiOS 9未満で起動するとクラッシュします。ご注意ください。
