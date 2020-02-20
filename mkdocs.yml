@@ -34,7 +34,7 @@ extra:
       unityads: 3.3.0
       zucks: 4.6.1
       facebook: 5.6.0
-    sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.14.6-SampleApp.zip'
+    sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.0-SampleApp.zip'
 
 # CSSの設定
 extra_css:
