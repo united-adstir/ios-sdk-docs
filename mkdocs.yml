@@ -116,8 +116,9 @@ nav:
           - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
           - AdstirInterstitialDelegate: adstir/api/interstitial/AdstirInterstitialDelegate-Protocol-Reference.md
       - その他:
-          - ユーザデータアクセス許可に関して: adstir/info/user_data.md 
-          - よくある質問: adstir/info/question.md
+        - テストスイート: adstir/testsuite/index.md
+        - ユーザデータアクセス許可に関して: adstir/info/user_data.md 
+        - よくある質問: adstir/info/question.md
   - AdMob: 
       - はじめに: admob/index.md
       - AdMobメディエーション: admob/network.md

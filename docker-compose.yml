@@ -1,8 +1,8 @@
 version: '2'
 services:
-  mkdocs:
+  ios-mkdocs:
     image: squidfunk/mkdocs-material:4.6.0
-    container_name: mkdocs
+    container_name: ios-mkdocs
     ports:
       - "8000:8000"
     volumes:
