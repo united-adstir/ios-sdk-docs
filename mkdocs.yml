@@ -19,21 +19,20 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.14.7
-      adcolony: 4.1.2
+      adstir: 2.15.1
+      adcolony: 4.1.4
       adcorsa: 2.1.0
-      applovin: 6.10.1
-      facebook: 5.6.0
+      applovin: 6.11.5
       imobile: 2.0.20
-      maio: 1.5.1
-      mobvista: 5.7.1
-      mopub: 5.10.0
-      nend: 5.3.0
-      tapjoy: 12.3.4
+      maio: 1.5.3
+      mobvista: 6.1.2
+      mopub: 5.11.0
+      nend: 5.3.1
+      tapjoy: 12.4.2
       tiktok: 2.4.6.7
-      unityads: 3.3.0
-      zucks: 4.6.1
-      facebook: 5.6.0
+      unityads: 3.4.2
+      zucks: 4.8.1
+      facebook: 5.8.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.0-SampleApp.zip'
 
 # CSSの設定
