@@ -4,18 +4,18 @@
 
 ネットワーク|SDKバージョン[^1]|対応OS|容量(KB)[^2]| バナー | スワイプインタースティシャル | ネイティブ | 動画リワード | 全画面インタースティシャル
 ---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
-[AdColony](adcolony.md)|{{config.version.adcolony}}|8.0〜| | - | - | - | ○ | -
-[AdCorsa](adcorsa.md)  |{{config.version.adcorsa}} |8.0〜|280 | - | - | - | ○ | ○
+[AdColony](adcolony.md)|{{config.version.adcolony}}|9.0〜| | - | - | - | ○ | -
+[AdCorsa](adcorsa.md)  |{{config.version.adcorsa}} |9.0〜|280 | - | - | - | ○ | ○
 [AppLovin](applovin.md)|{{config.version.applovin}}|10.0〜|760| - | - | - | ○ | ○
-[imobile](imobile.md)  |{{config.version.imobile}} |8.1〜| 110| - | - | - | - | ○
-[Maio](maio.md)        |{{config.version.maio}}    |8.0〜|180 | - | - | - | ○ | ○
-[Mobvista](mobvista.md)|{{config.version.mobvista}}|8.0〜|1880 | - | - | - | ○ | ○
+[imobile](imobile.md)  |{{config.version.imobile}} |9.0〜| 110| - | - | - | - | ○
+[Maio](maio.md)        |{{config.version.maio}}    |9.0〜|180 | - | - | - | ○ | ○
+[Mobvista](mobvista.md)|{{config.version.mobvista}}|9.0〜|1880 | - | - | - | ○ | ○
 [MoPub](mopub.md)      |{{config.version.mopub}}   |9.0〜|760| ○ | ○ | ○ | ○ | ○
-[Nend](nend.md)        |{{config.version.nend}}    |8.1〜|400 | - | - | - | ○ | ○
+[Nend](nend.md)        |{{config.version.nend}}    |9.0〜|400 | - | - | - | ○ | ○
 [TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |9.0〜|400 | - | - | - | ○ | ○
 [TikTok](tiktok.md)    |{{config.version.tiktok}}  |9.0〜|580| - | - | - | ○ | ○
 [UnityAds](unityads.md)|{{config.version.unityads}}|9.0〜|250 | - | - | - | ○ | -
-[Zucks](zucks.md)      |{{config.version.zucks}}   |8.0〜|  150| - | ○ | - | - | -
+[Zucks](zucks.md)      |{{config.version.zucks}}   |9.0〜|  150| - | ○ | - | - | -
 
 
 
