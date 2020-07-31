@@ -1,5 +1,13 @@
 # 変更履歴
 
+## v2.15.6 (2020/07/31)
+
+* bundle SDKの更新
+    * AppLovin 6.13.0
+    * Maio 1.5.4
+    * Mobvista 6.3.5
+    * UnityAds 3.4.6
+
 ## v2.15.5 (2020/07/28)
 
 * Cocoapodsで導入されるMoPubの修正
