@@ -1,5 +1,10 @@
 # 変更履歴
 
+## v2.15.7 (2020/09/15)
+
+* iOS 14への対応
+    * [こちら](https://united-adstir.github.io/ios-sdk-docs/adstir/index.html#infoplistの更新)を参考にInfo.plistの更新をお願いします。
+
 ## v2.15.6 (2020/07/31)
 
 * bundle SDKの更新
