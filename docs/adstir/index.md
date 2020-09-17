@@ -15,16 +15,3 @@ adstirのインテグレーションガイドです。iOS環境に対応して�
 
 初期設定/SDKの組み込みからadstir SDKをプロジェクトへ組み込んでください。
 
-## info.plistの更新
-
-iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
-
-```xml
-<key>SKAdNetworkItems</key>
-<array>
-    <dict>
-        <key>SKAdNetworkIdentifier</key>
-        <string>4PFYVQ9L8R.skadnetwork</string>
-    </dict>
-</array>
-```

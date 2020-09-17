@@ -38,6 +38,10 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
     * [UnityAds](https://google.bintray.com/mobile-ads-adapters-ios/UnityAdapter/{{config.version.unityads}}.0/UnityAdapter-{{config.version.unityads}}.0.zip)
 1. ダウンロードしたzipファイルを解凍し、各frameworkをプロジェクトへ追加します。
 
+### iOS 14以降への対応
+
+[こちら](../adstir/init/ios14.md)のページを参考にiOS 14以降へのご対応をお願いいたします。
+
 ## 広告の実装
 
 AdMobの実装ガイドをご覧ください。

@@ -33,4 +33,19 @@ ImageIO.framework|Required
 SafariServices.framework|Required
 WebKit.framework|Optional
 UIKit.framework|Optional
+AVKit.framework|Required
 libz.tbd|Required
+
+## Info.plistの更新
+
+iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+
+```xml
+<key>SKAdNetworkItems</key>
+<array>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>eh6m2bh4zr.skadnetwork</string>
+    </dict>
+</array>
+```

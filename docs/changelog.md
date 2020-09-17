@@ -1,5 +1,7 @@
 # 変更履歴
 
+ * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
+
 ## v2.15.8 (2020/09/XX)
 
 * bundle SDKの更新
@@ -17,7 +19,6 @@
 ## v2.15.7 (2020/09/15)
 
 * iOS 14への対応
-    * [こちら](adstir/index.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
 ## v2.15.6 (2020/07/31)
 

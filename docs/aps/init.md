@@ -25,6 +25,9 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
 
 営業担当にお問い合わせください。
 
+## iOS 14以降への対応
+
+[こちら](../adstir/init/ios14.md)のページを参考にiOS 14以降へのご対応をお願いいたします。
 
 ## APSの初期化
 

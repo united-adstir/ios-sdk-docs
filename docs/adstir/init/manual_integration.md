@@ -71,3 +71,7 @@ libz.tbd | Required
 
 [^1]: CoreMotion.frameworkはTapJoy、TikTokを利用する際に設定してください。  
 [^2]: CoreLocation.frameworkはMobvista、TikTokを利用する際に設定してください。  
+
+## iOS 14以降への対応
+
+[こちら](ios14.md)のページを参考にiOS 14以降へのご対応をお願いいたします。

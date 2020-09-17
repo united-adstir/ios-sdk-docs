@@ -63,6 +63,7 @@ nav:
         - SDKの組み込み:
           - CocoaPods: adstir/init/cocoapods.md
           - 手動組み込み: adstir/init/manual_integration.md
+          - iOS14以降の対応: adstir/init/ios14.md
       - 対応ネットワーク: 
         - 対応ネットワーク一覧: adstir/network/index.md
         - AdColony: adstir/network/adcolony.md

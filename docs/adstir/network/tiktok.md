@@ -52,8 +52,28 @@ CoreLocation.framework|Required
 libresolv.9.tbd|Required
 libc++.tbd|Required
 libz.tbd|Required
+libbz2.tbd|Required
+libxml2.tbd|Required
 
 ## ユーザデータアクセス許可に関する設定
 
 TikTokでは`CoreLocation.framework`, `CoreMotion.framework`を利用していますので、
 [こちら](../info/user_data.md)を参考に設定を行ってください。
+
+## Info.plistの更新
+
+iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+
+```xml
+<key>SKAdNetworkItems</key>
+<array>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>238da6jt44.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>22mmun2rn5.skadnetwork</string>
+    </dict>
+</array>
+```
