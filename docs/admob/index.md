@@ -26,16 +26,16 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込みます。
 1. [AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを導入します。
 1. adstir SDKにbundleされていないアドネットワークのSDKをダウンロードします。
-    * [Facebook](https://origincache.facebook.com/developers/resources/?id=FBAudienceNetwork-5.6.0.zip)
+    * [Facebook](https://origincache.facebook.com/developers/resources/?id=FBAudienceNetwork-{{config.version.facebook}}.zip)
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードします。
-    * [AdColony](https://google.bintray.com/mobile-ads-adapters-ios/AdColonyAdapter/4.1.2.0/AdColonyAdapter-4.1.2.0.zip)
-    * [AppLovin](https://google.bintray.com/mobile-ads-adapters-ios/AppLovinAdapter/6.10.1.0/AppLovinAdapter-6.10.1.0.zip)
-    * [Facebook](https://google.bintray.com/mobile-ads-adapters-ios/FacebookAdapter/5.6.0.0/FacebookAdapter-5.6.0.0.zip)
-    * [maio](https://google.bintray.com/mobile-ads-adapters-ios/MaioAdapter/1.5.1.0/MaioAdapter-1.5.1.0.zip)
-    * [MoPub](https://google.bintray.com/mobile-ads-adapters-ios/MoPubAdapter/5.10.0.0/MoPubAdapter-5.10.0.0.zip)
-    * [nend](https://google.bintray.com/mobile-ads-adapters-ios/NendAdapter/5.3.0.0/NendAdapter-5.3.0.0.zip)
-    * [TapJoy](https://google.bintray.com/mobile-ads-adapters-ios/TapjoyAdapter/12.3.4.0/TapjoyAdapter-12.3.4.0.zip)
-    * [UnityAds](https://google.bintray.com/mobile-ads-adapters-ios/UnityAdapter/3.3.0.0/UnityAdapter-3.3.0.0.zip)
+    * [AdColony](https://google.bintray.com/mobile-ads-adapters-ios/AdColonyAdapter/{{config.version.adcolony}}.0/AdColonyAdapter-{{config.version.adcolony}}.0.zip)
+    * [AppLovin](https://google.bintray.com/mobile-ads-adapters-ios/AppLovinAdapter/{{config.version.applovin}}.0/AppLovinAdapter-{{config.version.applovin}}.0.zip)
+    * [Facebook](https://google.bintray.com/mobile-ads-adapters-ios/FacebookAdapter/{{config.version.facebook}}.1/FacebookAdapter-{{config.version.facebook}}.1.zip)
+    * [maio](https://google.bintray.com/mobile-ads-adapters-ios/MaioAdapter/{{config.version.maio}}.0/MaioAdapter-{{config.version.maio}}.0.zip)
+    * [MoPub](https://google.bintray.com/mobile-ads-adapters-ios/MoPubAdapter/{{config.version.mopub}}.0/MoPubAdapter-{{config.version.mopub}}.0.zip)
+    * [nend](https://google.bintray.com/mobile-ads-adapters-ios/NendAdapter/{{config.version.nend}}.0/NendAdapter-{{config.version.nend}}.0.zip)
+    * [TapJoy](https://google.bintray.com/mobile-ads-adapters-ios/TapjoyAdapter/{{config.version.tapjoy}}.0/TapjoyAdapter-{{config.version.tapjoy}}.0.zip)
+    * [UnityAds](https://google.bintray.com/mobile-ads-adapters-ios/UnityAdapter/{{config.version.unityads}}.0/UnityAdapter-{{config.version.unityads}}.0.zip)
 1. ダウンロードしたzipファイルを解凍し、各frameworkをプロジェクトへ追加します。
 
 ## 広告の実装

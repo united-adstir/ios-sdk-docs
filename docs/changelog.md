@@ -1,5 +1,19 @@
 # 変更履歴
 
+## v2.15.8 (2020/09/XX)
+
+* bundle SDKの更新
+    * AdColony 4.3.1
+    * IMobile 2.0.33
+    * Maio 1.5.5
+    * Mobvista 6.6.0.0
+    * Nend 7.0.0
+        * AdMobパッケージにはNendのAdMob用アダプターは含まれておりません
+    * TikTok 3.2.6.2
+    * UnityAds 3.4.8
+    * Zucks 4.9.2
+
+
 ## v2.15.7 (2020/09/15)
 
 * iOS 14への対応
