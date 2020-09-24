@@ -2,7 +2,7 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
-## v2.15.8 (2020/09/XX)
+## v2.15.8 (2020/09/24)
 
 * bundle SDKの更新
     * AdColony 4.3.1
@@ -11,6 +11,7 @@
     * Mobvista 6.6.0.0
     * Nend 7.0.0
         * AdMobパッケージにはNendのAdMob用アダプターは含まれておりません
+    * TapJoy 12.7.0
     * TikTok 3.2.6.2
     * UnityAds 3.4.8
     * Zucks 4.9.2

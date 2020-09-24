@@ -238,5 +238,15 @@ iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/store
         <key>SKAdNetworkIdentifier</key>
         <string>bvpn9ufa9b.skadnetwork</string>
     </dict>
+    <dict>
+        <!--  TapJoy  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>ECPZ2SRF59.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Unicorn  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>578prtvx9j.skadnetwork</string>
+    </dict>
 </array>
 ```

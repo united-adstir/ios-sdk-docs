@@ -44,3 +44,43 @@ libz.tbd|Required
 
 TapJoyでは`CoreLocation.framework`, `CoreMotion.framework`を利用していますので、
 [こちら](../info/user_data.md)を参考に設定を行ってください。
+
+## Info.plistの更新
+
+iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+
+```xml
+<key>SKAdNetworkItems</key>
+<array>
+    <dict>
+        <!--  TapJoy  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>ECPZ2SRF59.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Liftoff  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>7UG5ZH24HU.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Moloco  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>9T245VHMPL.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  CrossInstall  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>prcb7njmu6.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  LoopMe  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>5lm9lj6jb7.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  Unicorn  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>578prtvx9j.skadnetwork</string>
+    </dict>
+</array>
+```
