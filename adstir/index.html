@@ -316,13 +316,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#infoplistの更新" class="md-nav__link">
-    info.plistの更新
-  </a>
-  
-</li>
-      
       
       
       
@@ -392,6 +385,18 @@
   <li class="md-nav__item">
     <a href="init/manual_integration.html" title="手動組み込み" class="md-nav__link">
       手動組み込み
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="init/ios14.html" title="iOS14以降の対応" class="md-nav__link">
+      iOS14以降の対応
     </a>
   </li>
 
@@ -1388,13 +1393,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#infoplistの更新" class="md-nav__link">
-    info.plistの更新
-  </a>
-  
-</li>
-      
       
       
       
@@ -1415,7 +1413,7 @@
                 <h1 id="adstir-integration-guide-for-ios"><a class="toclink" href="#adstir-integration-guide-for-ios">adstir Integration Guide for iOS</a><a class="headerlink" href="#adstir-integration-guide-for-ios" title="Permanent link">&para;</a></h1>
 <p>adstirのインテグレーションガイドです。iOS環境に対応しています。Androidのインテグレーションガイドは<a href="https://united-adstir.github.io/android-sdk-docs">こちら</a>からご覧いただけます。adstirSDKは管理画面から入手することができます。</p>
 <h2 id="サンプルアプリ"><a class="toclink" href="#サンプルアプリ">サンプルアプリ</a><a class="headerlink" href="#サンプルアプリ" title="Permanent link">&para;</a></h2>
-<p><a href="https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.0-SampleApp.zip">こちら</a>より、adstirSDKのサンプルプロジェクトをダウンロードすることができます。</p>
+<p><a href="https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.8-SampleApp.zip">こちら</a>より、adstirSDKのサンプルプロジェクトをダウンロードすることができます。</p>
 <h2 id="前提条件"><a class="toclink" href="#前提条件">前提条件</a><a class="headerlink" href="#前提条件" title="Permanent link">&para;</a></h2>
 <ul>
 <li>iOS 9以上</li>
@@ -1423,16 +1421,6 @@
 </ul>
 <h2 id="プロジェクトへsdkを組み込む"><a class="toclink" href="#プロジェクトへsdkを組み込む">プロジェクトへSDKを組み込む</a><a class="headerlink" href="#プロジェクトへsdkを組み込む" title="Permanent link">&para;</a></h2>
 <p>初期設定/SDKの組み込みからadstir SDKをプロジェクトへ組み込んでください。</p>
-<h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
-<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork 2.0</a>を利用するために、Info.plistに下記の内容を追加します。</p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
-<span class="nt">&lt;array&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>4PFYVQ9L8R.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-<span class="nt">&lt;/array&gt;</span>
-</pre></div>
                 
                   
                 

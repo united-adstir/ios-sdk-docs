@@ -337,6 +337,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../init/ios14.html" title="iOS14以降の対応" class="md-nav__link">
+      iOS14以降の対応
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -565,6 +577,13 @@
         <li class="md-nav__item">
   <a href="#ユーザデータアクセス許可に関する設定" class="md-nav__link">
     ユーザデータアクセス許可に関する設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infoplistの更新" class="md-nav__link">
+    Info.plistの更新
   </a>
   
 </li>
@@ -1463,6 +1482,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#infoplistの更新" class="md-nav__link">
+    Info.plistの更新
+  </a>
+  
+</li>
+      
       
       
       
@@ -1546,6 +1572,42 @@
 <h2 id="ユーザデータアクセス許可に関する設定"><a class="toclink" href="#ユーザデータアクセス許可に関する設定">ユーザデータアクセス許可に関する設定</a><a class="headerlink" href="#ユーザデータアクセス許可に関する設定" title="Permanent link">&para;</a></h2>
 <p>TapJoyでは<code>CoreLocation.framework</code>, <code>CoreMotion.framework</code>を利用していますので、
 <a href="../info/user_data.html">こちら</a>を参考に設定を行ってください。</p>
+<h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
+<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork 2.0</a>を利用するために、Info.plistに下記の内容を追加します。</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;array&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="c">&lt;!--  TapJoy  --&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>ECPZ2SRF59.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="c">&lt;!--  Liftoff  --&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>7UG5ZH24HU.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="c">&lt;!--  Moloco  --&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>9T245VHMPL.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="c">&lt;!--  CrossInstall  --&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>prcb7njmu6.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="c">&lt;!--  LoopMe  --&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>5lm9lj6jb7.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="c">&lt;!--  Unicorn  --&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>578prtvx9j.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/array&gt;</span>
+</pre></div>
                 
                   
                 

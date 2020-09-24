@@ -337,6 +337,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../init/ios14.html" title="iOS14以降の対応" class="md-nav__link">
+      iOS14以降の対応
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -547,6 +559,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#infoplistの更新" class="md-nav__link">
+    Info.plistの更新
+  </a>
   
 </li>
       
@@ -1449,6 +1468,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#infoplistの更新" class="md-nav__link">
+    Info.plistの更新
+  </a>
+  
+</li>
+      
       
       
       
@@ -1516,11 +1542,25 @@
 <td>Optional</td>
 </tr>
 <tr>
+<td>AVKit.framework</td>
+<td>Required</td>
+</tr>
+<tr>
 <td>libz.tbd</td>
 <td>Required</td>
 </tr>
 </tbody>
 </table>
+<h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
+<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork 2.0</a>を利用するために、Info.plistに下記の内容を追加します。</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
+<span class="nt">&lt;array&gt;</span>
+    <span class="nt">&lt;dict&gt;</span>
+        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
+        <span class="nt">&lt;string&gt;</span>eh6m2bh4zr.skadnetwork<span class="nt">&lt;/string&gt;</span>
+    <span class="nt">&lt;/dict&gt;</span>
+<span class="nt">&lt;/array&gt;</span>
+</pre></div>
                 
                   
                 
