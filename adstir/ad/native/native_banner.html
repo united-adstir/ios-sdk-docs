@@ -1508,8 +1508,10 @@
 <p>アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。</p>
 <p>広告識別子の取得方法は、下記取得サンプルと、<a href="https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/">公式ドキュメント(英語)</a>をご覧下さい。
 iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっているため、<a href="https://developer.apple.com/documentation/apptrackingtransparency">App Tracking Transparency</a>を利用してオプトアウトの有無を判定します。</p>
-<p>Swiftの例
-<div class="codehilite"><pre><span></span><span class="c1">// AdSupport.framework/AppTrackingTransparency.frameworkがが必要です</span>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">swift</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// AdSupport.framework/AppTrackingTransparency.frameworkが必要です</span>
 <span class="kd">import</span> <span class="nc">AdSupport</span>
 <span class="kd">import</span> <span class="nc">AppTrackingTransparency</span>
 <span class="p">...</span>
@@ -1530,9 +1532,10 @@ iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっている�
         <span class="c1">// オプトアウト</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</pre></div></p>
-<p>Objective-Cの例
-<div class="codehilite"><pre><span></span><span class="c1">// AdSupport.framework/AppTrackingTransparency.frameworkが必要です</span>
+</pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">objective-c</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// AdSupport.framework/AppTrackingTransparency.frameworkが必要です</span>
 <span class="k">@import</span> <span class="n">AdSupport</span><span class="p">;</span>
 <span class="k">@import</span> <span class="n">AppTrackingTransparency</span><span class="p">;</span>
 <span class="p">...</span>
@@ -1553,7 +1556,8 @@ iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっている�
         <span class="c1">// オプトアウト</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</pre></div></p>
+</pre></div></div>
+</div>
 <p>HTMLを生成する際に``の部分を、取得した広告識別子で置換してください。なお、広告識別子は、IDFAの使用に記載の通り、オプトアウトされている場合の利用が制限されております。下記コードのコメントに記載の通り、適切な対応をお願い致します。 </p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
 <span class="nt">html</span><span class="o">,</span><span class="nt">body</span> <span class="p">{</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="p">}</span> <span class="c">/* marginとpaddingを0に */</span>
