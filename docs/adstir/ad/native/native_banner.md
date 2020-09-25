@@ -63,9 +63,8 @@ var adstir_vars = {
 iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっているため、[App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)を利用してオプトアウトの有無を判定します。
 
 
-Swiftの例
-```swift
-// AdSupport.framework/AppTrackingTransparency.frameworkがが必要です
+```swift tab=
+// AdSupport.framework/AppTrackingTransparency.frameworkが必要です
 import AdSupport
 import AppTrackingTransparency
 ...
@@ -88,8 +87,7 @@ if #available(iOS 14, *) {
 }
 ```
 
-Objective-Cの例
-```objective-c
+```objective-c tab=
 // AdSupport.framework/AppTrackingTransparency.frameworkが必要です
 @import AdSupport;
 @import AppTrackingTransparency;
