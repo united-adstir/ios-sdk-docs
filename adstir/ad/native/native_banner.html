@@ -1465,10 +1465,12 @@
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
 <span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
   <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
   <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-aeeaa332&quot;</span><span class="p">,</span>
   <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
   <span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
 <span class="p">};</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
@@ -1491,40 +1493,67 @@
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
 <span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
   <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
   <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-aeeaa332&quot;</span><span class="p">,</span>
   <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
   <span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
 <span class="p">};</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 
 <h2 id="idfaadvertising-identifierの使用"><a class="toclink" href="#idfaadvertising-identifierの使用">IDFA（Advertising Identifier）の使用</a><a class="headerlink" href="#idfaadvertising-identifierの使用" title="Permanent link">&para;</a></h2>
-<p>アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。 </p>
-<p>広告識別子の取得方法は、下記取得サンプルと、<a href="https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/">公式ドキュメント(英語)</a>をご覧下さい。</p>
-<div class="superfences-tabs">
-<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">swift</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// AdSupport.frameworkが必要です</span>
+<p>アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。</p>
+<p>広告識別子の取得方法は、下記取得サンプルと、<a href="https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/">公式ドキュメント(英語)</a>をご覧下さい。
+iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっているため、<a href="https://developer.apple.com/documentation/apptrackingtransparency">App Tracking Transparency</a>を利用してオプトアウトの有無を判定します。</p>
+<p>Swiftの例
+<div class="codehilite"><pre><span></span><span class="c1">// AdSupport.framework/AppTrackingTransparency.frameworkがが必要です</span>
 <span class="kd">import</span> <span class="nc">AdSupport</span>
+<span class="kd">import</span> <span class="nc">AppTrackingTransparency</span>
 <span class="p">...</span>
 <span class="kd">let</span> <span class="nv">identifierManager</span> <span class="p">=</span> <span class="bp">ASIdentifierManager</span><span class="p">()</span>
-<span class="k">if</span><span class="p">(</span><span class="n">identifierManager</span><span class="p">.</span><span class="n">isAdvertisingTrackingEnabled</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">let</span> <span class="nv">idfa</span> <span class="p">=</span> <span class="n">identifierManager</span><span class="p">.</span><span class="n">advertisingIdentifier</span>
+<span class="kd">var</span> <span class="nv">idfa</span><span class="p">:</span><span class="n">UUID</span>
+<span class="k">if</span> <span class="cp">#available</span><span class="p">(</span><span class="cp">iOS</span> <span class="mi">14</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ATTrackingManager</span><span class="p">.</span><span class="n">trackingAuthorizationStatus</span> <span class="o">!=</span> <span class="p">.</span><span class="n">denied</span> <span class="o">||</span>
+        <span class="n">ATTrackingManager</span><span class="p">.</span><span class="n">trackingAuthorizationStatus</span> <span class="o">!=</span> <span class="p">.</span><span class="n">restricted</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">idfa</span> <span class="p">=</span> <span class="n">identifierManager</span><span class="p">.</span><span class="n">advertisingIdentifier</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// オプトアウト</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// isAdvertisingTrackingEnabled はiOS 14以降、常にfalseになります</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">identifierManager</span><span class="p">.</span><span class="n">isAdvertisingTrackingEnabled</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">idfa</span> <span class="p">=</span> <span class="n">identifierManager</span><span class="p">.</span><span class="n">advertisingIdentifier</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// オプトアウト</span>
+    <span class="p">}</span>
 <span class="p">}</span>
-</pre></div></div>
-<input name="__tabs_1" type="radio" id="__tab_1_1" />
-<label for="__tab_1_1">objective-c</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="c1">// AdSupport.frameworkが必要です</span>
+</pre></div></p>
+<p>Objective-Cの例
+<div class="codehilite"><pre><span></span><span class="c1">// AdSupport.framework/AppTrackingTransparency.frameworkが必要です</span>
 <span class="k">@import</span> <span class="n">AdSupport</span><span class="p">;</span>
+<span class="k">@import</span> <span class="n">AppTrackingTransparency</span><span class="p">;</span>
 <span class="p">...</span>
 <span class="bp">ASIdentifierManager</span> <span class="o">*</span><span class="n">identifierManager</span> <span class="o">=</span> <span class="p">[</span><span class="bp">ASIdentifierManager</span> <span class="n">sharedManager</span><span class="p">];</span>
-<span class="k">if</span> <span class="p">([</span><span class="n">identifierManager</span> <span class="n">isAdvertisingTrackingEnabled</span><span class="p">])</span> 
-    <span class="bp">NSString</span> <span class="o">*</span><span class="n">idfa</span> <span class="o">=</span> <span class="n">identifierManager</span><span class="p">.</span><span class="n">advertisingIdentifier</span><span class="p">.</span><span class="n">UUIDString</span><span class="p">;</span>
+<span class="bp">NSString</span> <span class="o">*</span><span class="n">idfa</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(@</span><span class="n">available</span><span class="p">(</span><span class="n">iOS</span> <span class="mi">14</span><span class="p">,</span> <span class="o">*</span><span class="p">))</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ATTrackingManager</span><span class="p">.</span><span class="n">trackingAuthorizationStatus</span> <span class="o">!=</span> <span class="n">ATTrackingManagerAuthorizationStatusDenied</span> <span class="o">&amp;&amp;</span>
+        <span class="n">ATTrackingManager</span><span class="p">.</span><span class="n">trackingAuthorizationStatus</span> <span class="o">!=</span> <span class="n">ATTrackingManagerAuthorizationStatusRestricted</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">idfa</span> <span class="o">=</span> <span class="n">identifierManager</span><span class="p">.</span><span class="n">advertisingIdentifier</span><span class="p">.</span><span class="n">UUIDString</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// オプトアウト</span>
+    <span class="p">}</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// isAdvertisingTrackingEnabled はiOS 14以降、常にNOになります</span>
+    <span class="k">if</span> <span class="p">([</span><span class="n">identifierManager</span> <span class="n">isAdvertisingTrackingEnabled</span><span class="p">])</span> <span class="p">{</span>
+        <span class="n">idfa</span> <span class="o">=</span> <span class="n">identifierManager</span><span class="p">.</span><span class="n">advertisingIdentifier</span><span class="p">.</span><span class="n">UUIDString</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// オプトアウト</span>
+    <span class="p">}</span>
 <span class="p">}</span>
-</pre></div></div>
-</div>
+</pre></div></p>
 <p>HTMLを生成する際に``の部分を、取得した広告識別子で置換してください。なお、広告識別子は、IDFAの使用に記載の通り、オプトアウトされている場合の利用が制限されております。下記コードのコメントに記載の通り、適切な対応をお願い致します。 </p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
 <span class="nt">html</span><span class="o">,</span><span class="nt">body</span> <span class="p">{</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="p">}</span> <span class="c">/* marginとpaddingを0に */</span>
@@ -1532,10 +1561,12 @@
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
 <span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
   <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
   <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
   <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-aeeaa332&quot;</span><span class="p">,</span>
   <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
   <span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
   <span class="nx">lmt</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// ユーザーがオプトアウトしている場合は、trueを設定してください</span>
   <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子の種類(Apple - IDFA)</span>
   <span class="nx">uid</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子</span>
