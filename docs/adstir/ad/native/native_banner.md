@@ -13,10 +13,12 @@ html,body { margin:0; padding:0 } /* marginとpaddingを0に */
 <script type="text/javascript">
 var adstir_vars = {
   ver: "4.0",
+  platform: "webview",
   type: "native",
   app_id: "MEDIA-aeeaa332",
   ad_spot: 3,
   async: false,
+  origin: "com.foo.bar.baz",
 };
 </script>
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir_native.js"></script>
@@ -42,10 +44,12 @@ html,body { margin:0; padding:0 } /* marginとpaddingを0に */
 <script type="text/javascript">
 var adstir_vars = {
   ver: "4.0",
+  platform: "webview",
   type: "native",
   app_id: "MEDIA-aeeaa332",
   ad_spot: 3,
   async: false,
+  origin: "com.foo.bar.baz",
 };
 </script>
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir_native.js"></script>
@@ -53,27 +57,59 @@ var adstir_vars = {
 
 ## IDFA（Advertising Identifier）の使用
 
-アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。 
+アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。
 
 広告識別子の取得方法は、下記取得サンプルと、[公式ドキュメント(英語)](https://developer.apple.com/library/ios/documentation/AdSupport/Reference/ASIdentifierManager_Ref/)をご覧下さい。
+iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっているため、[App Tracking Transparency](https://developer.apple.com/documentation/apptrackingtransparency)を利用してオプトアウトの有無を判定します。
 
-```swift tab=
-// AdSupport.frameworkが必要です
+
+Swiftの例
+```swift
+// AdSupport.framework/AppTrackingTransparency.frameworkがが必要です
 import AdSupport
+import AppTrackingTransparency
 ...
 let identifierManager = ASIdentifierManager()
-if(identifierManager.isAdvertisingTrackingEnabled) {
-    let idfa = identifierManager.advertisingIdentifier
+var idfa:UUID
+if #available(iOS 14, *) {
+    if (ATTrackingManager.trackingAuthorizationStatus != .denied ||
+        ATTrackingManager.trackingAuthorizationStatus != .restricted) {
+        idfa = identifierManager.advertisingIdentifier
+    } else {
+        // オプトアウト
+    }
+} else {
+    // isAdvertisingTrackingEnabled はiOS 14以降、常にfalseになります
+    if(identifierManager.isAdvertisingTrackingEnabled) {
+        idfa = identifierManager.advertisingIdentifier
+    } else {
+        // オプトアウト
+    }
 }
 ```
 
-```objective-c tab=
-// AdSupport.frameworkが必要です
+Objective-Cの例
+```objective-c
+// AdSupport.framework/AppTrackingTransparency.frameworkが必要です
 @import AdSupport;
+@import AppTrackingTransparency;
 ...
 ASIdentifierManager *identifierManager = [ASIdentifierManager sharedManager];
-if ([identifierManager isAdvertisingTrackingEnabled]) 
-    NSString *idfa = identifierManager.advertisingIdentifier.UUIDString;
+NSString *idfa;
+if (@available(iOS 14, *)) {
+    if (ATTrackingManager.trackingAuthorizationStatus != ATTrackingManagerAuthorizationStatusDenied &&
+        ATTrackingManager.trackingAuthorizationStatus != ATTrackingManagerAuthorizationStatusRestricted) {
+        idfa = identifierManager.advertisingIdentifier.UUIDString;
+    } else {
+        // オプトアウト
+    }
+} else {
+    // isAdvertisingTrackingEnabled はiOS 14以降、常にNOになります
+    if ([identifierManager isAdvertisingTrackingEnabled]) {
+        idfa = identifierManager.advertisingIdentifier.UUIDString;
+    } else {
+        // オプトアウト
+    }
 }
 ```
 
@@ -87,10 +123,12 @@ html,body { margin:0; padding:0 } /* marginとpaddingを0に */
 <script type="text/javascript">
 var adstir_vars = {
   ver: "4.0",
+  platform: "webview",
   type: "native",
   app_id: "MEDIA-aeeaa332",
   ad_spot: 3,
   async: false,
+  origin: "com.foo.bar.baz",
   lmt: false, // ユーザーがオプトアウトしている場合は、trueを設定してください
   id: "apple", // 広告識別子の種類(Apple - IDFA)
   uid: "{{ここに広告識別子を書き出す}}", // 広告識別子
