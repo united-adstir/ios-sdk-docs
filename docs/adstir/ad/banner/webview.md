@@ -9,7 +9,39 @@ adstirの広告タグを使用して、WebViewアプリで広告を配信する�
 
 2. 「広告タグ」より広告タグを取得してください。
 
-## IDFA（Advertising Identifier）の使用
+下記のような広告タグが取得いただけます。
+```HTML
+<script type="text/javascript">
+var adstir_vars = {
+  ver: "4.0",
+  platform: "webview",
+  app_id: "MEDIA-XXXXXXXX",
+  ad_spot: 1,
+  center: false
+};
+</script>
+<script type="text/javascript" src="https://js.ad-stir.com/js/adstir.js"></script>
+```
+
+## originの追加
+取得した広告タグにoriginパラメータを追加してください。  
+originにはアプリのBundle Identifierを設定してください。
+
+```HTML
+<script type="text/javascript">
+var adstir_vars = {
+  ver: "4.0",
+  platform: "webview",
+  app_id: "MEDIA-XXXXXXXX",
+  ad_spot: 1,
+  center: false,
+  origin: "com.foo.bar.baz", // Bundle Identifier
+};
+</script>
+<script type="text/javascript" src="https://js.ad-stir.com/js/adstir.js"></script>
+```
+
+## IDFA（Advertising Identifier）の追加
 
 アプリに掲載する広告は、広告識別子を送信することでさらなる収益化が可能になる場合があります。
 
@@ -76,6 +108,7 @@ var adstir_vars = {
   app_id: "MEDIA-XXXXXXXX",
   ad_spot: 1,
   center: false,
+  origin: "com.foo.bar.baz",
   lmt: false, // ユーザーがオプトアウトしている場合は、trueを設定してください
   id: "apple", // 広告識別子の種類(Apple - IDFA)
   uid: "{ここに広告識別子を書き出す}", // 広告識別子
