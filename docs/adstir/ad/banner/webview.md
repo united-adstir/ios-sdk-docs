@@ -35,7 +35,7 @@ var adstir_vars = {
   app_id: "MEDIA-XXXXXXXX",
   ad_spot: 1,
   center: false,
-  origin: "com.foo.bar.baz", // Bundle Identifier
+  origin: "com.foo.bar.baz" // Bundle Identifier
 };
 </script>
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir.js"></script>
@@ -111,20 +111,8 @@ var adstir_vars = {
   origin: "com.foo.bar.baz",
   lmt: false, // ユーザーがオプトアウトしている場合は、trueを設定してください
   id: "apple", // 広告識別子の種類(Apple - IDFA)
-  uid: "{ここに広告識別子を書き出す}", // 広告識別子
+  uid: "{ここに広告識別子を書き出す}" // 広告識別子
 };
 </script>
 <script type="text/javascript" src="https://js.ad-stir.com/js/adstir.js"></script>
 ```
-
-
-## よくある質問
-
-### User−Agentの変更について
-
-User-Agentを標準のものから変更された場合、正常に広告は配信されません。
-
-独自のUser-Agentをご利用になられる場合には、既存のUser-Agentの末尾に、文字列を追加して頂くようにお願い致します。
-
-例：
-Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403 **AdStir-IOS com.ad-stir.appli/2.7.2** <- 太字部分を追加
