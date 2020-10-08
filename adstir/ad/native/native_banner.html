@@ -565,10 +565,46 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      バナー
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        バナー
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
     <a href="../banner.html" title="バナー" class="md-nav__link">
       バナー
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../banner/webview.html" title="WebViewアプリでの配信" class="md-nav__link">
+      WebViewアプリでの配信
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1558,7 +1594,7 @@ iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっている�
 <span class="p">}</span>
 </pre></div></div>
 </div>
-<p>HTMLを生成する際に``の部分を、取得した広告識別子で置換してください。なお、広告識別子は、IDFAの使用に記載の通り、オプトアウトされている場合の利用が制限されております。下記コードのコメントに記載の通り、適切な対応をお願い致します。 </p>
+<p>HTMLを生成する際に<code>{ここに広告識別子を書き出す}</code>の部分を、取得した広告識別子で置換してください。なお、広告識別子は、IDFAの使用に記載の通り、オプトアウトされている場合の利用が制限されております。下記コードのコメントに記載の通り、適切な対応をお願い致します。 </p>
 <div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
 <span class="nt">html</span><span class="o">,</span><span class="nt">body</span> <span class="p">{</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="p">}</span> <span class="c">/* marginとpaddingを0に */</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
@@ -1573,7 +1609,7 @@ iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっている�
   <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
   <span class="nx">lmt</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// ユーザーがオプトアウトしている場合は、trueを設定してください</span>
   <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子の種類(Apple - IDFA)</span>
-  <span class="nx">uid</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子</span>
+  <span class="nx">uid</span><span class="o">:</span> <span class="s2">&quot;{ここに広告識別子を書き出す}&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子</span>
 <span class="p">};</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
