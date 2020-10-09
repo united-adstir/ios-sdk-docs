@@ -2,6 +2,10 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.9 (2020/10/09)
+
+* Mobvista(Mintegral) SDKのBundleを終了
+
 ## v2.15.8 (2020/09/24)
 
 * bundle SDKの更新

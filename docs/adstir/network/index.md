@@ -9,7 +9,6 @@
 [AppLovin](applovin.md)|{{config.version.applovin}}|10.0〜|760| - | - | - | ○ | ○
 [imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| 110| - | - | - | - | ○
 [Maio](maio.md)        |{{config.version.maio}}    |9.0〜|180 | - | - | - | ○ | ○
-[Mobvista](mobvista.md)|{{config.version.mobvista}}|9.0〜|1880 | - | - | - | ○ | ○
 [MoPub](mopub.md)      |{{config.version.mopub}}   |9.0〜|760| ○ | ○ | ○ | ○ | ○
 [Nend](nend.md)        |{{config.version.nend}}    |9.0〜|400 | - | - | - | ○ | ○
 [TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |9.0〜|400 | - | - | - | ○ | ○

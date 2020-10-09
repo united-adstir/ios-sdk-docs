@@ -43,7 +43,6 @@ AdStir-Ads-SDK/AdCorsa| adstir SDK / AdCorsa SDKとアダプター
 AdStir-Ads-SDK/AppLovin| adstir SDK / AppLovin SDKとアダプター
 AdStir-Ads-SDK/IMobile| adstir SDK / IMobile SDKとアダプター
 AdStir-Ads-SDK/Maio| adstir SDK / Maio SDKとアダプター
-AdStir-Ads-SDK/Mobvista| adstir SDK / Mobvista SDKとアダプター
 AdStir-Ads-SDK/MoPub| adstir SDK / MoPub SDKとアダプター
 AdStir-Ads-SDK/Nend| adstir SDK / Nend SDKとアダプター
 AdStir-Ads-SDK/TapJoy| adstir SDK / TapJoy SDKとアダプター

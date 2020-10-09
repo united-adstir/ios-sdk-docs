@@ -39,7 +39,6 @@ adstirのプレイヤー                |MEDIA-2e366f20|1
 [TapJoy](../network/tapjoy.md)     |MEDIA-2e366f20|6
 [MoPub](../network/mopub.md)       |MEDIA-2e366f20|7
 [AdCorsa](../network/adcorsa.md)  |MEDIA-2e366f20|8
-[Mobvista](../network/mobvista.md) |MEDIA-2e366f20|9
 [AdColony](../network/adcolony.md) |MEDIA-2e366f20|10
 [TikTok](../network/tiktok.md)     |MEDIA-2e366f20|11
 

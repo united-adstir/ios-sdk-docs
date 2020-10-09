@@ -25,7 +25,6 @@ extra:
       applovin: 6.13.0
       imobile: 2.0.33
       maio: 1.5.5
-      mobvista: 6.6.0.0
       mopub: 5.11.0
       nend: 7.0.0
       tapjoy: 12.7.0
@@ -71,7 +70,6 @@ nav:
         - AppLovin: adstir/network/applovin.md
         - imobile: adstir/network/imobile.md
         - maio: adstir/network/maio.md
-        - Mobvista: adstir/network/mobvista.md
         - MoPub: adstir/network/mopub.md
         - nend: adstir/network/nend.md
         - TapJoy: adstir/network/tapjoy.md
