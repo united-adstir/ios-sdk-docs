@@ -1,0 +1,34 @@
+<plist version="1.0">
+<key>SKAdNetworkItems</key>
+<array>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>arq2d5wxeq.skadnetwork</string>
+    </dict>
+    <!--  imobile  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>V4NXQHLYQP.skadnetwork</string>
+    </dict>
+    <!--  gunosy  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>5594BLYGHF.skadnetwork</string>
+    </dict>
+    <!--  RTB House  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>8s468mfl3y.skadnetwork</string>
+    </dict>
+    <!--  Logicad  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>XY9T38CT57.skadnetwork</string>
+    </dict>
+    <!--  Unicorn  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>578prtvx9j.skadnetwork</string>
+    </dict>
+</array>
+</plist>
