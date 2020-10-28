@@ -1,3 +1,6 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script src="../../custom/js/replace_network_skplist.js"></script>
+
 # imobile広告の導入
 
 ## 対応OS

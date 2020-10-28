@@ -1,3 +1,6 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script src="../../custom/js/replace_network_skplist.js"></script>
+
 # TikTok広告の導入
 
 ## 対応OS
@@ -66,14 +69,4 @@ iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/store
 
 ```xml
 <key>SKAdNetworkItems</key>
-<array>
-    <dict>
-        <key>SKAdNetworkIdentifier</key>
-        <string>238da6jt44.skadnetwork</string>
-    </dict>
-    <dict>
-        <key>SKAdNetworkIdentifier</key>
-        <string>22mmun2rn5.skadnetwork</string>
-    </dict>
-</array>
 ```

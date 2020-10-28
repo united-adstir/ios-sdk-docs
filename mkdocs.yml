@@ -53,6 +53,7 @@ markdown_extensions:
   - pymdownx.tasklist:  
       custom_checkbox: true
   - pymdownx.details
+  - attr_list # button
 
 nav:
   - スタートガイド: index.md

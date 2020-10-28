@@ -1,3 +1,6 @@
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+<script src="../../custom/js/replace_network_skplist.js"></script>
+
 # TapJoy広告の導入
 
 ## 対応OS
@@ -51,36 +54,4 @@ iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/store
 
 ```xml
 <key>SKAdNetworkItems</key>
-<array>
-    <dict>
-        <!--  TapJoy  -->
-        <key>SKAdNetworkIdentifier</key>
-        <string>ECPZ2SRF59.skadnetwork</string>
-    </dict>
-    <dict>
-        <!--  Liftoff  -->
-        <key>SKAdNetworkIdentifier</key>
-        <string>7UG5ZH24HU.skadnetwork</string>
-    </dict>
-    <dict>
-        <!--  Moloco  -->
-        <key>SKAdNetworkIdentifier</key>
-        <string>9T245VHMPL.skadnetwork</string>
-    </dict>
-    <dict>
-        <!--  CrossInstall  -->
-        <key>SKAdNetworkIdentifier</key>
-        <string>prcb7njmu6.skadnetwork</string>
-    </dict>
-    <dict>
-        <!--  LoopMe  -->
-        <key>SKAdNetworkIdentifier</key>
-        <string>5lm9lj6jb7.skadnetwork</string>
-    </dict>
-    <dict>
-        <!--  Unicorn  -->
-        <key>SKAdNetworkIdentifier</key>
-        <string>578prtvx9j.skadnetwork</string>
-    </dict>
-</array>
 ```
