@@ -21,6 +21,11 @@
   border-left: solid 3px #ef5350;
 }
 
+.md-button {
+  border: 1px solid;
+  background-color:rgba(0, 0, 0, 0);
+}
+
 
 @media only screen and (min-width: 100em) {
 

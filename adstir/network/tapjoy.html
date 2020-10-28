@@ -1530,7 +1530,11 @@
               
                 
                 
-                <h1 id="tapjoy広告の導入"><a class="toclink" href="#tapjoy広告の導入">TapJoy広告の導入</a><a class="headerlink" href="#tapjoy広告の導入" title="Permanent link">&para;</a></h1>
+                <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
+
+<script src="../../custom/js/replace_network_skplist.js"></script>
+
+<h1 id="tapjoy広告の導入"><a class="toclink" href="#tapjoy広告の導入">TapJoy広告の導入</a><a class="headerlink" href="#tapjoy広告の導入" title="Permanent link">&para;</a></h1>
 <h2 id="対応os"><a class="toclink" href="#対応os">対応OS</a><a class="headerlink" href="#対応os" title="Permanent link">&para;</a></h2>
 <p>iOS 9.0以上</p>
 <h2 id="sdkの準備"><a class="toclink" href="#sdkの準備">SDKの準備</a><a class="headerlink" href="#sdkの準備" title="Permanent link">&para;</a></h2>
@@ -1599,38 +1603,6 @@
 <h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
 <p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork 2.0</a>を利用するために、Info.plistに下記の内容を追加します。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
-<span class="nt">&lt;array&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="c">&lt;!--  TapJoy  --&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>ECPZ2SRF59.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="c">&lt;!--  Liftoff  --&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>7UG5ZH24HU.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="c">&lt;!--  Moloco  --&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>9T245VHMPL.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="c">&lt;!--  CrossInstall  --&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>prcb7njmu6.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="c">&lt;!--  LoopMe  --&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>5lm9lj6jb7.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-    <span class="nt">&lt;dict&gt;</span>
-        <span class="c">&lt;!--  Unicorn  --&gt;</span>
-        <span class="nt">&lt;key&gt;</span>SKAdNetworkIdentifier<span class="nt">&lt;/key&gt;</span>
-        <span class="nt">&lt;string&gt;</span>578prtvx9j.skadnetwork<span class="nt">&lt;/string&gt;</span>
-    <span class="nt">&lt;/dict&gt;</span>
-<span class="nt">&lt;/array&gt;</span>
 </pre></div>
                 
                   
