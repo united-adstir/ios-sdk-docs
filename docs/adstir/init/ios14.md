@@ -34,7 +34,7 @@ iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/store
     <!--  imobile  -->
     <dict>
         <key>SKAdNetworkIdentifier</key>
-        <string>V4NXQHLYQP.skadnetwork</string>
+        <string>v4nxqhlyqp.skadnetwork</string>
     </dict>
     <!--  gunosy  -->
     <dict>
