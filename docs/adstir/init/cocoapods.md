@@ -17,7 +17,7 @@ platformの行は、プロジェクトに応じて適宜設定してください
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
-platform :ios, "9.0"
+platform :ios, "10.0"
 pod 'AdStir-Ads-SDK'
 
 # AdMobメディエーションを利用する場合は、下記のコメントを外します。

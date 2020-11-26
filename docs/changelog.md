@@ -2,6 +2,16 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.10 (2020/11/26)
+
+* 対応OSバージョンをiOS 10.0以上に変更
+* bundle SDKの更新
+    * [MoPub 5.15.0](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.15.0)
+        * iOS 13以上の端末に広告が配信されます
+        * 5.14.0以上からiOS 14への対応が含まれております
+        * Swift 5が含まれております
+        * AdMobパッケージにはMoPubのAdMob用アダプターは含まれておりません
+
 ## v2.15.9 (2020/10/09)
 
 * Mobvista(Mintegral) SDKのBundleを終了
