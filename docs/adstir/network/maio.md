@@ -30,3 +30,9 @@ pod 'AdStir-Ads-SDK/Maio'
 1. `Copy items if needed`にチェックを入れます。
 1. `Add to targets`欄で、`Maio`を利用するすべてのターゲットにチェックを入れます。
 1. `Finish`をクリックします。
+
+## SDKが取得するプライバシー情報
+
+2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
+
+maio SDKが取得するプライバシーデータは[こちら](../info/nw_privacy.md#maio)をご覧ください

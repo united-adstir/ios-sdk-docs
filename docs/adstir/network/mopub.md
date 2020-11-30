@@ -51,3 +51,17 @@ CoreGraphics.framework|Required
 MediaPlayer.framework|Required
 StoreKit.framework|Required
 Webkit.framework|Optional
+
+## Info.plistの更新
+
+iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+
+```xml
+<key>SKAdNetworkItems</key>
+```
+
+## SDKが取得するプライバシー情報
+
+2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
+
+MoPub SDKが取得するプライバシーデータは[こちら](../info/nw_privacy.md#mopub)をご覧ください

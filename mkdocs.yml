@@ -117,7 +117,8 @@ nav:
           - AdstirInterstitial: adstir/api/interstitial/AdstirInterstitial-Class-Reference.md
           - AdstirInterstitialDelegate: adstir/api/interstitial/AdstirInterstitialDelegate-Protocol-Reference.md
       - その他:
-        - アプリのプライバシー: adstir/info/privacy.md
+        - adstir SDKが取得するプライバシー情報: adstir/info/privacy.md
+        - 提携対応ネットワークのプライバシー情報: adstir/info/nw_privacy.md
         - テストスイート: adstir/testsuite/index.md
         - ユーザデータアクセス許可に関して: adstir/info/user_data.md 
         - よくある質問: adstir/info/question.md

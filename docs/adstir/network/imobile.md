@@ -43,3 +43,8 @@ CoreLocation.framework|Required
 IMobileでは`CoreLocation.framework`を利用していますので、
 [こちら](../info/user_data.md)を参考に設定を行ってください。
 
+## SDKが取得するプライバシー情報
+
+2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
+
+imobile SDKが取得するプライバシーデータは[こちら](../info/nw_privacy.md#imobile)をご覧ください

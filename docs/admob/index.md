@@ -62,3 +62,10 @@ AdMobの実装ガイドをご覧ください。
 
 開発時には[テストデバイスを追加する](https://developers.google.com/admob/ios/test-ads#add_your_test_device)より、広告リクエスト時にデバイスIDの設定をおこなってください。
 こちらの設定をおこなった際には、アプリケーションのリリース前には該当コードの削除をお願いいたします。
+
+## アプリケーションのプライバシー
+
+2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
+adstir SDKが収集するデータは[こちら](../adstir/info/privacy.md)を参考にご回答ください。
+
+AdMobが取得するデータは[こちら](https://support.google.com/admob/answer/7665968)をご参考ください。

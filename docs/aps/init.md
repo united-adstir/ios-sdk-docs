@@ -64,3 +64,10 @@ DTBAds.sharedInstance().testMode = true
 
 * [AdMobバナー広告](banner.md)
 * [AdMobインタースティシャル広告](interstitial.md)
+
+## アプリケーションのプライバシー
+
+2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
+adstir SDKが収集するデータは[こちら](../adstir/info/privacy.md)を参考にご回答ください。
+
+APSが取得するデータは営業担当にご連絡ください。

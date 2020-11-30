@@ -38,3 +38,9 @@ CoreMedia.framework|Required
 StoreKit.framework|Required
 SystemConfiguration.framework|Required
 libz.tbd|Required
+
+## SDKが取得するプライバシー情報
+
+2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
+
+AppLovin SDKが取得するプライバシーデータは[こちら](../info/nw_privacy.md#applovin)をご覧ください
