@@ -37,7 +37,8 @@
 
 ## TikTok
 
-営業担当へご連絡ください
+* [https://www.pangleglobal.com/help/doc/5fc45f521ee5c2001d3f100e](https://www.pangleglobal.com/help/doc/5fc45f521ee5c2001d3f100e)
+    * サイト右上の言語設定を`English`に変更することで確認できます
 
 ## UnityAds
 
