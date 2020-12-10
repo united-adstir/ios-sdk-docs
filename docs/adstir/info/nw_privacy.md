@@ -29,7 +29,7 @@
 
 ## nend
 
-* [https://nend.net/privacy/sdkpolicy](https://nend.net/privacy/sdkpolicy)
+* [https://github.com/fan-ADN/nendSDK-iOS/wiki/nendSDK-%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E9%A0%85%E7%9B%AE](https://github.com/fan-ADN/nendSDK-iOS/wiki/nendSDK-%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E9%A0%85%E7%9B%AE)
 
 ## TapJoy
 
