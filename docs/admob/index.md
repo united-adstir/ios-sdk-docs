@@ -30,7 +30,7 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードします。
     * [AdColony](https://google.bintray.com/mobile-ads-adapters-ios/AdColonyAdapter/{{config.version.adcolony}}.0/AdColonyAdapter-{{config.version.adcolony}}.0.zip)
     * [AppLovin](https://google.bintray.com/mobile-ads-adapters-ios/AppLovinAdapter/{{config.version.applovin}}.0/AppLovinAdapter-{{config.version.applovin}}.0.zip)
-    * [Facebook](https://google.bintray.com/mobile-ads-adapters-ios/FacebookAdapter/{{config.version.facebook}}.1/FacebookAdapter-{{config.version.facebook}}.1.zip)
+    * [Facebook](https://google.bintray.com/mobile-ads-adapters-ios/FacebookAdapter/{{config.version.facebook}}.1/FacebookAdapter-{{config.version.facebook}}.0.zip)
     * [maio](https://google.bintray.com/mobile-ads-adapters-ios/MaioAdapter/{{config.version.maio}}.0/MaioAdapter-{{config.version.maio}}.0.zip)
     * [MoPub](https://google.bintray.com/mobile-ads-adapters-ios/MoPubAdapter/{{config.version.mopub}}.0/MoPubAdapter-{{config.version.mopub}}.0.zip)
     * [nend](https://google.bintray.com/mobile-ads-adapters-ios/NendAdapter/{{config.version.nend}}.0/NendAdapter-{{config.version.nend}}.0.zip)
