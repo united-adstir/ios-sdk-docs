@@ -68,4 +68,4 @@ AdMobの実装ガイドをご覧ください。
 2020年12月8日以降、[App Storeへ審査を行う際にアプリケーションのプライバシーに関する質問へ](https://developer.apple.com/app-store/app-privacy-details/)回答する必要がございます。
 adstir SDKが収集するデータは[こちら](../adstir/info/privacy.md)を参考にご回答ください。
 
-AdMobが取得するデータは[こちら](https://support.google.com/admob/answer/7665968)をご参考ください。
+AdMobが取得するデータは[こちら](https://developers.google.com/admob/ios/data-disclosure?hl=ja)をご参考ください。
