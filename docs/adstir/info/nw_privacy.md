@@ -17,11 +17,12 @@
 
 ## imobile
 
-営業担当へご連絡ください
+* [https://sppartner.i-mobile.co.jp/webdoc/index.html#objective-c/collected-data.html](https://sppartner.i-mobile.co.jp/webdoc/index.html#objective-c/collected-data.html)
 
 ## Maio
 
-営業担当へご連絡ください
+* [https://github.com/imobile-maio/maio-iOS-SDK#%E5%8F%8E%E9%9B%86%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6](https://github.com/imobile-maio/maio-iOS-SDK#%E5%8F%8E%E9%9B%86%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+
 
 ## MoPub
 

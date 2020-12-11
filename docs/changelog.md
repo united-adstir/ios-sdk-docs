@@ -2,6 +2,24 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.11 (2020/12/09)
+
+* bundle SDKの更新
+    * [AdColony 4.4.1](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md#441-20201009)
+        * [4.4.0](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md#440-20200918)でiOS 14対応が含まれております
+    * [AdCorsa 2.2.1](https://github.com/glossom-dev/GlossomAds-iOS/releases/tag/2.2.1)
+    * AppLovin 6.13.3
+        * AdMobパッケージにはAppLovinのAdMob用アダプターは含まれておりません
+    * [Nend 7.0.2](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.0.2)
+        * [7.0.1](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.0.1)でSKAdNetwork関連の修正が含まれております
+        * AdMobパッケージにはNendのAdMob用アダプターは含まれておりません
+    * [TapJoy 12.7.1](https://dev.tapjoy.com/jp/ios-sdk/Changelog#id-1271-2020-11-02)
+        * SKAdNetwork関連の修正が含まれております
+    * TikTok 3.3.6.0
+    * [UnityAds 3.5.1](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/3.5.1)
+        * SKAdNetwork対応の更新が含まれております
+    * [Zucks 4.9.3](https://ms.zucksadnetwork.com/media/sdk/manual/ios/#integrateSDK)
+
 ## v2.15.10 (2020/11/26)
 
 * 対応OSバージョンをiOS 10.0以上に変更
