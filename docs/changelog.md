@@ -2,6 +2,17 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.12 (2021/01/25)
+
+* 対象開発環境をXcode 12以上に変更
+* SKAdNetwork関連の修正
+* bundle SDKの更新
+    * [AdCorsa 2.2.2](https://github.com/glossom-dev/GlossomAds-iOS/releases/tag/2.2.2)
+    * TikTok 3.3.6.2
+        * SKAdNetwork対応の更新が含まれております
+    * [Zucks 4.10.0](https://ms.zucksadnetwork.com/media/sdk/manual/ios/#integrateSDK)
+        * SKAdNetworkへの対応が含まれております
+
 ## v2.15.11 (2020/12/09)
 
 * bundle SDKの更新
