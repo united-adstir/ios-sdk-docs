@@ -10,11 +10,22 @@
         <key>SKAdNetworkIdentifier</key>
         <string>v4nxqhlyqp.skadnetwork</string>
     </dict>
+    <!--  amoad  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>866k9ut3g3.skadnetwork</string>
+    </dict>
     <!--  gunosy  -->
     <dict>
         <key>SKAdNetworkIdentifier</key>
         <string>5594BLYGHF.skadnetwork</string>
     </dict>
+    <dict>
+    <!--  Zucks  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>3qcr597p9d.skadnetwork</string>
+    </dict>
+    <dict>
     <!--  RTB House  -->
     <dict>
         <key>SKAdNetworkIdentifier</key>
