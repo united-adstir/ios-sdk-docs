@@ -5,39 +5,38 @@
         <key>SKAdNetworkIdentifier</key>
         <string>arq2d5wxeq.skadnetwork</string>
     </dict>
-    <!--  imobile  -->
     <dict>
+        <!--  imobile  -->
         <key>SKAdNetworkIdentifier</key>
         <string>v4nxqhlyqp.skadnetwork</string>
     </dict>
-    <!--  amoad  -->
     <dict>
+        <!--  amoad  -->
         <key>SKAdNetworkIdentifier</key>
         <string>866k9ut3g3.skadnetwork</string>
     </dict>
-    <!--  gunosy  -->
     <dict>
+        <!--  gunosy  -->
         <key>SKAdNetworkIdentifier</key>
         <string>5594BLYGHF.skadnetwork</string>
     </dict>
     <dict>
-    <!--  Zucks  -->
+        <!--  Zucks  -->
         <key>SKAdNetworkIdentifier</key>
         <string>3qcr597p9d.skadnetwork</string>
     </dict>
     <dict>
-    <!--  RTB House  -->
-    <dict>
+        <!--  RTB House  -->
         <key>SKAdNetworkIdentifier</key>
         <string>8s468mfl3y.skadnetwork</string>
     </dict>
-    <!--  Logicad  -->
     <dict>
+        <!--  Logicad  -->
         <key>SKAdNetworkIdentifier</key>
         <string>XY9T38CT57.skadnetwork</string>
     </dict>
-    <!--  Unicorn  -->
     <dict>
+        <!--  Unicorn  -->
         <key>SKAdNetworkIdentifier</key>
         <string>578prtvx9j.skadnetwork</string>
     </dict>
