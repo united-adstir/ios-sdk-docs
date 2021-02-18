@@ -4,17 +4,17 @@
     <dict>
         <!--  TapJoy  -->
         <key>SKAdNetworkIdentifier</key>
-        <string>ECPZ2SRF59.skadnetwork</string>
+        <string>ecpz2srf59.skadnetwork</string>
     </dict>
     <dict>
         <!--  Liftoff  -->
         <key>SKAdNetworkIdentifier</key>
-        <string>7UG5ZH24HU.skadnetwork</string>
+        <string>7ug5zh24hu.skadnetwork</string>
     </dict>
     <dict>
         <!--  Moloco  -->
         <key>SKAdNetworkIdentifier</key>
-        <string>9T245VHMPL.skadnetwork</string>
+        <string>9t245vhmpl.skadnetwork</string>
     </dict>
     <dict>
         <!--  CrossInstall  -->
