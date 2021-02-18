@@ -40,5 +40,10 @@
         <key>SKAdNetworkIdentifier</key>
         <string>578prtvx9j.skadnetwork</string>
     </dict>
+    <dict>
+        <!--  Criteo  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>hs6bdukanm.skadnetwork</string>
+    </dict>
 </array>
 </plist>
