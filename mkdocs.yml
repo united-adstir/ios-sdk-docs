@@ -19,7 +19,7 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.13
+      adstir: 2.15.14
       adcolony: 4.4.1
       adcorsa: 2.2.2
       applovin: 6.13.3
