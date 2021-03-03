@@ -2,6 +2,12 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.15 (2021/03/03)
+
+* Google Mobile Ads SDK v8 への対応
+    * v8 SDKではAPIが変更されています
+    * AdMobをご利用でv8 SDKへ移行する場合は[こちら](https://developers.google.com/admob/ios/migration)を参考にしてください
+
 ## v2.15.14 (2021/02/18)
 
 * iOS 14.5への対応
