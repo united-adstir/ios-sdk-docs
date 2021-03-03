@@ -36,7 +36,7 @@
     
     
       
-        <title>AdMobバナー - adstir Integration Guide for iOS</title>
+        <title>AdMobインタースティシャル(v8 SDK) - adstir Integration Guide for iOS</title>
       
     
     
@@ -85,7 +85,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#amazon-publisher-servicesapsのバナー広告の導入" tabindex="1" class="md-skip">
+      <a href="#amazon-publisher-servicesapsのインタースティシャル広告の導入v8-sdk" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -1311,6 +1311,30 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="banner.html" title="AdMobバナー" class="md-nav__link">
+      AdMobバナー
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
+      AdMobインタースティシャル
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1322,11 +1346,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        AdMobバナー
+        AdMobインタースティシャル(v8 SDK)
       </label>
     
-    <a href="banner.html" title="AdMobバナー" class="md-nav__link md-nav__link--active">
-      AdMobバナー
+    <a href="interstitialv8.html" title="AdMobインタースティシャル(v8 SDK)" class="md-nav__link md-nav__link--active">
+      AdMobインタースティシャル(v8 SDK)
     </a>
     
       
@@ -1340,8 +1364,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apsバナーへのリクエストを行う" class="md-nav__link">
-    APSバナーへのリクエストを行う
+  <a href="#apsインタースティシャルへのリクエストを行う" class="md-nav__link">
+    APSインタースティシャルへのリクエストを行う
   </a>
   
     <nav class="md-nav">
@@ -1375,6 +1399,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#広告を表示する" class="md-nav__link">
+    広告を表示する
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1395,30 +1426,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
-      AdMobインタースティシャル
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="interstitialv8.html" title="AdMobインタースティシャル(v8 SDK)" class="md-nav__link">
-      AdMobインタースティシャル(v8 SDK)
-    </a>
   </li>
 
         
@@ -1460,8 +1467,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apsバナーへのリクエストを行う" class="md-nav__link">
-    APSバナーへのリクエストを行う
+  <a href="#apsインタースティシャルへのリクエストを行う" class="md-nav__link">
+    APSインタースティシャルへのリクエストを行う
   </a>
   
     <nav class="md-nav">
@@ -1495,6 +1502,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#広告を表示する" class="md-nav__link">
+    広告を表示する
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1524,28 +1538,33 @@
               
                 
                 
-                <h1 id="amazon-publisher-servicesapsのバナー広告の導入"><a class="toclink" href="#amazon-publisher-servicesapsのバナー広告の導入">Amazon Publisher Services(APS)のバナー広告の導入</a><a class="headerlink" href="#amazon-publisher-servicesapsのバナー広告の導入" title="Permanent link">&para;</a></h1>
+                <h1 id="amazon-publisher-servicesapsのインタースティシャル広告の導入v8-sdk"><a class="toclink" href="#amazon-publisher-servicesapsのインタースティシャル広告の導入v8-sdk">Amazon Publisher Services(APS)のインタースティシャル広告の導入(v8 SDK)</a><a class="headerlink" href="#amazon-publisher-servicesapsのインタースティシャル広告の導入v8-sdk" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">はじめに</p>
-<p>APS SDKの初期化が必要です。<a href="init.html">APSの設定</a>をご覧になり、<a href="init.html#apsの初期化">APSの初期化</a>を必ず先に行ってください。</p>
+<p>APS SDKの初期化が必要です。<a href="init.html">APSの設定</a>をご覧になり、<a href="init#apsの初期化.md">APSの初期化</a>を必ず先に行ってください。<br />
+こちらはGoogle Mobile Ads SDK v8を使用した場合の実装例です。v8以前のSDKをご利用の場合は<a href="interstitial.html">こちら</a>をご覧ください。</p>
 </div>
-<h2 id="apsバナーへのリクエストを行う"><a class="toclink" href="#apsバナーへのリクエストを行う">APSバナーへのリクエストを行う</a><a class="headerlink" href="#apsバナーへのリクエストを行う" title="Permanent link">&para;</a></h2>
+<h2 id="apsインタースティシャルへのリクエストを行う"><a class="toclink" href="#apsインタースティシャルへのリクエストを行う">APSインタースティシャルへのリクエストを行う</a><a class="headerlink" href="#apsインタースティシャルへのリクエストを行う" title="Permanent link">&para;</a></h2>
 <h3 id="dtbadsizeのインスタンスを生成します"><a class="toclink" href="#dtbadsizeのインスタンスを生成します"><code>DTBAdSize</code>のインスタンスを生成します</a><a class="headerlink" href="#dtbadsizeのインスタンスを生成します" title="Permanent link">&para;</a></h3>
-<p>広告サイズは実際に表示するバナー広告のサイズを、<code>YOUR_SLOT_UUID</code>には営業担当がお知らせしたIDを入力してください。</p>
+<p><code>YOUR_SLOT_UUID</code>には営業担当がお知らせしたIDを入力してください。</p>
 <div class="superfences-tabs">
 <input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">Objective-C</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">DTBAdSize</span> <span class="o">*</span><span class="n">size</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DTBAdSize</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initBannerAdSizeWithWidth</span><span class="err">：</span><span class="mi">320</span> <span class="n">height</span><span class="err">：</span><span class="mi">50</span> <span class="n">andSlotUUID</span><span class="err">：</span><span class="s">@&quot;YOUR_SLOT_UUID&quot;</span><span class="p">];</span>
+<label for="__tab_1_0">Objective-c</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cp">#import &lt;DTBiOSSDK/DTBiOSSDK.h&gt;</span>
+
+<span class="n">DTBAdSize</span> <span class="o">*</span><span class="n">size</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DTBAdSize</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initInterstitialAdSizeWithSlotUUID</span><span class="p">:</span><span class="s">@&quot;YOUR_SLOT_UUID&quot;</span><span class="p">];</span>
 </pre></div></div>
 <input name="__tabs_1" type="radio" id="__tab_1_1" />
 <label for="__tab_1_1">swift</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nv">size</span> <span class="p">=</span> <span class="n">DTBAdSize</span><span class="p">(</span><span class="n">bannerAdSizeWithWidth</span><span class="p">:</span> <span class="mi">320</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="n">andSlotUUID</span><span class="p">:</span> <span class="s">&quot;YOUR_SLOT_UUID&quot;</span><span class="p">)</span>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kd">import</span> <span class="nc">DTBiOSSDK</span>
+
+<span class="kd">let</span> <span class="nv">size</span> <span class="p">=</span> <span class="n">DTBAdSize</span><span class="p">(</span><span class="n">interstitialAdSizeWithSlotUUID</span><span class="p">:</span> <span class="s">&quot;YOUR_SLOT_UUID&quot;</span><span class="p">)</span>
 </pre></div></div>
 </div>
 <h3 id="dtbadloaderのインスタンスを生成しdtbadsizeを設定する"><a class="toclink" href="#dtbadloaderのインスタンスを生成しdtbadsizeを設定する"><code>DTBAdLoader</code>のインスタンスを生成し、<code>DTBAdSize</code>を設定する</a><a class="headerlink" href="#dtbadloaderのインスタンスを生成しdtbadsizeを設定する" title="Permanent link">&para;</a></h3>
 <div class="superfences-tabs">
 <input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
-<label for="__tab_2_0">Objective-C</label>
+<label for="__tab_2_0">Objective-c</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="n">DTBAdLoader</span> <span class="o">*</span><span class="n">adLoader</span> <span class="o">=</span> <span class="p">[</span><span class="n">DTBAdLoader</span> <span class="n">new</span><span class="p">];</span>
 <span class="p">[</span><span class="n">adLoader</span> <span class="nl">setSizes</span><span class="p">:</span><span class="n">size</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
 </pre></div></div>
@@ -1559,7 +1578,7 @@
 <p>loadAdを呼び出して入札リクエストを行います。</p>
 <div class="superfences-tabs">
 <input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
-<label for="__tab_3_0">Objective-C</label>
+<label for="__tab_3_0">Objective-c</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="p">[</span><span class="n">adLoader</span> <span class="nl">loadAd</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
 </pre></div></div>
 <input name="__tabs_3" type="radio" id="__tab_3_1" />
@@ -1575,9 +1594,9 @@ onFailureが呼ばれた場合は、AdMobへ追加情報を付与せずにリク
 AdMobの実装については<a href="/admob#広告の実装">こちら</a>をご覧ください。</p>
 <div class="superfences-tabs">
 <input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
-<label for="__tab_4_0">Objective-C</label>
+<label for="__tab_4_0">Objective-c</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cp">#import &lt;DTBiOSSDK/DTBiOSSDK.h&gt;</span>
-<span class="k">@interface</span> <span class="nc">ViewController</span> <span class="p">()</span> <span class="o">&lt;</span><span class="n">GADBannerViewDelegate</span><span class="p">,</span> <span class="n">DTBAdCallback</span><span class="o">&gt;</span>
+<span class="k">@interface</span> <span class="nc">ViewController</span> <span class="p">()</span> <span class="o">&lt;</span><span class="n">GADFullScreenContentDelegate</span><span class="p">,</span> <span class="n">DTBAdCallback</span><span class="o">&gt;</span>
 <span class="k">@end</span>
 
 <span class="k">@implementation</span> <span class="nc">ViewController</span>
@@ -1586,7 +1605,7 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
 <span class="cp">#pragma mark - DTBAdCallback</span>
 <span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">onFailure</span><span class="p">:</span> <span class="p">(</span><span class="n">DTBAdError</span><span class="p">)</span><span class="n">error</span> <span class="p">{</span>
     <span class="c1">// APSの入札情報は付与しないでAdMobへリクエストを行う</span>
-    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobBannerAdsWithExtras</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobInterstitialAdsWithExtras</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
 <span class="p">}</span>
 
 <span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">onSuccess</span><span class="p">:</span> <span class="p">(</span><span class="n">DTBAdResponse</span> <span class="o">*</span><span class="p">)</span><span class="n">adResponse</span> <span class="p">{</span>
@@ -1595,12 +1614,12 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
     <span class="bp">NSDictionary</span> <span class="o">*</span><span class="n">mediationHints</span> <span class="o">=</span> <span class="p">[</span><span class="n">adResponse</span> <span class="n">mediationHints</span><span class="p">];</span>
     <span class="n">GADCustomEventExtras</span> <span class="o">*</span><span class="n">extras</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GADCustomEventExtras</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
     <span class="p">[</span><span class="n">extras</span> <span class="nl">setExtras</span><span class="p">:</span><span class="n">mediationHints</span> <span class="nl">forLabel</span><span class="p">:</span><span class="n">amznSlots</span><span class="p">];</span>
-    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobBannerAdsWithExtras</span><span class="p">:</span><span class="n">extras</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobInterstitialAdsWithExtras</span><span class="p">:</span><span class="n">extras</span><span class="p">];</span>
 <span class="p">}</span>
 
-<span class="cp">#pragma mark - AdMobBanner load</span>
+<span class="cp">#pragma mark - AdMobinterstitial load</span>
 
-<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">loadAdMobBannerAdsWithExtras</span><span class="p">:</span> <span class="p">(</span><span class="n">GADCustomEventExtras</span> <span class="o">*</span><span class="p">)</span><span class="n">extras</span>
+<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">loadAdMobInterstitialAdsWithExtras</span><span class="p">:</span> <span class="p">(</span><span class="n">GADCustomEventExtras</span> <span class="o">*</span><span class="p">)</span><span class="n">extras</span>
 <span class="p">{</span>
     <span class="n">GADRequest</span> <span class="o">*</span><span class="n">request</span> <span class="o">=</span> <span class="p">[</span><span class="n">GADRequest</span> <span class="n">request</span><span class="p">];</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">extras</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
@@ -1608,12 +1627,17 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
         <span class="p">[</span><span class="n">request</span> <span class="nl">registerAdNetworkExtras</span><span class="p">:</span><span class="n">extras</span><span class="p">];</span>
     <span class="p">}</span>
 
-    <span class="c1">// AdMobへリクエストを行う</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GADBannerView</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithAdSize</span><span class="p">:</span><span class="err">利用するバナーのサイズ</span><span class="p">];</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">adUnitID</span> <span class="o">=</span> <span class="s">@&quot;ADMOB_BANNER_ID&quot;</span><span class="p">;</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">rootViewController</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
-    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span> <span class="nl">loadRequest</span><span class="p">:</span><span class="n">request</span><span class="p">];</span>
+    <span class="c1">// AdMobへリクストを行う。</span>
+    <span class="p">[</span><span class="n">GADInterstitialAd</span> <span class="nl">loadWithAdUnitID</span><span class="p">:</span><span class="s">@&quot;ADMOB_INTERSTITIAL_ID&quot;</span>
+                                <span class="nl">request</span><span class="p">:</span><span class="n">request</span>
+                      <span class="nl">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">GADInterstitialAd</span> <span class="o">*</span><span class="n">ad</span><span class="p">,</span> <span class="bp">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;Failed to load interstitial ad with error: %@&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">error</span> <span class="n">localizedDescription</span><span class="p">]);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">googleInterstitial</span> <span class="o">=</span> <span class="n">ad</span><span class="p">;</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">googleInterstitial</span><span class="p">.</span><span class="n">fullScreenContentDelegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
+    <span class="p">}];</span>
 <span class="p">}</span>
 </pre></div></div>
 <input name="__tabs_4" type="radio" id="__tab_4_1" />
@@ -1622,15 +1646,13 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
 <span class="kd">import</span> <span class="nc">DTBiOSSDK</span>
 <span class="kd">import</span> <span class="nc">GoogleMobileAds</span>
 
-<span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span><span class="p">,</span> <span class="n">DTBAdCallback</span> <span class="p">{</span>
-
-    <span class="kd">var</span> <span class="nv">bannerView</span><span class="p">:</span> <span class="n">GADBannerView</span><span class="p">!</span>
-
+<span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span><span class="p">,</span> <span class="n">GADFullScreenContentDelegate</span><span class="p">,</span> <span class="n">DTBAdCallback</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nv">googleInterstitial</span><span class="p">:</span> <span class="n">GADInterstitial</span><span class="p">!</span>
     <span class="p">...</span>
-
+    <span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> DTBAdCallback</span>
     <span class="kd">func</span> <span class="nf">onFailure</span><span class="p">(</span><span class="kc">_</span> <span class="n">error</span><span class="p">:</span> <span class="n">DTBAdError</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// APSの入札情報を付与してAdMobへリクエスト行う</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">loadAdMobBannerAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">loaodAdMobInterstitialAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
     <span class="p">}</span>
 
     <span class="kd">func</span> <span class="nf">onSuccess</span><span class="p">(</span><span class="kc">_</span> <span class="n">adResponse</span><span class="p">:</span> <span class="n">DTBAdResponse</span><span class="p">!)</span> <span class="p">{</span>
@@ -1639,38 +1661,60 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
         <span class="kd">let</span> <span class="nv">mediationHints</span> <span class="p">=</span> <span class="n">adResponse</span><span class="p">.</span><span class="n">mediationHints</span><span class="p">()</span>
         <span class="kd">let</span> <span class="nv">extras</span> <span class="p">=</span> <span class="n">GADCustomEventExtras</span><span class="p">.</span><span class="kd">init</span><span class="p">()</span>
         <span class="n">extras</span><span class="p">.</span><span class="n">setExtras</span><span class="p">(</span><span class="n">mediationHints</span><span class="p">,</span> <span class="n">forLabel</span><span class="p">:</span> <span class="n">amznSlots</span><span class="p">)</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">loadAdMobBannerAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">extras</span><span class="p">)</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">loaodAdMobInterstitialAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">extras</span><span class="p">)</span>
     <span class="p">}</span>
 
-    <span class="kd">func</span> <span class="nf">loadAdMobBannerAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">GADCustomEventExtras</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> load AdMob interstitial</span>
+    <span class="kd">func</span> <span class="nf">loaodAdMobInterstitialAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">GADCustomEventExtras</span><span class="p">?)</span> <span class="p">{</span>
         <span class="kd">let</span> <span class="nv">request</span> <span class="p">=</span> <span class="n">GADRequest</span><span class="p">()</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">extras</span> <span class="o">!=</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">request</span><span class="p">.</span><span class="n">register</span><span class="p">(</span><span class="n">extras</span><span class="p">!)</span>
         <span class="p">}</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span> <span class="p">=</span> <span class="n">GADBannerView</span><span class="p">.</span><span class="kd">init</span><span class="p">(</span><span class="n">adSize</span><span class="p">:</span> <span class="n">kGADAdSizeBanner</span><span class="p">)</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">adUnitID</span> <span class="p">=</span> <span class="s">&quot;ADMOB_BANNER_ID&quot;</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">rootViewController</span> <span class="p">=</span> <span class="kc">self</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+        <span class="n">GADInterstitialAd</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">withAdUnitID</span><span class="p">:</span> <span class="s">&quot;ADMOB_INTERSTITIAL_ID&quot;</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">request</span><span class="p">,</span> <span class="n">completionHandler</span><span class="p">:</span> <span class="p">{</span> <span class="n">ad</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+            <span class="k">if</span> <span class="kd">let</span> <span class="nv">error</span> <span class="p">=</span> <span class="n">error</span> <span class="p">{</span>
+                <span class="bp">print</span><span class="p">(</span><span class="s">&quot;Failed to load interstitial ad with error: </span><span class="si">\(</span><span class="n">error</span><span class="p">.</span><span class="n">localizedDescription</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+            <span class="kc">self</span><span class="p">.</span><span class="n">googleInterstitial</span> <span class="p">=</span> <span class="n">ad</span><span class="p">;</span>
+            <span class="kc">self</span><span class="p">.</span><span class="n">googleInterstitial</span><span class="p">.</span><span class="n">fullScreenContentDelegate</span> <span class="p">=</span> <span class="kc">self</span><span class="p">;</span>
+        <span class="p">})</span>
     <span class="p">}</span>
-    <span class="p">...</span>
+<span class="p">}</span>
+</pre></div></div>
+</div>
+<h3 id="広告を表示する"><a class="toclink" href="#広告を表示する">広告を表示する</a><a class="headerlink" href="#広告を表示する" title="Permanent link">&para;</a></h3>
+<p>広告の準備ができているか確認してから広告を表示します。</p>
+<div class="superfences-tabs">
+<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
+<label for="__tab_5_0">Objective-c</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showInterstitialAd</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">googleInterstitial</span><span class="p">)</span> <span class="p">{</span>
+        <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">googleInterstitial</span> <span class="nl">presentFromRootViewController</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div></div>
+<input name="__tabs_5" type="radio" id="__tab_5_1" />
+<label for="__tab_5_1">swift</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kd">func</span> <span class="nf">showInterstitialAd</span><span class="p">(){</span>
+    <span class="k">if</span> <span class="kd">let</span> <span class="nv">ad</span> <span class="p">=</span> <span class="kc">self</span><span class="p">.</span><span class="n">googleInterstitial</span> <span class="p">{</span>
+        <span class="n">ad</span><span class="p">.</span><span class="n">present</span><span class="p">(</span><span class="n">fromRootViewController</span><span class="p">:</span> <span class="kc">self</span><span class="p">)</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div></div>
 </div>
 <h2 id="実装例"><a class="toclink" href="#実装例">実装例</a><a class="headerlink" href="#実装例" title="Permanent link">&para;</a></h2>
 <div class="superfences-tabs">
-<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
-<label for="__tab_5_0">Objective-C</label>
-<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cp">#import &quot;ViewController.h&quot;</span>
+<input name="__tabs_6" type="radio" id="__tab_6_0" checked="checked" />
+<label for="__tab_6_0">Objective-c</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="cp">#import &quot;APSInterstitialViewController.h&quot;</span>
 <span class="cp">#import &lt;DTBiOSSDK/DTBiOSSDK.h&gt;</span>
-<span class="cp">#import &lt;GoogleMobileAds/GoogleMobileAds.h&gt;</span>
+<span class="k">@import</span> <span class="n">GoogleMobileAds</span><span class="p">;</span>
 
-<span class="k">@interface</span> <span class="nc">ViewController</span> <span class="p">()</span> <span class="o">&lt;</span><span class="n">DTBAdCallback</span><span class="o">&gt;</span>
-
-<span class="k">@property</span><span class="p">(</span><span class="k">nonatomic</span><span class="p">,</span> <span class="k">strong</span><span class="p">)</span> <span class="n">GADBannerView</span> <span class="o">*</span><span class="n">bannerView</span><span class="p">;</span>
-
+<span class="k">@interface</span> <span class="nc">APSInterstitialViewController</span> <span class="p">()</span> <span class="o">&lt;</span><span class="n">GADFullScreenContentDelegate</span><span class="p">,</span> <span class="n">DTBAdCallback</span><span class="o">&gt;</span>
+<span class="k">@property</span><span class="p">(</span><span class="k">nonatomic</span><span class="p">,</span> <span class="k">strong</span><span class="p">)</span> <span class="n">GADInterstitialAd</span> <span class="o">*</span><span class="n">googleInterstitial</span><span class="p">;</span>
 <span class="k">@end</span>
 
-<span class="k">@implementation</span> <span class="nc">ViewController</span>
+<span class="k">@implementation</span> <span class="nc">APSInterstitialViewController</span>
 
 <span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
     <span class="p">[</span><span class="nb">super</span> <span class="n">viewDidLoad</span><span class="p">];</span>
@@ -1678,18 +1722,23 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
     <span class="c1">// APSのSDKの初期化を行います。</span>
     <span class="p">[[</span><span class="n">DTBAds</span> <span class="n">sharedInstance</span><span class="p">]</span> <span class="nl">setAppKey</span><span class="p">:</span> <span class="s">@&quot;YOUR_APP_ID&quot;</span><span class="p">];</span>
 
-    <span class="c1">// 広告サイズと、APSのslot idを指定します。</span>
-    <span class="n">DTBAdSize</span> <span class="o">*</span><span class="n">size</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DTBAdSize</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initBannerAdSizeWithWidth</span><span class="p">:</span><span class="mi">320</span> <span class="nl">height</span><span class="p">:</span><span class="mi">50</span> <span class="nl">andSlotUUID</span><span class="p">:</span><span class="s">@&quot;YOUR_SLOT_UUID&quot;</span><span class="p">];</span>
-    <span class="n">DTBAdLoader</span> <span class="o">*</span><span class="n">adLoader</span> <span class="o">=</span> <span class="p">[</span><span class="n">DTBAdLoader</span> <span class="n">new</span><span class="p">];</span>
-    <span class="p">[</span><span class="n">adLoader</span> <span class="nl">setSizes</span><span class="p">:</span><span class="n">size</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
-    <span class="p">[</span><span class="n">adLoader</span> <span class="nl">loadAd</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="n">loadInterstitialAd</span><span class="p">];</span>
 <span class="p">}</span>
 
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loadInterstitialAd</span> <span class="p">{</span>
+    <span class="c1">// APSの読み込みを行う。</span>
+    <span class="n">DTBAdSize</span> <span class="o">*</span><span class="n">size</span> <span class="o">=</span> <span class="p">[[</span><span class="n">DTBAdSize</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initInterstitialAdSizeWithSlotUUID</span><span class="p">:</span><span class="s">@&quot;YOUR_SLOT_UUID&quot;</span><span class="p">];</span>
+    <span class="n">DTBAdLoader</span> <span class="o">*</span><span class="n">adLoader</span> <span class="o">=</span> <span class="p">[</span><span class="n">DTBAdLoader</span> <span class="n">new</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">adLoader</span> <span class="nl">setSizes</span><span class="p">:</span><span class="n">size</span><span class="p">,</span> <span class="nb">nil</span><span class="p">];</span>
+
+    <span class="c1">// APSの入札リクエスト</span>
+    <span class="p">[</span><span class="n">adLoader</span> <span class="nl">loadAd</span><span class="p">:</span><span class="nb">self</span><span class="p">];</span>
+<span class="p">}</span>
 
 <span class="cp">#pragma mark - DTBAdCallback</span>
 <span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onFailure:</span> <span class="p">(</span><span class="n">DTBAdError</span><span class="p">)</span><span class="nv">error</span> <span class="p">{</span>
     <span class="c1">// APSの入札情報は付与しないでAdMobへリクエストを行う</span>
-    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobBannerAdsWithExtras</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobInterstitialAdsWithExtras</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
 <span class="p">}</span>
 
 <span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onSuccess:</span> <span class="p">(</span><span class="n">DTBAdResponse</span> <span class="o">*</span><span class="p">)</span><span class="nv">adResponse</span> <span class="p">{</span>
@@ -1698,12 +1747,12 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
     <span class="bp">NSDictionary</span> <span class="o">*</span><span class="n">mediationHints</span> <span class="o">=</span> <span class="p">[</span><span class="n">adResponse</span> <span class="n">mediationHints</span><span class="p">];</span>
     <span class="n">GADCustomEventExtras</span> <span class="o">*</span><span class="n">extras</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GADCustomEventExtras</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
     <span class="p">[</span><span class="n">extras</span> <span class="nl">setExtras</span><span class="p">:</span><span class="n">mediationHints</span> <span class="nl">forLabel</span><span class="p">:</span><span class="n">amznSlots</span><span class="p">];</span>
-    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobBannerAdsWithExtras</span><span class="p">:</span><span class="n">extras</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="nl">loadAdMobInterstitialAdsWithExtras</span><span class="p">:</span><span class="n">extras</span><span class="p">];</span>
 <span class="p">}</span>
 
-<span class="cp">#pragma mark - AdMobBanner load</span>
+<span class="cp">#pragma mark - AdMobInterstitial load</span>
 
-<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loadAdMobBannerAdsWithExtras:</span> <span class="p">(</span><span class="n">GADCustomEventExtras</span> <span class="o">*</span><span class="p">)</span><span class="nv">extras</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loadAdMobInterstitialAdsWithExtras:</span> <span class="p">(</span><span class="n">GADCustomEventExtras</span> <span class="o">*</span><span class="p">)</span><span class="nv">extras</span>
 <span class="p">{</span>
     <span class="n">GADRequest</span> <span class="o">*</span><span class="n">request</span> <span class="o">=</span> <span class="p">[</span><span class="n">GADRequest</span> <span class="n">request</span><span class="p">];</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">extras</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
@@ -1711,48 +1760,43 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
         <span class="p">[</span><span class="n">request</span> <span class="nl">registerAdNetworkExtras</span><span class="p">:</span><span class="n">extras</span><span class="p">];</span>
     <span class="p">}</span>
 
-    <span class="c1">// AdMobへリクエストを行う</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GADBannerView</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithAdSize</span><span class="p">:</span><span class="n">kGADAdSizeBanner</span><span class="p">];</span>
-    <span class="c1">// viewへセット</span>
-    <span class="p">[</span><span class="nb">self</span> <span class="nl">addBannerViewToView</span><span class="p">:</span><span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">];</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">adUnitID</span> <span class="o">=</span> <span class="s">@&quot;AD_ADMOB_BANNER_ID&quot;</span><span class="p">;</span>
-    <span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">rootViewController</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
-    <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">bannerView</span> <span class="nl">loadRequest</span><span class="p">:</span><span class="n">request</span><span class="p">];</span>
+    <span class="c1">// AdMobへリクストを行う。</span>
+    <span class="p">[</span><span class="n">GADInterstitialAd</span> <span class="nl">loadWithAdUnitID</span><span class="p">:</span><span class="s">@&quot;ADMOB_INTERSTITIAL_ID&quot;</span>
+                                <span class="nl">request</span><span class="p">:</span><span class="n">request</span>
+                      <span class="nl">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">GADInterstitialAd</span> <span class="o">*</span><span class="n">ad</span><span class="p">,</span> <span class="bp">NSError</span> <span class="o">*</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;Failed to load interstitial ad with error: %@&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">error</span> <span class="n">localizedDescription</span><span class="p">]);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">googleInterstitial</span> <span class="o">=</span> <span class="n">ad</span><span class="p">;</span>
+        <span class="nb">self</span><span class="p">.</span><span class="n">googleInterstitial</span><span class="p">.</span><span class="n">fullScreenContentDelegate</span> <span class="o">=</span> <span class="nb">self</span><span class="p">;</span>
+    <span class="p">}];</span>
 <span class="p">}</span>
 
+<span class="cp">#pragma mark -</span>
+<span class="cp">#pragma mark GADFullScreenContentDelegate</span>
 
-<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addBannerViewToView:</span><span class="p">(</span><span class="bp">UIView</span> <span class="o">*</span><span class="p">)</span><span class="nv">bannerView</span> <span class="p">{</span>
-  <span class="n">bannerView</span><span class="p">.</span><span class="n">translatesAutoresizingMaskIntoConstraints</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
-  <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span> <span class="nl">addSubview</span><span class="p">:</span><span class="n">bannerView</span><span class="p">];</span>
-  <span class="p">[</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span> <span class="nl">addConstraints</span><span class="p">:</span><span class="l">@[</span>
-    <span class="p">[</span><span class="bp">NSLayoutConstraint</span> <span class="nl">constraintWithItem</span><span class="p">:</span><span class="n">bannerView</span>
-                               <span class="nl">attribute</span><span class="p">:</span><span class="n">NSLayoutAttributeBottom</span>
-                               <span class="nl">relatedBy</span><span class="p">:</span><span class="n">NSLayoutRelationEqual</span>
-                                  <span class="nl">toItem</span><span class="p">:</span><span class="nb">self</span><span class="p">.</span><span class="n">bottomLayoutGuide</span>
-                               <span class="nl">attribute</span><span class="p">:</span><span class="n">NSLayoutAttributeTop</span>
-                              <span class="nl">multiplier</span><span class="p">:</span><span class="mi">1</span>
-                                <span class="nl">constant</span><span class="p">:</span><span class="mi">0</span><span class="p">],</span>
-    <span class="p">[</span><span class="bp">NSLayoutConstraint</span> <span class="nl">constraintWithItem</span><span class="p">:</span><span class="n">bannerView</span>
-                               <span class="nl">attribute</span><span class="p">:</span><span class="n">NSLayoutAttributeCenterX</span>
-                               <span class="nl">relatedBy</span><span class="p">:</span><span class="n">NSLayoutRelationEqual</span>
-                                  <span class="nl">toItem</span><span class="p">:</span><span class="nb">self</span><span class="p">.</span><span class="n">view</span>
-                               <span class="nl">attribute</span><span class="p">:</span><span class="n">NSLayoutAttributeCenterX</span>
-                              <span class="nl">multiplier</span><span class="p">:</span><span class="mi">1</span>
-                                <span class="nl">constant</span><span class="p">:</span><span class="mi">0</span><span class="p">]</span>
-                                <span class="l">]</span><span class="p">];</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">adDidPresentFullScreenContent:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">ad</span> <span class="p">{}</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">ad:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">ad</span> <span class="nf">didFailToPresentFullScreenContentWithError:</span><span class="p">(</span><span class="bp">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span> <span class="p">{</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="n">loadInterstitialAd</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">adDidDismissFullScreenContent:</span><span class="p">(</span><span class="kt">id</span><span class="p">)</span><span class="nv">ad</span> <span class="p">{</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="n">loadInterstitialAd</span><span class="p">];</span>
 <span class="p">}</span>
 
 <span class="k">@end</span>
 </pre></div></div>
-<input name="__tabs_5" type="radio" id="__tab_5_1" />
-<label for="__tab_5_1">swift</label>
+<input name="__tabs_6" type="radio" id="__tab_6_1" />
+<label for="__tab_6_1">swift</label>
 <div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kd">import</span> <span class="nc">UIKit</span>
 <span class="kd">import</span> <span class="nc">DTBiOSSDK</span>
 <span class="kd">import</span> <span class="nc">GoogleMobileAds</span>
 
-<span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span><span class="p">,</span> <span class="n">DTBAdCallback</span> <span class="p">{</span>
+<span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span><span class="p">,</span> <span class="n">GADFullScreenContentDelegate</span><span class="p">,</span> <span class="n">DTBAdCallback</span> <span class="p">{</span>
 
-    <span class="kd">var</span> <span class="nv">bannerView</span><span class="p">:</span> <span class="n">GADBannerView</span><span class="p">!</span>
+    <span class="kd">var</span> <span class="nv">googleInterstitial</span><span class="p">:</span> <span class="n">GADInterstitialAd</span><span class="p">!</span>
 
     <span class="kr">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
         <span class="kc">super</span><span class="p">.</span><span class="n">viewDidLoad</span><span class="p">()</span>
@@ -1760,16 +1804,21 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
         <span class="c1">// APSのSDKの初期化を行います。</span>
         <span class="n">DTBAds</span><span class="p">.</span><span class="n">sharedInstance</span><span class="p">().</span><span class="n">setAppKey</span><span class="p">(</span><span class="s">&quot;YOUR_APP_ID&quot;</span><span class="p">)</span>
 
-        <span class="kd">let</span> <span class="nv">size</span> <span class="p">=</span> <span class="n">DTBAdSize</span><span class="p">(</span><span class="n">bannerAdSizeWithWidth</span><span class="p">:</span> <span class="mi">320</span><span class="p">,</span> <span class="n">height</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="n">andSlotUUID</span><span class="p">:</span> <span class="s">&quot;YOUR_SLOT_UUID&quot;</span><span class="p">)</span>
-        <span class="kd">let</span> <span class="nv">adLoader</span> <span class="p">=</span> <span class="n">DTBAdLoade</span><span class="p">()</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">loadInterstitialAd</span><span class="p">()</span>
+    <span class="p">}</span>
+
+
+    <span class="kd">func</span> <span class="nf">loadInterstitialAd</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nv">size</span> <span class="p">=</span> <span class="n">DTBAdSize</span><span class="p">(</span><span class="n">interstitialAdSizeWithSlotUUID</span><span class="p">:</span> <span class="s">&quot;YOUR_SLOT_UUID&quot;</span><span class="p">)</span>
+        <span class="kd">let</span> <span class="nv">adLoader</span> <span class="p">=</span> <span class="n">DTBAdLoader</span><span class="p">()</span>
         <span class="n">adLoader</span><span class="p">.</span><span class="n">setAdSizes</span><span class="p">([</span><span class="n">size</span><span class="p">])</span>
         <span class="n">adLoader</span><span class="p">.</span><span class="n">loadAd</span><span class="p">(</span><span class="kc">self</span><span class="p">)</span>
     <span class="p">}</span>
 
+    <span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> DTBAdCallback</span>
     <span class="kd">func</span> <span class="nf">onFailure</span><span class="p">(</span><span class="kc">_</span> <span class="n">error</span><span class="p">:</span> <span class="n">DTBAdError</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// APSの入札情報を付与してAdMobへリクエスト行う</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">loadAdMobBannerAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
-
+        <span class="kc">self</span><span class="p">.</span><span class="n">loaodAdMobInterstitialAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
     <span class="p">}</span>
 
     <span class="kd">func</span> <span class="nf">onSuccess</span><span class="p">(</span><span class="kc">_</span> <span class="n">adResponse</span><span class="p">:</span> <span class="n">DTBAdResponse</span><span class="p">!)</span> <span class="p">{</span>
@@ -1778,41 +1827,32 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
         <span class="kd">let</span> <span class="nv">mediationHints</span> <span class="p">=</span> <span class="n">adResponse</span><span class="p">.</span><span class="n">mediationHints</span><span class="p">()</span>
         <span class="kd">let</span> <span class="nv">extras</span> <span class="p">=</span> <span class="n">GADCustomEventExtras</span><span class="p">.</span><span class="kd">init</span><span class="p">()</span>
         <span class="n">extras</span><span class="p">.</span><span class="n">setExtras</span><span class="p">(</span><span class="n">mediationHints</span><span class="p">,</span> <span class="n">forLabel</span><span class="p">:</span> <span class="n">amznSlots</span><span class="p">)</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">loadAdMobBannerAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">extras</span><span class="p">)</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">loaodAdMobInterstitialAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">extras</span><span class="p">)</span>
     <span class="p">}</span>
 
-    <span class="kd">func</span> <span class="nf">loadAdMobBannerAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">GADCustomEventExtras</span><span class="p">?)</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">loaodAdMobInterstitialAd</span><span class="p">(</span><span class="n">extras</span><span class="p">:</span> <span class="n">GADCustomEventExtras</span><span class="p">?)</span> <span class="p">{</span>
         <span class="kd">let</span> <span class="nv">request</span> <span class="p">=</span> <span class="n">GADRequest</span><span class="p">()</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">extras</span> <span class="o">!=</span> <span class="kc">nil</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">request</span><span class="p">.</span><span class="n">register</span><span class="p">(</span><span class="n">extras</span><span class="p">!)</span>
         <span class="p">}</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span> <span class="p">=</span> <span class="n">GADBannerView</span><span class="p">(</span><span class="n">adSize</span><span class="p">:</span> <span class="n">kGADAdSizeBanner</span><span class="p">)</span>
-        <span class="c1">// viewへセット</span>
-        <span class="n">addBannerViewToView</span><span class="p">(</span><span class="n">bannerView</span><span class="p">)</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">adUnitID</span> <span class="p">=</span> <span class="s">&quot;AD_ADMOB_BANNER_ID&quot;</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">rootViewController</span> <span class="p">=</span> <span class="kc">self</span>
-        <span class="kc">self</span><span class="p">.</span><span class="n">bannerView</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+        <span class="n">GADInterstitialAd</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="n">withAdUnitID</span><span class="p">:</span> <span class="s">&quot;ADMOB_INTERSTITIAL_ID&quot;</span><span class="p">,</span> <span class="n">request</span><span class="p">:</span> <span class="n">request</span><span class="p">,</span> <span class="n">completionHandler</span><span class="p">:</span> <span class="p">{</span> <span class="n">ad</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+            <span class="k">if</span> <span class="kd">let</span> <span class="nv">error</span> <span class="p">=</span> <span class="n">error</span> <span class="p">{</span>
+                <span class="bp">print</span><span class="p">(</span><span class="s">&quot;Failed to load interstitial ad with error: </span><span class="si">\(</span><span class="n">error</span><span class="p">.</span><span class="n">localizedDescription</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+            <span class="kc">self</span><span class="p">.</span><span class="n">googleInterstitial</span> <span class="p">=</span> <span class="n">ad</span><span class="p">;</span>
+            <span class="kc">self</span><span class="p">.</span><span class="n">googleInterstitial</span><span class="p">.</span><span class="n">fullScreenContentDelegate</span> <span class="p">=</span> <span class="kc">self</span><span class="p">;</span>
+        <span class="p">})</span>
     <span class="p">}</span>
 
-    <span class="kd">func</span> <span class="nf">addBannerViewToView</span><span class="p">(</span><span class="kc">_</span> <span class="n">bannerView</span><span class="p">:</span> <span class="n">GADBannerView</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">bannerView</span><span class="p">.</span><span class="n">translatesAutoresizingMaskIntoConstraints</span> <span class="p">=</span> <span class="kc">false</span>
-        <span class="n">view</span><span class="p">.</span><span class="n">addSubview</span><span class="p">(</span><span class="n">bannerView</span><span class="p">)</span>
-        <span class="n">view</span><span class="p">.</span><span class="n">addConstraints</span><span class="p">(</span>
-        <span class="p">[</span><span class="bp">NSLayoutConstraint</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">bannerView</span><span class="p">,</span>
-                           <span class="n">attribute</span><span class="p">:</span> <span class="p">.</span><span class="n">bottom</span><span class="p">,</span>
-                           <span class="n">relatedBy</span><span class="p">:</span> <span class="p">.</span><span class="bp">equal</span><span class="p">,</span>
-                           <span class="n">toItem</span><span class="p">:</span> <span class="n">bottomLayoutGuide</span><span class="p">,</span>
-                           <span class="n">attribute</span><span class="p">:</span> <span class="p">.</span><span class="n">top</span><span class="p">,</span>
-                           <span class="n">multiplier</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                           <span class="n">constant</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span>
-        <span class="bp">NSLayoutConstraint</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">bannerView</span><span class="p">,</span>
-                           <span class="n">attribute</span><span class="p">:</span> <span class="p">.</span><span class="n">centerX</span><span class="p">,</span>
-                           <span class="n">relatedBy</span><span class="p">:</span> <span class="p">.</span><span class="bp">equal</span><span class="p">,</span>
-                           <span class="n">toItem</span><span class="p">:</span> <span class="n">view</span><span class="p">,</span>
-                           <span class="n">attribute</span><span class="p">:</span> <span class="p">.</span><span class="n">centerX</span><span class="p">,</span>
-                           <span class="n">multiplier</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                           <span class="n">constant</span><span class="p">:</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="p">])</span>
+    <span class="kd">func</span> <span class="nf">adDidPresentFullScreenContent</span><span class="p">(</span><span class="kc">_</span> <span class="n">ad</span><span class="p">:</span> <span class="n">GADFullScreenPresentingAd</span><span class="p">)</span> <span class="p">{}</span>
+
+    <span class="kd">func</span> <span class="nf">ad</span><span class="p">(</span><span class="kc">_</span> <span class="n">ad</span><span class="p">:</span> <span class="n">GADFullScreenPresentingAd</span><span class="p">,</span> <span class="n">didFailToPresentFullScreenContentWithError</span> <span class="n">error</span><span class="p">:</span> <span class="n">Error</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">loadInterstitialAd</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">adDidDismissFullScreenContent</span><span class="p">(</span><span class="kc">_</span> <span class="n">ad</span><span class="p">:</span> <span class="n">GADFullScreenPresentingAd</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kc">self</span><span class="p">.</span><span class="n">loadInterstitialAd</span><span class="p">()</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div></div>

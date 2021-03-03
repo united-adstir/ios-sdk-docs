@@ -1352,8 +1352,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apsバナーへのリクエストを行う" class="md-nav__link">
-    APSバナーへのリクエストを行う
+  <a href="#apsインタースティシャルへのリクエストを行う" class="md-nav__link">
+    APSインタースティシャルへのリクエストを行う
   </a>
   
     <nav class="md-nav">
@@ -1417,6 +1417,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="interstitialv8.html" title="AdMobインタースティシャル(v8 SDK)" class="md-nav__link">
+      AdMobインタースティシャル(v8 SDK)
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1455,8 +1467,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#apsバナーへのリクエストを行う" class="md-nav__link">
-    APSバナーへのリクエストを行う
+  <a href="#apsインタースティシャルへのリクエストを行う" class="md-nav__link">
+    APSインタースティシャルへのリクエストを行う
   </a>
   
     <nav class="md-nav">
@@ -1529,9 +1541,10 @@
                 <h1 id="amazon-publisher-servicesapsのインタースティシャル広告の導入"><a class="toclink" href="#amazon-publisher-servicesapsのインタースティシャル広告の導入">Amazon Publisher Services(APS)のインタースティシャル広告の導入</a><a class="headerlink" href="#amazon-publisher-servicesapsのインタースティシャル広告の導入" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">はじめに</p>
-<p>APS SDKの初期化が必要です。<a href="/aps/init">APSの設定</a>をご覧になり、<a href="/aps/init#apsの初期化">APSの初期化</a>を必ず先に行ってください。</p>
+<p>APS SDKの初期化が必要です。<a href="init.html">APSの設定</a>をご覧になり、<a href="init.html#apsの初期化">APSの初期化</a>を必ず先に行ってください。<br />
+こちらはGoogle Mobile Ads SDK v7を使用した場合の実装例です。v8 SDKをご利用の場合は<a href="interstitialv8.html">こちら</a>をご覧ください。</p>
 </div>
-<h2 id="apsバナーへのリクエストを行う"><a class="toclink" href="#apsバナーへのリクエストを行う">APSバナーへのリクエストを行う</a><a class="headerlink" href="#apsバナーへのリクエストを行う" title="Permanent link">&para;</a></h2>
+<h2 id="apsインタースティシャルへのリクエストを行う"><a class="toclink" href="#apsインタースティシャルへのリクエストを行う">APSインタースティシャルへのリクエストを行う</a><a class="headerlink" href="#apsインタースティシャルへのリクエストを行う" title="Permanent link">&para;</a></h2>
 <h3 id="dtbadsizeのインスタンスを生成します"><a class="toclink" href="#dtbadsizeのインスタンスを生成します"><code>DTBAdSize</code>のインスタンスを生成します</a><a class="headerlink" href="#dtbadsizeのインスタンスを生成します" title="Permanent link">&para;</a></h3>
 <p><code>YOUR_SLOT_UUID</code>には営業担当がお知らせしたIDを入力してください。</p>
 <div class="superfences-tabs">
@@ -1626,7 +1639,7 @@ AdMobの実装については<a href="/admob#広告の実装">こちら</a>を�
 <span class="kd">import</span> <span class="nc">DTBiOSSDK</span>
 <span class="kd">import</span> <span class="nc">GoogleMobileAds</span>
 
-<span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span><span class="p">,</span> <span class="n">DTBAdCallback</span> <span class="p">{</span>
+<span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="bp">UIViewController</span><span class="p">,</span> <span class="n">GADInterstitialDelegate</span><span class="p">,</span> <span class="n">DTBAdCallback</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nv">googleInterstitial</span><span class="p">:</span> <span class="n">GADInterstitial</span><span class="p">!</span>
     <span class="p">...</span>
     <span class="c1">// </span><span class="cs">MARK:</span><span class="c1"> DTBAdCallback</span>
