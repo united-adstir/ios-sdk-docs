@@ -1,8 +1,8 @@
-# Amazon Publisher Services(APS)のインタースティシャル広告の導入
+# Amazon Publisher Services(APS)のインタースティシャル広告の導入(v8 SDK)
 
 !!! warning "はじめに"
-    APS SDKの初期化が必要です。[APSの設定](init.md)をご覧になり、[APSの初期化](init.md#apsの初期化)を必ず先に行ってください。  
-    こちらはGoogle Mobile Ads SDK v7を使用した場合の実装例です。v8 SDKをご利用の場合は[こちら](interstitialv8.md)をご覧ください。
+    APS SDKの初期化が必要です。[APSの設定](init.md)をご覧になり、[APSの初期化](init#apsの初期化.md)を必ず先に行ってください。  
+    こちらはGoogle Mobile Ads SDK v8を使用した場合の実装例です。v8以前のSDKをご利用の場合は[こちら](interstitial.md)をご覧ください。
 
 ## APSインタースティシャルへのリクエストを行う
 
@@ -59,7 +59,7 @@ AdMobの実装については[こちら](/admob#広告の実装)をご覧くだ�
 
 ```Objective-c tab=
 #import <DTBiOSSDK/DTBiOSSDK.h>
-@interface ViewController () <GADInterstitialDelegate, DTBAdCallback>
+@interface ViewController () <GADFullScreenContentDelegate, DTBAdCallback>
 @end
 
 @implementation ViewController
@@ -90,10 +90,17 @@ AdMobの実装については[こちら](/admob#広告の実装)をご覧くだ�
         [request registerAdNetworkExtras:extras];
     }
 
-    // GADInterstitial オブジェクトを生成し、AdMobへリクストを行う。
-    googleInterstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ADMOB_INTERSTITIAL_ID"];
-    googleInterstitial.delegate = self
-    [googleInterstitial loadRequest:request];
+    // AdMobへリクストを行う。
+    [GADInterstitialAd loadWithAdUnitID:@"ADMOB_INTERSTITIAL_ID"
+                                request:request
+                      completionHandler:^(GADInterstitialAd *ad, NSError *error) {
+        if (error) {
+            NSLog(@"Failed to load interstitial ad with error: %@", [error localizedDescription]);
+            return;
+        }
+        self.googleInterstitial = ad;
+        self.googleInterstitial.fullScreenContentDelegate = self;
+    }];
 }
 ```
 
@@ -102,7 +109,7 @@ import UIKit
 import DTBiOSSDK
 import GoogleMobileAds
 
-class ViewController: UIViewController, GADInterstitialDelegate, DTBAdCallback {
+class ViewController: UIViewController, GADFullScreenContentDelegate, DTBAdCallback {
     var googleInterstitial: GADInterstitial!
     ...
     // MARK: DTBAdCallback
@@ -126,8 +133,14 @@ class ViewController: UIViewController, GADInterstitialDelegate, DTBAdCallback {
         if (extras != nil) {
             request.register(extras!)
         }
-        self.googleInterstitial = GADInterstitial(adUnitID: "ADMOB_INTERSTITIAL_ID")
-        self.googleInterstitial.load(request)
+        GADInterstitialAd.load(withAdUnitID: "ADMOB_INTERSTITIAL_ID", request: request, completionHandler: { ad, error in
+            if let error = error {
+                print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                return
+            }
+            self.googleInterstitial = ad;
+            self.googleInterstitial.fullScreenContentDelegate = self;
+        })
     }
 }
 ```
@@ -138,16 +151,16 @@ class ViewController: UIViewController, GADInterstitialDelegate, DTBAdCallback {
 
 ```Objective-c tab=
 - (void)showInterstitialAd {
-  if (googleInterstitial.isReady){
-   [googleInterstitial presentFromRootViewController:self];
-  }
+    if (self.googleInterstitial) {
+        [self.googleInterstitial presentFromRootViewController:self];
+    }
 }
 ```
 
 ```swift tab=
 func showInterstitialAd(){
-    if (self.googleInterstitial.isReady) {
-        self.googleInterstitial.present(fromRootViewController: self)
+    if let ad = self.googleInterstitial {
+        ad.present(fromRootViewController: self)
     }
 }
 ```
@@ -159,8 +172,8 @@ func showInterstitialAd(){
 #import <DTBiOSSDK/DTBiOSSDK.h>
 @import GoogleMobileAds;
 
-@interface APSInterstitialViewController () <GADInterstitialDelegate, DTBAdCallback>
-@property(nonatomic, strong) GADInterstitial *googleInterstitial;
+@interface APSInterstitialViewController () <GADFullScreenContentDelegate, DTBAdCallback>
+@property(nonatomic, strong) GADInterstitialAd *googleInterstitial;
 @end
 
 @implementation APSInterstitialViewController
@@ -209,40 +222,31 @@ func showInterstitialAd(){
         [request registerAdNetworkExtras:extras];
     }
 
-    // GADInterstitial オブジェクトを生成し、AdMobへリクストを行う。
-    self.googleInterstitial = [[GADInterstitial alloc] initWithAdUnitID:@"ADMOB_INTERSTITIAL_ID"];
-    self.googleInterstitial.delegate = self;
-    [self.googleInterstitial loadRequest:request];
+    // AdMobへリクストを行う。
+    [GADInterstitialAd loadWithAdUnitID:@"ADMOB_INTERSTITIAL_ID"
+                                request:request
+                      completionHandler:^(GADInterstitialAd *ad, NSError *error) {
+        if (error) {
+            NSLog(@"Failed to load interstitial ad with error: %@", [error localizedDescription]);
+            return;
+        }
+        self.googleInterstitial = ad;
+        self.googleInterstitial.fullScreenContentDelegate = self;
+    }];
 }
 
 #pragma mark -
-#pragma mark GADInterstitialDelegate
+#pragma mark GADFullScreenContentDelegate
 
-- (void)interstitialDidReceiveAd:(GADInterstitial *)ad
-{
-    // 読み込み完了したら呼ばれます
-    if (self.googleInterstitial.isReady) {
-        [self.googleInterstitial presentFromRootViewController:self];
-    }
-}
+- (void)adDidPresentFullScreenContent:(id)ad {}
 
-- (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error {
+- (void)ad:(id)ad didFailToPresentFullScreenContentWithError:(NSError *)error {
     [self loadInterstitialAd];
 }
 
-- (void)interstitialWillPresentScreen:(GADInterstitial *)ad {}
-
-- (void)interstitialDidFailToPresentScreen:(GADInterstitial *)ad {
+- (void)adDidDismissFullScreenContent:(id)ad {
     [self loadInterstitialAd];
 }
-
-- (void)interstitialWillDismissScreen:(GADInterstitial *)ad {}
-
-- (void)interstitialDidDismissScreen:(GADInterstitial *)ad {
-    [self loadInterstitialAd];
-}
-
-- (void)interstitialWillLeaveApplication:(GADInterstitial *)ad {}
 
 @end
 ```
@@ -252,9 +256,9 @@ import UIKit
 import DTBiOSSDK
 import GoogleMobileAds
 
-class ViewController: UIViewController, GADInterstitialDelegate, DTBAdCallback {
+class ViewController: UIViewController, GADFullScreenContentDelegate, DTBAdCallback {
     
-    var googleInterstitial: GADInterstitial!
+    var googleInterstitial: GADInterstitialAd!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -293,36 +297,24 @@ class ViewController: UIViewController, GADInterstitialDelegate, DTBAdCallback {
         if (extras != nil) {
             request.register(extras!)
         }
-        self.googleInterstitial = GADInterstitial(adUnitID: "ADMOB_INTERSTITIAL_ID")
-        self.googleInterstitial.delegate = self
-        self.googleInterstitial.load(request)
-    }
-    
-    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
-        if (self.googleInterstitial.isReady) {
-            self.googleInterstitial.present(fromRootViewController: self)
-        }
+        GADInterstitialAd.load(withAdUnitID: "ADMOB_INTERSTITIAL_ID", request: request, completionHandler: { ad, error in
+            if let error = error {
+                print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                return
+            }
+            self.googleInterstitial = ad;
+            self.googleInterstitial.fullScreenContentDelegate = self;
+        })
     }
 
-    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {}
+
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         self.loadInterstitialAd()
     }
 
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         self.loadInterstitialAd()
-    }
-
-    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
-    }
-
-    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
-    }
-
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
-        self.loadInterstitialAd()
-    }
-
-    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
     }
 }
 ```

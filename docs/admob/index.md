@@ -8,7 +8,8 @@
 ## 事前準備
 
 [AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
-GoogleMobileAds SDKは7.53.0以上をご利用ください。
+Google Mobile Ads SDKは7.53.0以上をご利用ください。  
+Google Mobile Ads SDK v8以上をご利用の場合は、adstir SDK v2.15.15以上をご利用ください。
 
 ### メディエーションの準備
 

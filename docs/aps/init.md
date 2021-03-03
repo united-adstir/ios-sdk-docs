@@ -64,6 +64,7 @@ DTBAds.sharedInstance().testMode = true
 
 * [AdMobバナー広告](banner.md)
 * [AdMobインタースティシャル広告](interstitial.md)
+* [AdMobインタースティシャル広告(v8 SDK)](interstitialv8.md)
 
 ## アプリケーションのプライバシー
 

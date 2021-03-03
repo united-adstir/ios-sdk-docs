@@ -32,7 +32,7 @@ extra:
       unityads: 3.5.1
       zucks: 4.11.0
       facebook: 6.2.0
-    sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.8-SampleApp.zip'
+    sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.15-SampleApp.zip'
 
 # CSSの設定
 extra_css:
@@ -130,6 +130,7 @@ nav:
       - APSの初期設定: aps/init.md
       - AdMobバナー: aps/banner.md
       - AdMobインタースティシャル: aps/interstitial.md
+      - AdMobインタースティシャル(v8 SDK): aps/interstitialv8.md
   - 変更履歴: changelog.md
 
 plugins:
