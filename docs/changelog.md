@@ -2,6 +2,16 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.16 (2021/04/01)
+
+* バナー広告の新フォーマットに対応しました
+* bundle SDKの更新
+    * [MoPub 5.16.2](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.16.2)
+        * [5.16.0](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.16.0)でSKAdNetwork関連の修正や5Gへの対応が含まれております
+        * AdMobパッケージにはMoPubのAdMob用アダプターは含まれておりません
+    * [TapJoy 12.8.0](https://dev.tapjoy.com/jp/ios-sdk/Changelog#id-1280-2021-03-16)
+        * SKAdNetwork関連の修正が含まれております
+        * AdMobパッケージにはTapJoyのAdMob用アダプターは含まれておりません
 ## v2.15.15 (2021/03/03)
 
 * Google Mobile Ads SDK v8 への対応
