@@ -2,6 +2,11 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.18 (YYYY/MM/DD)
+
+* 対象開発環境をXcode 12.5以上に変更
+* SKAdNetwork 2.2への対応
+
 ## v2.15.17 (2021/04/12)
 
 * SKAdNetwork関連の修正
