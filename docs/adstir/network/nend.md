@@ -7,14 +7,14 @@
 iOS 10.0以降
 
 ## SDKの準備
-NendのSDKは、VideoAdSDKBundledのパッケージに同梱されております。  
+NendのSDKは、VideoAdSDKBundledのパッケージに同梱されております。
 作成された動画枠の`動画SDK (iOS)`より取得いただけます。
 
 ### CocoaPodsを利用して組み込む場合
 
 CocoaPodsでの導入については[こちら](../init/cocoapods.md)をご覧ください。
 
-Nendを利用される場合、Podfileに下記の記述を追記します。  
+Nendを利用される場合、Podfileに下記の記述を追記します。
 
 ```
 pod 'AdStir-Ads-SDK/Nend'
@@ -41,7 +41,7 @@ libz.tbd|Required
 
 ## Info.plistの更新
 
-iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
 
 ```xml
 <key>SKAdNetworkItems</key>

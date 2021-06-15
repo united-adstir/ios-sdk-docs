@@ -16,7 +16,7 @@ AdColonyのSDKは、VideoAdSDKBundledのパッケージに同梱されており�
 
 CocoaPodsでの導入については[こちら](../init/cocoapods.md)をご覧ください。
 
-AdColonyを利用される場合、Podfileに下記の記述を追記します。  
+AdColonyを利用される場合、Podfileに下記の記述を追記します。
 
 ```
 pod 'AdStir-Ads-SDK/AdColony'
@@ -37,8 +37,8 @@ pod 'AdStir-Ads-SDK/AdColony'
 1. 動画広告を組み込むビルドターゲットを選択します。
 1. **Build Target**タブを選択します。
 1. 画面右側の検索窓に**Other Linker Flags**と入力し、検索します。
-1. **Other Linker Flags**欄に、**-ObjC**と **-fobjc-arc**を設定します。  
-1. 組み込む対象の全てのビルドターゲットに、同じ設定を行います。  
+1. **Other Linker Flags**欄に、**-ObjC**と **-fobjc-arc**を設定します。
+1. 組み込む対象の全てのビルドターゲットに、同じ設定を行います。
 もしくは、この設定はプロジェクト単位で設定することも可能です。
 
 #### 依存Framework/Libraryの追加
@@ -74,7 +74,7 @@ Info.plistに下記の記述を追加します。
 
 ## Info.plistの更新
 
-iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
 
 ```xml
 <key>SKAdNetworkItems</key>

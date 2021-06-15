@@ -16,7 +16,7 @@ TapJoyのSDKは、VideoAdSDKBundledのパッケージに同梱されておりま
 
 CocoaPodsでの導入については[こちら](../init/cocoapods.md)をご覧ください。
 
-TapJoyを利用される場合、Podfileに下記の記述を追記します。  
+TapJoyを利用される場合、Podfileに下記の記述を追記します。
 
 ```
 pod 'AdStir-Ads-SDK/TapJoy'
@@ -50,7 +50,7 @@ TapJoyでは`CoreLocation.framework`, `CoreMotion.framework`を利用してい�
 
 ## Info.plistの更新
 
-iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
 
 ```xml
 <key>SKAdNetworkItems</key>

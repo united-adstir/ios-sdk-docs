@@ -13,7 +13,7 @@
 [Nend](nend.md)        |{{config.version.nend}}    |10.0〜|400 | - | - | - | ○ | ○
 [TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |10.0〜|400 | - | - | - | ○ | ○
 [TikTok](tiktok.md)    |{{config.version.tiktok}}  |10.0〜|580| - | - | - | ○ | ○
-[UnityAds](unityads.md)|{{config.version.unityads}}|10.0〜|250 | - | - | - | ○ | -
+[UnityAds](unityads.md)|{{config.version.unityads}}|12.0〜|250 | - | - | - | ○ | -
 [Zucks](zucks.md)      |{{config.version.zucks}}   |10.0〜|  150| - | ○ | - | - | -
 
 

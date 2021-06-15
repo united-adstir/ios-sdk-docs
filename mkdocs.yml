@@ -19,17 +19,17 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.17
-      adcolony: 4.4.1
+      adstir: 2.15.18
+      adcolony: 4.6.1
       adcorsa: 2.2.2
-      applovin: 6.13.3
-      imobile: 2.0.33
-      maio: 1.5.5
-      mopub: 5.16.2
-      nend: 7.0.2
-      tapjoy: 12.8.0
-      tiktok: 3.3.6.2
-      unityads: 3.5.1
+      applovin: 10.3.0
+      imobile: 2.1.0
+      maio: 1.5.8
+      mopub: 5.17.0
+      nend: 7.0.5
+      tapjoy: 12.8.1
+      tiktok: 3.5.1.2
+      unityads: 3.7.2
       zucks: 4.11.0
       facebook: 6.2.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.15-SampleApp.zip'
@@ -50,21 +50,21 @@ markdown_extensions:
       slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: true
       anchorlink: true
-  - pymdownx.tasklist:  
+  - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.details
   - attr_list # button
 
 nav:
   - スタートガイド: index.md
-  - adstir: 
+  - adstir:
       - はじめに: adstir/index.md
-      - 初期設定: 
+      - 初期設定:
         - SDKの組み込み:
           - CocoaPods: adstir/init/cocoapods.md
           - 手動組み込み: adstir/init/manual_integration.md
           - iOS14以降の対応: adstir/init/ios14.md
-      - 対応ネットワーク: 
+      - 対応ネットワーク:
         - 対応ネットワーク一覧: adstir/network/index.md
         - AdColony: adstir/network/adcolony.md
         - AdCorsa: adstir/network/adcorsa.md
@@ -79,19 +79,19 @@ nav:
         - Zucks: adstir/network/zucks.md
 
       - 広告の実装:
-        - バナー: 
+        - バナー:
           - バナー: adstir/ad/banner.md
           - WebViewアプリでの配信: adstir/ad/banner/webview.md
         - スワイプインタースティシャル: adstir/ad/swipe.md
-        - ネイティブ: 
+        - ネイティブ:
           - ネイティブライクバナー: adstir/ad/native/native_banner.md
           - フルカスタマイズ: adstir/ad/native/custom.md
           - ネイティブ動画: adstir/ad/native/native_video.md
-        - 動画リワード: 
+        - 動画リワード:
           - 実装: adstir/ad/vr/index.md
           - リワードコールバック: adstir/ad/vr/callback.md
         - 全画面インタースティシャル: adstir/ad/interstitial.md
-      - APIリファレンス: 
+      - APIリファレンス:
         - 一覧: adstir/api/index.md
         - バナー:
           - AdstirMraidView: adstir/api/banner/AdstirMraidView-Class-Reference.md
@@ -120,9 +120,9 @@ nav:
         - adstir SDKが取得するプライバシー情報: adstir/info/privacy.md
         - 提携対応ネットワークのプライバシー情報: adstir/info/nw_privacy.md
         - テストスイート: adstir/testsuite/index.md
-        - ユーザデータアクセス許可に関して: adstir/info/user_data.md 
+        - ユーザデータアクセス許可に関して: adstir/info/user_data.md
         - よくある質問: adstir/info/question.md
-  - AdMob: 
+  - AdMob:
       - はじめに: admob/index.md
       - AdMobメディエーション: admob/network.md
       - よくある質問: admob/question.md

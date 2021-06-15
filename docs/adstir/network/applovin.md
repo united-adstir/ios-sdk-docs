@@ -16,7 +16,7 @@ AppLovinのSDKは、VideoAdSDKBundledのパッケージに同梱されており�
 
 CocoaPodsでの導入については[こちら](../init/cocoapods.md)をご覧ください。
 
-AppLovinを利用される場合、Podfileに下記の記述を追記します。  
+AppLovinを利用される場合、Podfileに下記の記述を追記します。
 
 ```
 pod 'AdStir-Ads-SDK/AppLovin'
@@ -41,7 +41,7 @@ libz.tbd|Required
 
 ## Info.plistの更新
 
-iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
+iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。
 
 ```xml
 <key>SKAdNetworkItems</key>

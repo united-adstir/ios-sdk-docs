@@ -2,10 +2,32 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
-## v2.15.18 (YYYY/MM/DD)
+## v2.15.18 (2021/06/15)
 
 * 対象開発環境をXcode 12.5以上に変更
-* SKAdNetwork 2.2への対応
+* SKAdNetwork 2.2/3.0への対応
+* 5Gネットワークへの対応
+* UnityAdsアダプタのサポートOSバージョンをiOS12以上に変更
+* bundle SDKの更新
+    * [AdColony 4.6.1](https://github.com/AdColony/AdColony-iOS-SDK/releases/tag/v4.6.1)
+        * SKAdNetwork関連の修正が含まれております
+    * [AppLovin 10.3.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_0)
+        * [10.0.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_0_0)でSKAdNetwork関連の修正が含まれております
+    * IMobile 2.1.0
+        * SKAdNetwork関連の修正が含まれております
+    * [Maio 1.5.8](https://github.com/imobile-maio/maio-iOS-SDK/releases/tag/v1.5.8)
+        * SKAdNetwork関連の修正が含まれております
+        * AdMobパッケージにはMaio用のAdMob用アダプターは含まれておりません
+    * [MoPub 5.17.0](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.17.0)
+        * SKAdNetwork関連の修正が含まれております
+    * [Nend 7.0.5](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.0.5)
+        * [7.0.4](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.0.4)でSKAdNetwork関連の修正が含まれております
+    * [TapJoy 12.8.1](https://dev.tapjoy.com/jp/ios-sdk/Changelog#id-1281-2021-05-25)
+        * SKAdNetwork関連の修正が含まれております
+    * TikTok 3.5.1.2
+        * SKAdNetwork関連の修正が含まれております
+    * [UnityAds 3.7.2](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/3.7.2)
+
 
 ## v2.15.17 (2021/04/12)
 
@@ -37,7 +59,7 @@
 * bundle SDKの更新
     * [Zucks 4.11.0](https://github.com/zucks/ZucksAdNetworkSDK-iOS/releases/tag/4.11.0)
         * SKAdNetwork関連の修正が含まれております
-        
+
 ## v2.15.12 (2021/01/25)
 
 * 対象開発環境をXcode 12以上に変更
