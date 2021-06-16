@@ -1576,7 +1576,7 @@
 <h2 id="対応os"><a class="toclink" href="#対応os">対応OS</a><a class="headerlink" href="#対応os" title="Permanent link">&para;</a></h2>
 <p>iOS 13.0以降</p>
 <h2 id="sdkの準備"><a class="toclink" href="#sdkの準備">SDKの準備</a><a class="headerlink" href="#sdkの準備" title="Permanent link">&para;</a></h2>
-<p>MoPubのSDKは、VideoAdSDKBundledのパッケージ、もしくはSwipeInterstitialSDKBundledのパッケージに同梱されております。<br />
+<p>MoPubのSDKは、VideoAdSDKBundledのパッケージ、もしくはSwipeInterstitialSDKBundledのパッケージに同梱されております。
 作成された動画枠の<code>動画SDK (iOS)</code>もしくはスワイプインタースティシャル広告枠の<code>スワイプインタースティシャルSDK (iOS)</code>より取得いただけます。</p>
 <h2 id="プロジェクトへのsdkの追加"><a class="toclink" href="#プロジェクトへのsdkの追加">プロジェクトへのSDKの追加</a><a class="headerlink" href="#プロジェクトへのsdkの追加" title="Permanent link">&para;</a></h2>
 <h3 id="cocoapodsを利用して組み込む場合"><a class="toclink" href="#cocoapodsを利用して組み込む場合">CocoaPodsを利用して組み込む場合</a><a class="headerlink" href="#cocoapodsを利用して組み込む場合" title="Permanent link">&para;</a></h3>
@@ -1587,11 +1587,12 @@
 
 <h3 id="cocoapodsを利用せず組み込む場合"><a class="toclink" href="#cocoapodsを利用せず組み込む場合">CocoaPodsを利用せず組み込む場合</a><a class="headerlink" href="#cocoapodsを利用せず組み込む場合" title="Permanent link">&para;</a></h3>
 <ol>
-<li><code>libAdstirAdsMediationAdapter-MoPub.a</code>、<code>MoPubSDKFramework.xcframework</code>を、プロジェクト内の任意の箇所にドラッグ&amp;ドロップします。</li>
+<li><code>libAdstirAdsMediationAdapter-MoPub.a</code>、<code>MoPubSDKFramework.xcframework</code>, <code>OMSDK_Mopub.xcframework</code>を、プロジェクト内の任意の箇所にドラッグ&amp;ドロップします。</li>
 <li><code>Copy items if needed</code>にチェックを入れます。</li>
 <li><code>Add to targets</code>欄で、adstir SDKを利用するすべてのターゲットにチェックを入れます。</li>
 <li><code>Finish</code>をクリックします。</li>
 <li>GeneralタブのEmbedded Binariesに<code>MoPubSDKFramework.xcframework</code>を追加します。</li>
+<li>GeneralタブのEmbedded Binariesに<code>OMSDK_Mopub.xcframework</code>を追加します。</li>
 </ol>
 <h2 id="ビルド設定の変更"><a class="toclink" href="#ビルド設定の変更">ビルド設定の変更</a><a class="headerlink" href="#ビルド設定の変更" title="Permanent link">&para;</a></h2>
 <ol>
@@ -1599,9 +1600,9 @@
 <li>動画広告を組み込むビルドターゲットを選択します。</li>
 <li><strong>Build Target</strong>タブを選択します。</li>
 <li>画面右側の検索窓に<strong>Other Linker Flags</strong>と入力し、検索します。</li>
-<li><strong>Other Linker Flags</strong>欄に、<strong>-ObjC</strong>と設定します。<br />
+<li><strong>Other Linker Flags</strong>欄に、<strong>-ObjC</strong>と設定します。
 MoPub広告を利用するためには、この設定が必須となり、設定がされていない場合は、案件切れ扱いとなってしまいます。</li>
-<li>組み込む対象の全てのビルドターゲットに、同じ設定を行います。<br />
+<li>組み込む対象の全てのビルドターゲットに、同じ設定を行います。
 もしくは、この設定はプロジェクト単位で設定することも可能です。</li>
 </ol>
 <h2 id="依存frameworklibraryの追加"><a class="toclink" href="#依存frameworklibraryの追加">依存Framework/Libraryの追加</a><a class="headerlink" href="#依存frameworklibraryの追加" title="Permanent link">&para;</a></h2>
@@ -1632,7 +1633,7 @@ MoPub広告を利用するためには、この設定が必須となり、設定
 </tbody>
 </table>
 <h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
-<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork 2.0</a>を利用するために、Info.plistに下記の内容を追加します。</p>
+<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>を利用するために、Info.plistに下記の内容を追加します。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
 </pre></div>
 

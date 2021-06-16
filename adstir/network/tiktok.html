@@ -1606,7 +1606,7 @@
 作成された動画枠の<code>動画SDK (iOS)</code>より取得いただけます。</p>
 <h3 id="cocoapodsを利用して組み込む場合"><a class="toclink" href="#cocoapodsを利用して組み込む場合">CocoaPodsを利用して組み込む場合</a><a class="headerlink" href="#cocoapodsを利用して組み込む場合" title="Permanent link">&para;</a></h3>
 <p>CocoaPodsでの導入については<a href="../init/cocoapods.html">こちら</a>をご覧ください。</p>
-<p>TikTokを利用される場合、Podfileに下記の記述を追記します。  </p>
+<p>TikTokを利用される場合、Podfileに下記の記述を追記します。</p>
 <div class="codehilite"><pre><span></span><span class="err">pod &#39;AdStir-Ads-SDK/TikTok&#39;</span>
 </pre></div>
 
@@ -1624,8 +1624,8 @@
 <li>動画広告を組み込むビルドターゲットを選択します。</li>
 <li><strong>Build Target</strong>タブを選択します。</li>
 <li>画面右側の検索窓に<strong>Other Linker Flags</strong>と入力し、検索します。</li>
-<li><strong>Other Linker Flags</strong>欄に、<strong>-ObjC</strong>を設定します。  </li>
-<li>組み込む対象の全てのビルドターゲットに、同じ設定を行います。<br />
+<li><strong>Other Linker Flags</strong>欄に、<strong>-ObjC</strong>を設定します。</li>
+<li>組み込む対象の全てのビルドターゲットに、同じ設定を行います。
 もしくは、この設定はプロジェクト単位で設定することも可能です。</li>
 </ol>
 <h4 id="依存frameworklibraryの追加"><a class="toclink" href="#依存frameworklibraryの追加">依存Framework/Libraryの追加</a><a class="headerlink" href="#依存frameworklibraryの追加" title="Permanent link">&para;</a></h4>
@@ -1662,6 +1662,10 @@
 <td>Required</td>
 </tr>
 <tr>
+<td>Accelerate.framework</td>
+<td>Required</td>
+</tr>
+<tr>
 <td>libresolv.9.tbd</td>
 <td>Required</td>
 </tr>
@@ -1681,13 +1685,21 @@
 <td>libxml2.tbd</td>
 <td>Required</td>
 </tr>
+<tr>
+<td>libiconv.tbd</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>libc++abi.tbd</td>
+<td>Required</td>
+</tr>
 </tbody>
 </table>
 <h2 id="ユーザデータアクセス許可に関する設定"><a class="toclink" href="#ユーザデータアクセス許可に関する設定">ユーザデータアクセス許可に関する設定</a><a class="headerlink" href="#ユーザデータアクセス許可に関する設定" title="Permanent link">&para;</a></h2>
 <p>TikTokでは<code>CoreLocation.framework</code>, <code>CoreMotion.framework</code>を利用していますので、
 <a href="../info/user_data.html">こちら</a>を参考に設定を行ってください。</p>
 <h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
-<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork 2.0</a>を利用するために、Info.plistに下記の内容を追加します。</p>
+<p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>を利用するために、Info.plistに下記の内容を追加します。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
 </pre></div>
 
