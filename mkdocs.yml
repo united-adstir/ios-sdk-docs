@@ -19,10 +19,10 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.18
+      adstir: 2.15.19
       adcolony: 4.6.1
       adcorsa: 2.2.2
-      applovin: 10.3.0
+      applovin: 10.3.2
       imobile: 2.1.0
       maio: 1.5.8
       mopub: 5.17.0

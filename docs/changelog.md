@@ -2,6 +2,12 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.19 (2021/06/23)
+
+* bundle SDKの更新
+    * [AppLovin 10.3.2](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_2)
+        * [10.3.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_0)で発生するSDKの初期化の不具合修正が含まれております
+        
 ## v2.15.18 (2021/06/15)
 
 * 対象開発環境をXcode 12.5以上に変更
