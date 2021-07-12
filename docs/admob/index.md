@@ -29,14 +29,14 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
 1. adstir SDKにbundleされていないアドネットワークのSDKをダウンロードします。
     * [Facebook](https://origincache.facebook.com/developers/resources/?id=FBAudienceNetwork-{{config.version.facebook}}.zip)
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードします。
-    * [AdColony](https://google.bintray.com/mobile-ads-adapters-ios/AdColonyAdapter/{{config.version.adcolony}}.0/AdColonyAdapter-{{config.version.adcolony}}.0.zip)
-    * [AppLovin](https://google.bintray.com/mobile-ads-adapters-ios/AppLovinAdapter/{{config.version.applovin}}.0/AppLovinAdapter-{{config.version.applovin}}.0.zip)
-    * [Facebook](https://google.bintray.com/mobile-ads-adapters-ios/FacebookAdapter/{{config.version.facebook}}.1/FacebookAdapter-{{config.version.facebook}}.0.zip)
-    * [maio](https://google.bintray.com/mobile-ads-adapters-ios/MaioAdapter/{{config.version.maio}}.0/MaioAdapter-{{config.version.maio}}.0.zip)
-    * [MoPub](https://google.bintray.com/mobile-ads-adapters-ios/MoPubAdapter/{{config.version.mopub}}.0/MoPubAdapter-{{config.version.mopub}}.0.zip)
-    * [nend](https://google.bintray.com/mobile-ads-adapters-ios/NendAdapter/{{config.version.nend}}.0/NendAdapter-{{config.version.nend}}.0.zip)
-    * [TapJoy](https://google.bintray.com/mobile-ads-adapters-ios/TapjoyAdapter/{{config.version.tapjoy}}.0/TapjoyAdapter-{{config.version.tapjoy}}.0.zip)
-    * [UnityAds](https://google.bintray.com/mobile-ads-adapters-ios/UnityAdapter/{{config.version.unityads}}.0/UnityAdapter-{{config.version.unityads}}.0.zip)
+    * [AdColony](https://dl.google.com/googleadmobadssdk/mediation/ios/adcolony/AdColonyAdapter-{{config.version.adcolony}}.0.zip)
+    * [AppLovin](https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-{{config.version.applovin}}.0.zip)
+    * [Facebook](https://dl.google.com/googleadmobadssdk/mediation/ios/facebook/FacebookAdapter-{{config.version.facebook}}.0.zip)
+    * [maio](https://dl.google.com/googleadmobadssdk/mediation/ios/maio/MaioAdapter-{{config.version.maio}}.0.zip)
+    * [MoPub](https://dl.google.com/googleadmobadssdk/mediation/ios/mopub/MoPubAdapter-{{config.version.mopub}}.0.zip)
+    * [nend](https://dl.google.com/googleadmobadssdk/mediation/ios/nend/NendAdapter-{{config.version.nend}}.0.zip)
+    * [TapJoy](https://dl.google.com/googleadmobadssdk/mediation/ios/tapjoy/TapjoyAdapter-{{config.version.tapjoy}}.0.zip)
+    * [UnityAds](https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-{{config.version.unityads}}.0.zip)
 1. ダウンロードしたzipファイルを解凍し、各frameworkをプロジェクトへ追加します。
 
 ### iOS 14以降への対応
