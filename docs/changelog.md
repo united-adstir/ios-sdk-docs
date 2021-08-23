@@ -2,6 +2,13 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.20 (2021/08/24)
+
+* SKAdNetwork関連の修正
+* AdMobパッケージにMaioのAdMob用アダプターを追加
+* bundle SDKの更新
+    * [MoPub 5.18.0](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.18.0)
+
 ## v2.15.19 (2021/06/23)
 
 * bundle SDKの更新
