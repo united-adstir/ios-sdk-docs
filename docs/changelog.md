@@ -5,6 +5,7 @@
 ## v2.15.20 (2021/08/24)
 
 * SKAdNetwork関連の修正
+    * バナー関連の不具合を改修
 * AdMobパッケージにMaioのAdMob用アダプターを追加
 * bundle SDKの更新
     * [MoPub 5.18.0](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.18.0)
