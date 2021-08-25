@@ -5,7 +5,7 @@
 
 ## info.plistの更新
 
-iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加してください。
+iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加してください。
 利用するネットワークにチェックを入れて更新を押すと、SKAdNetworkItemsが更新されます。
 
 - [x] adstir
@@ -55,6 +55,11 @@ iOS 14以降で[SKAdNetwork 2.0](https://developer.apple.com/documentation/store
     <dict>
         <key>SKAdNetworkIdentifier</key>
         <string>578prtvx9j.skadnetwork</string>
+    </dict>
+    <!--  VRize  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>r8lj5b58b5.skadnetwork</string>
     </dict>
 </array>
 ```
