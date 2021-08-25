@@ -45,5 +45,10 @@
         <key>SKAdNetworkIdentifier</key>
         <string>hs6bdukanm.skadnetwork</string>
     </dict>
+    <!--  VRize  -->
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>r8lj5b58b5.skadnetwork</string>
+    </dict>
 </array>
 </plist>
