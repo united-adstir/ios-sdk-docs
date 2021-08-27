@@ -131,6 +131,9 @@ nav:
       - AdMobバナー: aps/banner.md
       - AdMobインタースティシャル: aps/interstitial.md
       - AdMobインタースティシャル(v8 SDK): aps/interstitialv8.md
+  - AdManager:
+      - はじめに: admanager/index.md
+      # - メディエーション: admanager/network.md
   - 変更履歴: changelog.md
 
 plugins:
