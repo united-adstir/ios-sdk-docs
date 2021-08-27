@@ -9,13 +9,13 @@
 
 [AdManagerのスタートガイド](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/quick-start)を参考に、AdManagerの設定をおこなってください。
 
-[Ad Manager app ID](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/quick-start#update_your_infoplist)は弊社で登録後、担当よりお伝えします。
+[Ad Manager app ID](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/quick-start#update_your_infoplist)は弊社で登録後、営業担当よりお伝えします。
 
 ### メディエーションの準備
 
 [メディエーション](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/mediate)を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。
 
-#### CocoaPodを利用している場合
+#### CocoaPodsを利用している場合
 
 Podfileへ下記のものを記述することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
@@ -45,7 +45,7 @@ pod 'AdStir-Ads-SDK/UnityAds'
 ## 広告の実装
 
 AdManagerの実装ガイドをご覧ください。
-ad_unit_idは担当よりお伝えしますが、もともとのad_unit_idが
+ad_unit_idは営業担当よりお伝えしますが、もともとのad_unit_idが
 
 ```
 /1234/banner_id
