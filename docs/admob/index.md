@@ -15,7 +15,7 @@ Google Mobile Ads SDK v8以上をご利用の場合は、adstir SDK v2.15.15以�
 
 [AdMobメディエーション](https://developers.google.com/admob/ios/mediate?hl=ja)を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。
 
-#### CocoaPodを利用している場合
+#### CocoaPodsを利用している場合
 Podfileへ下記のものを記述することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
 ```
