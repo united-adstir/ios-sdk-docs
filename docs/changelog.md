@@ -2,6 +2,17 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.22 (2021/09/21)
+
+* AppLovinアダプタのサポートOSバージョンをiOS11以上に変更
+* bundle SDKの更新
+    * [AdColony 4.7.1](https://github.com/AdColony/AdColony-iOS-SDK/releases/tag/v4.7.1)
+    * [AppLovin 10.3.5](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_5)
+    * [Nend 7.0.6](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.0.6)
+    * TikTok 3.9.0.4
+        * SKAdNetwork2.2のサポートが含まれております
+    * [UnityAds 3.7.5](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/3.7.5)
+
 ## v2.15.21 (2021/08/27)
 
 * AdMobメディエーションのアダプタ改修 (バナー)
@@ -19,7 +30,7 @@
 * bundle SDKの更新
     * [AppLovin 10.3.2](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_2)
         * [10.3.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_0)で発生するSDKの初期化の不具合修正が含まれております
-        
+
 ## v2.15.18 (2021/06/15)
 
 * 対象開発環境をXcode 12.5以上に変更

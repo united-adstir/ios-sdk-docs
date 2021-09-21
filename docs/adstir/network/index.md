@@ -6,7 +6,7 @@
 ---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
 [AdColony](adcolony.md)|{{config.version.adcolony}}|10.0〜| | - | - | - | ○ | -
 [AdCorsa](adcorsa.md)  |{{config.version.adcorsa}} |10.0〜|280 | - | - | - | ○ | ○
-[AppLovin](applovin.md)|{{config.version.applovin}}|10.0〜|760| - | - | - | ○ | ○
+[AppLovin](applovin.md)|{{config.version.applovin}}|11.0〜|760| - | - | - | ○ | ○
 [imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| 110| - | - | - | - | ○
 [Maio](maio.md)        |{{config.version.maio}}    |10.0〜|180 | - | - | - | ○ | ○
 [MoPub](mopub.md)      |{{config.version.mopub}}   |13.0〜|760| ○ | ○ | ○ | ○ | ○

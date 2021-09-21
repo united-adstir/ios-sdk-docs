@@ -14,11 +14,11 @@ adstirでは、インセンティブ付与の通知を、任意のコールバ�
 
 | 置換文字列 	| 内容 | 必須
 |---|---|:-:|
-| ${TRANSACTION_ID} | adstir成果ID | o |
-| ${USER_ID} 	    | メディアユーザーID | o |
-| ${CURRENCY} 	    | インセンティブの単位 | - |
-| ${AMOUNT} 	    | インセンティブの額 | - |
-| ${IFA} 	        | Apple IDFA/Google Play Advertising ID (正常に取れない場合もあります) | - |
+| $\{TRANSACTION_ID\} | adstir成果ID | o |
+| $\{USER_ID\}        | メディアユーザーID | o |
+| $\{CURRENCY\}       | インセンティブの単位 | - |
+| $\{AMOUNT\}         | インセンティブの額 | - |
+| $\{IFA\}            | Apple IDFA/Google Play Advertising ID (正常に取れない場合もあります) | - |
 
 > 例： http(s)://aaa.com/bbb?ccc=${TRANSACTION_ID}&ddd=${USER_ID}&eee=${CURRENCY}&fff=${AMOUNT}
 
@@ -31,5 +31,5 @@ adstirでは、インセンティブ付与の通知を、任意のコールバ�
 コールバックは重複して発行されることがありますので、必ずadstir成果IDに対してユニーク処理を実装するようにしてください。
 IFAは正常に取れない場合がありますので、必ずUSER_IDで成果の付与は行ってください。
 コールバックサーバの呼び出しは、60秒でタイムアウトするよう設定しています。
-タイムアウトや、サーバー接続で200 OK以外のレスポンスが返された場合、`1分おきに最大10回リトライ`をします。 
+タイムアウトや、サーバー接続で200 OK以外のレスポンスが返された場合、`1分おきに最大10回リトライ`をします。
 
