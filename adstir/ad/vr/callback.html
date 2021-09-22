@@ -1513,27 +1513,27 @@
 </thead>
 <tbody>
 <tr>
-<td TRANSACTION_ID="TRANSACTION_ID">$</td>
+<td>${TRANSACTION_ID}</td>
 <td>adstir成果ID</td>
 <td align="center">o</td>
 </tr>
 <tr>
-<td USER_ID="USER_ID">$</td>
+<td>${USER_ID}</td>
 <td>メディアユーザーID</td>
 <td align="center">o</td>
 </tr>
 <tr>
-<td CURRENCY="CURRENCY">$</td>
+<td>${CURRENCY}</td>
 <td>インセンティブの単位</td>
 <td align="center">-</td>
 </tr>
 <tr>
-<td AMOUNT="AMOUNT">$</td>
+<td>${AMOUNT}</td>
 <td>インセンティブの額</td>
 <td align="center">-</td>
 </tr>
 <tr>
-<td IFA="IFA">$</td>
+<td>${IFA}</td>
 <td>Apple IDFA/Google Play Advertising ID (正常に取れない場合もあります)</td>
 <td align="center">-</td>
 </tr>
@@ -1548,7 +1548,7 @@
 <p>コールバックは重複して発行されることがありますので、必ずadstir成果IDに対してユニーク処理を実装するようにしてください。
 IFAは正常に取れない場合がありますので、必ずUSER_IDで成果の付与は行ってください。
 コールバックサーバの呼び出しは、60秒でタイムアウトするよう設定しています。
-タイムアウトや、サーバー接続で200 OK以外のレスポンスが返された場合、<code>1分おきに最大10回リトライ</code>をします。 </p>
+タイムアウトや、サーバー接続で200 OK以外のレスポンスが返された場合、<code>1分おきに最大10回リトライ</code>をします。</p>
                 
                   
                 
