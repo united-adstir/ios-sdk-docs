@@ -30,7 +30,6 @@ extra:
       tiktok: 3.9.0.4
       unityads: 3.7.5
       zucks: 4.11.0
-      facebook: 6.2.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.15-SampleApp.zip'
 
 # CSSの設定

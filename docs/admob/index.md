@@ -26,12 +26,9 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
 
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込みます。
 1. [AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを導入します。
-1. adstir SDKにbundleされていないアドネットワークのSDKをダウンロードします。
-    * [Facebook](https://origincache.facebook.com/developers/resources/?id=FBAudienceNetwork-{{config.version.facebook}}.zip)
 1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードします。
     * [AdColony](https://dl.google.com/googleadmobadssdk/mediation/ios/adcolony/AdColonyAdapter-{{config.version.adcolony}}.0.zip)
     * [AppLovin](https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-{{config.version.applovin}}.0.zip)
-    * [Facebook](https://dl.google.com/googleadmobadssdk/mediation/ios/facebook/FacebookAdapter-{{config.version.facebook}}.0.zip)
     * [maio](https://dl.google.com/googleadmobadssdk/mediation/ios/maio/MaioAdapter-{{config.version.maio}}.0.zip)
     * [MoPub](https://dl.google.com/googleadmobadssdk/mediation/ios/mopub/MoPubAdapter-{{config.version.mopub}}.0.zip)
     * [nend](https://dl.google.com/googleadmobadssdk/mediation/ios/nend/NendAdapter-{{config.version.nend}}.0.zip)

@@ -6,7 +6,6 @@ adstirのAdMobパッケージには下記のアドネットワークのSDKがパ
 ---| :-: |:-:|:-:|:-:|:-:|:-:|:-:
 AdColony|{{config.version.adcolony}}| o | o | o | o | - | -
 AppLovin|{{config.version.applovin}}| o | o | o | o | o | -
-Facebook|{{config.version.facebook}}| o | o | o | o | o | -
 maio    |{{config.version.maio}}| - | o | o | o | - | -
 MoPub   |{{config.version.mopub}}| o | o | o | o | o | -
 nend    |{{config.version.nend}}| o | o | o | o | - | -
