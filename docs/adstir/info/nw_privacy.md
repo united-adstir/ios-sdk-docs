@@ -6,10 +6,6 @@
 
 * [https://support.adcolony.com/helpdesk/app-privacy-details-adcolonysdk/](https://support.adcolony.com/helpdesk/app-privacy-details-adcolonysdk/)
 
-## AdCorsa
-
-営業担当へご連絡ください
-
 ## AppLovin
 
 * [https://www.applovin.com/privacy-jp/](https://www.applovin.com/privacy-jp/)

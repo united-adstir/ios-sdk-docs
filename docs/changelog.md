@@ -2,6 +2,12 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.23 (2021/10/11)
+
+* 動画広告プレイヤーの安定性向上
+* AdCorsa SDKのバンドル終了
+* [facebookのウォータフォールでの配信終了](https://www.facebook.com/business/help/178983086270324?id=211412110064838)に伴い、AdMobパッケージのfacebookのバンドル終了
+
 ## v2.15.22 (2021/09/21)
 
 * AppLovinアダプタのサポートOSバージョンをiOS11以上に変更

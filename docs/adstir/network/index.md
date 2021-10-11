@@ -5,7 +5,6 @@
 ネットワーク|SDKバージョン[^1]|対応OS|容量(KB)[^2]| バナー | スワイプインタースティシャル | ネイティブ | 動画リワード | 全画面インタースティシャル
 ---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
 [AdColony](adcolony.md)|{{config.version.adcolony}}|10.0〜| | - | - | - | ○ | -
-[AdCorsa](adcorsa.md)  |{{config.version.adcorsa}} |10.0〜|280 | - | - | - | ○ | ○
 [AppLovin](applovin.md)|{{config.version.applovin}}|11.0〜|760| - | - | - | ○ | ○
 [imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| 110| - | - | - | - | ○
 [Maio](maio.md)        |{{config.version.maio}}    |10.0〜|180 | - | - | - | ○ | ○
@@ -15,8 +14,6 @@
 [TikTok](tiktok.md)    |{{config.version.tiktok}}  |10.0〜|580| - | - | - | ○ | ○
 [UnityAds](unityads.md)|{{config.version.unityads}}|12.0〜|250 | - | - | - | ○ | -
 [Zucks](zucks.md)      |{{config.version.zucks}}   |10.0〜|  150| - | ○ | - | - | -
-
-
 
 * 対応OSバージョンでない端末の場合、非対応のネットワークは配信されず、対応しているネットワークが配信されます。
 * ATS, Bitcode, IPv6については上記のネットワーク全て対応しております。
