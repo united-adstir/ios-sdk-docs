@@ -19,9 +19,8 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.22
+      adstir: 2.15.23
       adcolony: 4.7.1
-      adcorsa: 2.2.2
       applovin: 10.3.5
       imobile: 2.1.0
       maio: 1.5.8
@@ -31,7 +30,6 @@ extra:
       tiktok: 3.9.0.4
       unityads: 3.7.5
       zucks: 4.11.0
-      facebook: 6.2.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.15-SampleApp.zip'
 
 # CSSの設定
@@ -67,7 +65,6 @@ nav:
       - 対応ネットワーク:
         - 対応ネットワーク一覧: adstir/network/index.md
         - AdColony: adstir/network/adcolony.md
-        - AdCorsa: adstir/network/adcorsa.md
         - AppLovin: adstir/network/applovin.md
         - imobile: adstir/network/imobile.md
         - maio: adstir/network/maio.md
