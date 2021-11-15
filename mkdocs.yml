@@ -19,15 +19,15 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.23
-      adcolony: 4.7.1
-      applovin: 10.3.5
+      adstir: 2.15.24
+      adcolony: 4.7.2
+      applovin: 10.3.6
       imobile: 2.1.0
       maio: 1.5.8
-      mopub: 5.18.0
-      nend: 7.0.6
+      mopub: 5.18.2
+      nend: 7.1.0
       tapjoy: 12.8.1
-      tiktok: 3.9.0.4
+      tiktok: 4.0.0.2
       unityads: 3.7.5
       zucks: 4.11.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.15-SampleApp.zip'

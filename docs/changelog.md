@@ -2,6 +2,18 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.24 (2021/11/15)
+
+* SDKの安定性向上
+* bundle SDKの更新
+    * [AdColony 4.7.2](https://github.com/AdColony/AdColony-iOS-SDK/releases/tag/v4.7.2)
+    * [AppLovin 10.3.6](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_10_3_6)
+    * [MoPub 5.18.2](https://github.com/mopub/mopub-ios-sdk/releases/tag/5.18.2)
+        * iOS15に関する修正が含まれております
+    * [Nend 7.1.0](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.1.0)
+    * TikTok 4.0.0.2
+        * SKAdNetwork3.0のサポートが含まれております
+
 ## v2.15.23 (2021/10/11)
 
 * 動画広告プレイヤーの安定性向上
