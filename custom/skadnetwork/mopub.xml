@@ -107,6 +107,10 @@
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
+            <string>7fbxrn65az.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
             <string>7rz58n8ntl.skadnetwork</string>
         </dict>
         <dict>
@@ -276,6 +280,10 @@
         <dict>
             <key>SKAdNetworkIdentifier</key>
             <string>pwa73g5rt2.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>rvh3l7un93.skadnetwork</string>
         </dict>
         <dict>
             <key>SKAdNetworkIdentifier</key>
