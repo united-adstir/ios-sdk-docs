@@ -13,7 +13,7 @@ $ pod init
 ## Podfileの編集
 
 任意のエディタでPodfileを開き、下記の様にadstir SDKについての記述を追記します。  
-platformの行は、プロジェクトに応じて適宜設定してください。  
+platformの行は、プロジェクトに応じて適宜設定してください。
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
@@ -42,7 +42,6 @@ AdStir-Ads-SDK/AdColony| adstir SDK / AdColony SDKとアダプター
 AdStir-Ads-SDK/AppLovin| adstir SDK / AppLovin SDKとアダプター
 AdStir-Ads-SDK/IMobile| adstir SDK / IMobile SDKとアダプター
 AdStir-Ads-SDK/Maio| adstir SDK / Maio SDKとアダプター
-AdStir-Ads-SDK/MoPub| adstir SDK / MoPub SDKとアダプター
 AdStir-Ads-SDK/Nend| adstir SDK / Nend SDKとアダプター
 AdStir-Ads-SDK/TapJoy| adstir SDK / TapJoy SDKとアダプター
 AdStir-Ads-SDK/TikTok| adstir SDK / TikTok SDKとアダプター

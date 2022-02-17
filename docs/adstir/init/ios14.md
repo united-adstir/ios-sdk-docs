@@ -13,7 +13,6 @@ iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/
 - [x] AppLovin
 - [x] imobile
 - [x] maio
-- [x] MoPub
 - [x] nend
 - [x] TapJoy
 - [x] TikTok

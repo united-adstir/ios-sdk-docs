@@ -8,7 +8,6 @@
 [AppLovin](applovin.md)|{{config.version.applovin}}|11.0〜|760| - | - | - | ○ | ○
 [imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| 110| - | - | - | - | ○
 [Maio](maio.md)        |{{config.version.maio}}    |10.0〜|180 | - | - | - | ○ | ○
-[MoPub](mopub.md)      |{{config.version.mopub}}   |13.0〜|760| ○ | ○ | ○ | ○ | ○
 [Nend](nend.md)        |{{config.version.nend}}    |10.0〜|400 | - | - | - | ○ | ○
 [TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |10.0〜|400 | - | - | - | ○ | ○
 [TikTok](tiktok.md)    |{{config.version.tiktok}}  |10.0〜|580| - | - | - | ○ | ○

@@ -37,7 +37,6 @@ adstirのプレイヤー                |MEDIA-2e366f20|1
 [UnityAds](../network/unityads.md) |MEDIA-2e366f20|4
 [Maio](../network/maio.md)         |MEDIA-2e366f20|5
 [TapJoy](../network/tapjoy.md)     |MEDIA-2e366f20|6
-[MoPub](../network/mopub.md)       |MEDIA-2e366f20|7
 [AdColony](../network/adcolony.md) |MEDIA-2e366f20|10
 [TikTok](../network/tiktok.md)     |MEDIA-2e366f20|11
 

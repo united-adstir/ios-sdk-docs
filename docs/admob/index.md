@@ -7,9 +7,8 @@
 
 ## 事前準備
 
-[AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
-Google Mobile Ads SDKは7.53.0以上をご利用ください。  
-Google Mobile Ads SDK v8以上をご利用の場合は、adstir SDK v2.15.15以上をご利用ください。
+[AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。  
+AdMobアダプタはGoogle Mobile Ads SDK version 8.13.0でビルドおよびテストを行なっています。
 
 ### メディエーションの準備
 
@@ -30,7 +29,6 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
     * [AdColony](https://dl.google.com/googleadmobadssdk/mediation/ios/adcolony/AdColonyAdapter-{{config.version.adcolony}}.0.zip)
     * [AppLovin](https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-{{config.version.applovin}}.0.zip)
     * [maio](https://dl.google.com/googleadmobadssdk/mediation/ios/maio/MaioAdapter-{{config.version.maio}}.0.zip)
-    * [MoPub](https://dl.google.com/googleadmobadssdk/mediation/ios/mopub/MoPubAdapter-{{config.version.mopub}}.0.zip)
     * [nend](https://dl.google.com/googleadmobadssdk/mediation/ios/nend/NendAdapter-{{config.version.nend}}.0.zip)
     * [TapJoy](https://dl.google.com/googleadmobadssdk/mediation/ios/tapjoy/TapjoyAdapter-{{config.version.tapjoy}}.0.zip)
     * [UnityAds](https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-{{config.version.unityads}}.0.zip)

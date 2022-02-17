@@ -2,6 +2,19 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.25 (2022/02/17)
+
+* SDKの安定性向上
+* MoPub SDKのバンドル終了
+* bundle SDKの更新
+    * [AppLovin 11.0.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_11_0_0)
+        * AdMobパッケージにはAppLovin用のAdMob用アダプターは含まれておりません
+    * TikTok 4.2.0.2
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 8.13.0
+* SKAdNetworkIdsの更新
+    * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします
+
 ## v2.15.24 (2021/11/15)
 
 * SDKの安定性向上
