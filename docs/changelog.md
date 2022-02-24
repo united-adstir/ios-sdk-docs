@@ -2,6 +2,9 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+    !!! info
+        SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
+
 ## v2.15.26 (2022/02/24)
 
 * AdMobアダプタのGoogle Mobile Ads SDK v9 への対応
@@ -30,8 +33,6 @@
     * TikTok 4.2.0.2
 * AdMobアダプタ ビルド・テスト
     * Google Mobile Ads SDK version 8.13.0
-* SKAdNetworkIdsの更新
-    * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします
 
 ## v2.15.24 (2021/11/15)
 

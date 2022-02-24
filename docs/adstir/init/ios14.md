@@ -8,6 +8,9 @@
 iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加してください。
 利用するネットワークにチェックを入れて更新を押すと、SKAdNetworkItemsが更新されます。
 
+!!! info
+    SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
+
 - [x] adstir
 - [x] AdColony
 - [x] AppLovin
