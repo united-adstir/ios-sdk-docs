@@ -2,6 +2,24 @@
 
  * [こちら](adstir/init/ios14.md#infoplistの更新)を参考にInfo.plistの更新をお願いします。
 
+## v2.15.26 (2022/02/24)
+
+* AdMobアダプタのGoogle Mobile Ads SDK v9 への対応
+    * AdMobパッケージをご利用の方はGoogle Mobile Ads SDK v9以上をご利用ください
+* bundle SDKの更新
+    * [AppLovin 11.1.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_11_1_0)
+    * IMobile 2.2.0
+        * SKAdNetwork2.2のサポートが含まれております
+        * Xcode13でビルドされております
+    * [Maio 1.6.0](https://github.com/imobile-maio/maio-iOS-SDK/releases/tag/v1.6.0)
+        *  Xcode13 以降をサポート対象とします
+    * [TapJoy 12.9.0](https://dev.tapjoy.com/jp/ios-sdk/Changelog#id-1290-2022-01-13)
+        * Xcode13でビルドされております
+    * [UnityAds 4.0.0](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.0.0)
+        * Xcode13でビルドされております
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 9.0.0
+
 ## v2.15.25 (2022/02/17)
 
 * SDKの安定性向上
