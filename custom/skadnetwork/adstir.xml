@@ -6,6 +6,11 @@
         <string>arq2d5wxeq.skadnetwork</string>
     </dict>
     <dict>
+        <!--  bypass  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>f2zub97jtl.skadnetwork</string>
+    </dict>
+    <dict>
         <!--  imobile  -->
         <key>SKAdNetworkIdentifier</key>
         <string>v4nxqhlyqp.skadnetwork</string>
@@ -45,8 +50,8 @@
         <key>SKAdNetworkIdentifier</key>
         <string>hs6bdukanm.skadnetwork</string>
     </dict>
-    <!--  VRize  -->
     <dict>
+        <!--  VRize  -->
         <key>SKAdNetworkIdentifier</key>
         <string>r8lj5b58b5.skadnetwork</string>
     </dict>
