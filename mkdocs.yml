@@ -19,7 +19,7 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.26
+      adstir: 2.15.27
       adcolony: 4.7.2
       applovin: 11.1.0
       imobile: 2.2.0
@@ -30,7 +30,7 @@ extra:
       unityads: 4.0.0
       zucks: 4.11.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2022/02/24'
+    skadnid_updated_at: '2022/04/08'
 
 # CSSの設定
 extra_css:
@@ -121,6 +121,7 @@ nav:
   - AdMob:
       - はじめに: admob/index.md
       - AdMobメディエーション: admob/network.md
+      - AdMob配信設定: admob/setting.md
       - よくある質問: admob/question.md
   - APS:
       - APSの初期設定: aps/init.md
