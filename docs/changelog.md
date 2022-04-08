@@ -5,6 +5,13 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.27 (2022/04/07)
+
+* AdMobバナーアダプタの追加/改修
+    * ご自身でAdMobの配信設定をされる方は[こちら](admob/setting.md)をご覧ください。
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 9.2.0
+
 ## v2.15.26 (2022/02/24)
 
 * AdMobアダプタのGoogle Mobile Ads SDK v9 への対応
