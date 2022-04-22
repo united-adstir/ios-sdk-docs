@@ -30,7 +30,7 @@ extra:
       unityads: 4.0.0
       zucks: 4.11.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2022/04/08'
+    skadnid_updated_at: '2022/04/25'
 
 # CSSの設定
 extra_css:
