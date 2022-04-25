@@ -55,5 +55,15 @@
         <key>SKAdNetworkIdentifier</key>
         <string>r8lj5b58b5.skadnetwork</string>
     </dict>
+    <dict>
+        <!--  appier  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>v72qych5uu.skadnetwork</string>
+    </dict>
+    <dict>
+        <!--  appier  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>x8uqf25wch.skadnetwork</string>
+    </dict>
 </array>
 </plist>
