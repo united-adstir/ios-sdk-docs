@@ -29,8 +29,7 @@
 
 ## TikTok
 
-* [https://www.pangleglobal.com/help/doc/5fc45f521ee5c2001d3f100e](https://www.pangleglobal.com/help/doc/5fc45f521ee5c2001d3f100e)
-    * サイト右上の言語設定を`English`に変更することで確認できます
+* [https://www.pangleglobal.com/integration/app-privacy-details](https://www.pangleglobal.com/integration/app-privacy-details)
 
 ## UnityAds
 
