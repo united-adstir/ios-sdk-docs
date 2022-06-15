@@ -8,7 +8,7 @@
 ## 事前準備
 
 [AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja)を参考に、AdMobの設定をおこなってください。
-AdMobアダプタはGoogle Mobile Ads SDK version 9.0.0でビルドおよびテストを行なっています。
+AdMobアダプタは[Google Mobile Ads SDK version {{config.version.google}}](https://developers.google.com/admob/ios/rel-notes)でビルドおよびテストを行なっています。
 
 ### メディエーションの準備
 
