@@ -31,7 +31,7 @@ $ pod init
 platformの行は、プロジェクトに応じて適宜設定してください。
 
 ```ruby
-platform :ios, "9.0"
+platform :ios, "10.0"
 pod 'AdstirTestSuite'
 
 target 'projectname' do
