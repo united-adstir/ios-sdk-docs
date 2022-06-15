@@ -5,6 +5,21 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.28 (2022/06/14)
+
+* bundle SDKの更新
+    * [AdColony 4.8.0](https://github.com/AdColony/AdColony-iOS-SDK/releases/tag/v4.8.0)
+    * [AppLovin 11.3.3](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_11_3_3)
+    * [Maio 1.6.1](https://github.com/imobile-maio/maio-iOS-SDK/releases/tag/v1.6.1)
+    * [Nend 7.3.0](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.3.0)
+        * SKAdNetwork3.0のサポートが含まれております
+    * [TapJoy 12.9.1](https://dev.tapjoy.com/jp/ios-sdk/Changelog#id-1291-2022-03-16)
+    * TikTok 4.3.1.9
+    * [UnityAds 4.1.0](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.1.0)
+* AdMobアダプタの安定性向上
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 9.5.0
+
 ## v2.15.27 (2022/04/07)
 
 * AdMobバナーアダプタの追加/改修

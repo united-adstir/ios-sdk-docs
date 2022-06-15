@@ -19,18 +19,18 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.27
-      adcolony: 4.7.2
-      applovin: 11.1.0
+      adstir: 2.15.28
+      adcolony: 4.8.0
+      applovin: 11.3.3
       imobile: 2.2.0
-      maio: 1.6.0
-      nend: 7.1.0
-      tapjoy: 12.9.0
-      tiktok: 4.2.0.2
-      unityads: 4.0.0
+      maio: 1.6.1
+      nend: 7.3.0
+      tapjoy: 12.9.1
+      tiktok: 4.3.1.9
+      unityads: 4.1.0
       zucks: 4.11.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2022/04/25'
+    skadnid_updated_at: '2022/06/14'
 
 # CSSの設定
 extra_css:
