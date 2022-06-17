@@ -65,5 +65,10 @@
         <key>SKAdNetworkIdentifier</key>
         <string>x8uqf25wch.skadnetwork</string>
     </dict>
+    <dict>
+        <!--  Logicad  -->
+        <key>SKAdNetworkIdentifier</key>
+        <string>xy9t38ct57.skadnetwork</string>
+    </dict>
 </array>
 </plist>
