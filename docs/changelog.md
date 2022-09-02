@@ -5,6 +5,15 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.29 (2022/09/01)
+
+* bundle SDKの更新
+    * [AppLovin 11.4.3](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_11_4_3)
+    * [Maio 1.6.2](https://github.com/imobile-maio/maio-iOS-SDK/releases/tag/v1.6.2)
+    * [UnityAds 4.3.0](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.3.0)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 9.9.0
+
 ## v2.15.28 (2022/06/14)
 
 * bundle SDKの更新
