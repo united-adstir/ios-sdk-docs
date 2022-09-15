@@ -5,6 +5,15 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.30 (2022/09/15)
+
+* bundle SDKの更新
+    * [Nend 7.4.0](https://github.com/fan-ADN/nendSDK-iOS-pub/releases/tag/7.4.0)
+        * iOS 16に関するSKAdNetwork広告関連の修正が含まれております
+* AdMobアダプタの安定性向上(動画リワード)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 9.10.0
+
 ## v2.15.29 (2022/09/01)
 
 * bundle SDKの更新
