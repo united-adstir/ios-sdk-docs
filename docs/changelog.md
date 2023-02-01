@@ -5,6 +5,12 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.31 (2023/02/01)
+
+* SDKの安定性向上
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 9.10.0
+
 ## v2.15.30 (2022/09/15)
 
 * bundle SDKの更新
