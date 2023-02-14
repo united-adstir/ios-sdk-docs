@@ -504,6 +504,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ユーザデータアクセス許可に関する設定" class="md-nav__link">
+    ユーザデータアクセス許可に関する設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#infoplistの更新" class="md-nav__link">
     Info.plistの更新
   </a>
@@ -1573,6 +1580,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ユーザデータアクセス許可に関する設定" class="md-nav__link">
+    ユーザデータアクセス許可に関する設定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#infoplistの更新" class="md-nav__link">
     Info.plistの更新
   </a>
@@ -1637,11 +1651,47 @@
 </thead>
 <tbody>
 <tr>
+<td>AdSupport.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>AppTrackingTransparency.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>AudioToolbox.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>AVFoundation.framework</td>
+<td>Required</td>
+</tr>
+<tr>
 <td>CoreGraphics.framework</td>
 <td>Required</td>
 </tr>
 <tr>
 <td>CoreMedia.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>CoreMotion.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>CoreTelephony.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>Foundation.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>MessageUI.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>SafariServices.framework</td>
 <td>Required</td>
 </tr>
 <tr>
@@ -1653,11 +1703,22 @@
 <td>Required</td>
 </tr>
 <tr>
+<td>UIKit.framework</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>WebKit.framework</td>
+<td>Required</td>
+</tr>
+<tr>
 <td>libz.tbd</td>
 <td>Required</td>
 </tr>
 </tbody>
 </table>
+<h2 id="ユーザデータアクセス許可に関する設定"><a class="toclink" href="#ユーザデータアクセス許可に関する設定">ユーザデータアクセス許可に関する設定</a><a class="headerlink" href="#ユーザデータアクセス許可に関する設定" title="Permanent link">&para;</a></h2>
+<p>AppLovinでは<code>CoreMotion.framework</code>を利用していますので、
+<a href="../info/user_data.html">こちら</a>を参考に設定を行ってください。</p>
 <h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
 <p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>を利用するために、Info.plistに下記の内容を追加します。</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;key&gt;</span>SKAdNetworkItems<span class="nt">&lt;/key&gt;</span>
