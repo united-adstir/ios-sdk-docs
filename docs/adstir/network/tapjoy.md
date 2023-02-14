@@ -34,14 +34,16 @@ pod 'AdStir-Ads-SDK/TapJoy'
 #### 依存Framework/Libraryの追加
 名前|ステータス
 ----|----
-MediaPlayer.framework|Required
-CoreMotion.framework|Required
+AdSupport.framework|Required
+CFNetwork.framework|Required
+CoreTelephony.framework|Required
 StoreKit.framework|Required
-MessageUI.framework|Required
-ImageIO.framework|Required
-MobileCoreServices.framework|Required
+SystemConfiguration.framework|Required
+UIKit.framework|Required
+WbKit.framework|Required
 libc++.tbd|Required
 libz.tbd|Required
+PassKit..framework|Optional
 
 ## ユーザデータアクセス許可に関する設定
 
