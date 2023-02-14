@@ -46,16 +46,26 @@ pod 'AdStir-Ads-SDK/TikTok'
 
 名前|ステータス
 ----|----
+AppTrackingTransparency.framework|Required
 StoreKit.framework|Required
 MobileCoreServices.framework|Required
 WebKit.framework|Required
 MediaPlayer.framework|Required
+CoreMedia.framework|Required
+AVFoundation.framework|Required
+CoreTelephony.framework|Required
+SystemConfiguration.framework|Required
+AdSupport.framework|Required
 CoreMotion.framework|Required
-CoreLocation.framework|Required
 Accelerate.framework|Required
+Security.framework|Required
+JavaScriptCore.framework|Required
+AudioToolbox.framework|Required
+DeviceCheck.framework|Required
 libresolv.9.tbd|Required
 libc++.tbd|Required
 libz.tbd|Required
+libsqlite3.tbd|Required
 libbz2.tbd|Required
 libxml2.tbd|Required
 libiconv.tbd|Required
@@ -63,7 +73,7 @@ libc++abi.tbd|Required
 
 ## ユーザデータアクセス許可に関する設定
 
-TikTokでは`CoreLocation.framework`, `CoreMotion.framework`を利用していますので、
+TikTokでは`CoreMotion.framework`を利用していますので、
 [こちら](../info/user_data.md)を参考に設定を行ってください。
 
 ## Info.plistの更新

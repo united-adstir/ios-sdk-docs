@@ -45,15 +45,23 @@ pod 'AdStir-Ads-SDK/AdColony'
 
 名前|ステータス
 ----|----
-libz.1.2.5.tbd|Required
+libz.tbd|Required
+libsqlite3.tbd|Required
+AdSupport.framework|Required
 AudioToolbox.framework|Required
+AVFoundation.framework|Required
+CoreMedia.framework|Required
+CoreTelephony.framework|Required
 JavaScriptCore.framework|Required
 MessageUI.framework|Required
-MobileCoreServices.framework|Required
+CoreServices.framework|Required
+SafariServices.framework|Required
 Social.framework|Optional
 StoreKit.framework|Optional
+SystemConfiguration.framework|Optional
 WatchConnectivity.framework|Optional
 WebKit.framework|Optional
+AppTrackingTransparency.framework|Optional
 
 ## ATSの設定
 

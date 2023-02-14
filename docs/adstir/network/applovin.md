@@ -33,11 +33,27 @@ pod 'AdStir-Ads-SDK/AppLovin'
 #### 依存Framework/Libraryの追加
 名前|ステータス
 ----|----
+AdSupport.framework|Required
+AppTrackingTransparency.framework|Required
+AudioToolbox.framework|Required
+AVFoundation.framework|Required
 CoreGraphics.framework|Required
 CoreMedia.framework|Required
+CoreMotion.framework|Required
+CoreTelephony.framework|Required
+Foundation.framework|Required
+MessageUI.framework|Required
+SafariServices.framework|Required
 StoreKit.framework|Required
 SystemConfiguration.framework|Required
+UIKit.framework|Required
+WebKit.framework|Required
 libz.tbd|Required
+
+## ユーザデータアクセス許可に関する設定
+
+AppLovinでは`CoreMotion.framework`を利用していますので、
+[こちら](../info/user_data.md)を参考に設定を行ってください。
 
 ## Info.plistの更新
 
