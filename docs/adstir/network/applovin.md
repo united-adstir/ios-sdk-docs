@@ -50,6 +50,11 @@ UIKit.framework|Required
 WebKit.framework|Required
 libz.tbd|Required
 
+## ユーザデータアクセス許可に関する設定
+
+AppLovinでは`CoreMotion.framework`を利用していますので、
+[こちら](../info/user_data.md)を参考に設定を行ってください。
+
 ## Info.plistの更新
 
 iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/skadnetwork)を利用するために、Info.plistに下記の内容を追加します。

@@ -9,9 +9,9 @@
 
 * bundle SDKの更新
     * [AdColony 4.9.0](https://github.com/AdColony/AdColony-iOS-SDK/blob/master/CHANGELOG.md#490-202267)
-        * bitcodeのサポートが終了しました
     * [AppLovin 11.7.1](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_11_7_1)
-        * Xcode 13.2.1のサポートです
+        * Xcode 13.2.1のサポートです 
+        * bitcodeのサポートが終了しました
     * IMobile 2.3.0
     * [Maio 1.6.3](https://github.com/imobile-maio/maio-iOS-SDK/releases/tag/v1.6.3)
     * [TapJoy 12.11.1](https://dev.tapjoy.com/jp/ios-sdk/Changelog#id-1291-2022-03-16)

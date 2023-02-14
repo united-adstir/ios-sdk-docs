@@ -43,12 +43,7 @@ UIKit.framework|Required
 WbKit.framework|Required
 libc++.tbd|Required
 libz.tbd|Required
-PassKit..framework|Optional
-
-## ユーザデータアクセス許可に関する設定
-
-TapJoyでは`CoreLocation.framework`, `CoreMotion.framework`を利用していますので、
-[こちら](../info/user_data.md)を参考に設定を行ってください。
+PassKit.framework|Optional
 
 ## Info.plistの更新
 
