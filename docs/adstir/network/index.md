@@ -3,7 +3,7 @@
 各広告には下記のネットワークSDKが対応しています。
 
 ネットワーク|SDKバージョン[^1]|対応OS| バナー | スワイプインタースティシャル | ネイティブ | 動画リワード | 全画面インタースティシャル
----|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
+---|:-:|:-:|:-:|:-:|:-:|:-:|:-:
 [AdColony](adcolony.md)|{{config.version.adcolony}}|10.0〜| - | - | - | ○ | -
 [AppLovin](applovin.md)|{{config.version.applovin}}|11.0〜| - | - | - | ○ | ○
 [imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| - | - | - | - | ○
