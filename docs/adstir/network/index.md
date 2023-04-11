@@ -2,21 +2,18 @@
 
 各広告には下記のネットワークSDKが対応しています。
 
-ネットワーク|SDKバージョン[^1]|対応OS|容量(KB)[^2]| バナー | スワイプインタースティシャル | ネイティブ | 動画リワード | 全画面インタースティシャル
+ネットワーク|SDKバージョン[^1]|対応OS| バナー | スワイプインタースティシャル | ネイティブ | 動画リワード | 全画面インタースティシャル
 ---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:
-[AdColony](adcolony.md)|{{config.version.adcolony}}|10.0〜| | - | - | - | ○ | -
-[AppLovin](applovin.md)|{{config.version.applovin}}|11.0〜|760| - | - | - | ○ | ○
-[imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| 110| - | - | - | - | ○
-[Maio](maio.md)        |{{config.version.maio}}    |10.0〜|180 | - | - | - | ○ | ○
-[Nend](nend.md)        |{{config.version.nend}}    |10.0〜|400 | - | - | - | ○ | ○
-[TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |10.0〜|400 | - | - | - | ○ | ○
-[TikTok](tiktok.md)    |{{config.version.tiktok}}  |10.0〜|580| - | - | - | ○ | ○
-[UnityAds](unityads.md)|{{config.version.unityads}}|12.0〜|250 | - | - | - | ○ | -
-[Zucks](zucks.md)      |{{config.version.zucks}}   |10.0〜|  150| - | ○ | - | - | -
+[AdColony](adcolony.md)|{{config.version.adcolony}}|10.0〜| - | - | - | ○ | -
+[AppLovin](applovin.md)|{{config.version.applovin}}|11.0〜| - | - | - | ○ | ○
+[imobile](imobile.md)  |{{config.version.imobile}} |10.0〜| - | - | - | - | ○
+[Maio](maio.md)        |{{config.version.maio}}    |10.0〜| - | - | - | ○ | ○
+[Nend](nend.md)        |{{config.version.nend}}    |10.0〜| - | - | - | ○ | ○
+[TapJoy](tapjoy.md)    |{{config.version.tapjoy}}  |10.0〜| - | - | - | ○ | ○
+[TikTok](tiktok.md)    |{{config.version.tiktok}}  |12.0〜| - | - | - | ○ | ○
+[UnityAds](unityads.md)|{{config.version.unityads}}|12.0〜| - | - | - | ○ | -
+[Zucks](zucks.md)      |{{config.version.zucks}}   |10.0〜| - | ○ | - | - | -
 
 * 対応OSバージョンでない端末の場合、非対応のネットワークは配信されず、対応しているネットワークが配信されます。
-* ATS, IPv6については上記のネットワーク全て対応しております。
-* BitcodeについてはAppLovin以外が対応しております。
 
 [^1]: adstir SDK {{config.version.adstir}}の対応状況です。
-[^2]: 容量は、対応提携ネットワークのSDKと、メディエーションアダプタを追加したときに増加する概算容量です。

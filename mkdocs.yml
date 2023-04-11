@@ -31,7 +31,7 @@ extra:
       zucks: 4.11.0
       google: 9.14.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2023/02/01'
+    skadnid_updated_at: '2023/04/10'
 
 # CSSの設定
 extra_css:
@@ -131,6 +131,8 @@ nav:
       - AdMobインタースティシャル(v8 SDK): aps/interstitialv8.md
   - AdManager:
       - はじめに: admanager/index.md
+  - MAX:
+    - はじめに: max/index.md
   - 変更履歴: changelog.md
 
 plugins:
