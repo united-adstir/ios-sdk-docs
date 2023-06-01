@@ -3,22 +3,8 @@
 動画リワード広告を呼び出すためのクラスです。
 
 ## Class Methods
-* [+mediaUserID](#mediauserid)
 * [+setTestModeEnabled:](#settestmodeenabled)
 * [+testModeEnabled](#testmodeenabled)
-
-***
-
-
-### +mediaUserID
-メディアユーザIDを取得します。
-```objc
-+ (NSString *)mediaUserID
-```
-
-#### Returns
-* _NSString *_
-    * メディアユーザID
 
 ***
 
