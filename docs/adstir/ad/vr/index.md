@@ -2,20 +2,7 @@
 
 動画広告の視聴完了時にユーザーにインセンティブを付与することができます。
 
-### 1. メディアユーザIDの設定を行う
-
-サーバーサイドで成果通知を受け取る場合、メディアユーザーIDを設定します。
-メディアユーザIDの設定は、[`動画リワード広告の読み込み`](#5-動画リワード広告の読み込み)よりも前までに設定する必要があります。
-
-```Objctive-c tab=
-[AdstirVideoAds setMediaUserID:[[UIDevice currentDevice].identifierForVendor UUIDString]]; // ここでは例として、Vendor IDを指定していますが、任意のIDが利用可能です。
-```
-
-```swift tab=
-AdstirVideoAds.setMediaUserID(UIDevice.current.identifierForVendor!.uuidString); // ここでは例として、Vendor IDを指定していますが、任意のIDが利用可能です。
-```
-
-### 2. 動画広告の初期化を行う
+### 1. 動画広告の初期化を行う
 
 `AdstirVideoAds prepareWithMedia`を使い、プロジェクトで利用する全ての動画広告の初期化を同時に行います。
 
@@ -30,7 +17,7 @@ AdstirVideoAds.setMediaUserID(UIDevice.current.identifierForVendor!.uuidString);
 AdstirVideoAds.prepare(withMedia: "メディアID", spots: [1, 2]);
 ```
 
-### 3. 動画リワード広告のインスタンスを生成
+### 2. 動画リワード広告のインスタンスを生成
 
 `AdstirVideoReward`のインスタンスを生成します。
 
@@ -42,7 +29,7 @@ AdstirVideoReward *aVideoReward = [[AdstirVideoReward alloc] initWithMedia:@"メ
 let videoReward = AdstirVideoReward(media: "メディアID", spot: 枠No)!
 ```
 
-### 4. デリゲートの実装(オプション)
+### 3. デリゲートの実装(オプション)
 
 ```Objective-c tab=
 
@@ -120,7 +107,7 @@ func adstirVideoRewardDidClose(_ videoReward: AdstirVideoReward) {
 
 ```
 
-### 5. 動画リワード広告の読み込み
+### 4. 動画リワード広告の読み込み
 
 動画リワード広告の読み込みを行います。
 
@@ -132,7 +119,7 @@ func adstirVideoRewardDidClose(_ videoReward: AdstirVideoReward) {
 videoReward.load()
 ```
 
-### 6. 動画リワード広告の再生
+### 5. 動画リワード広告の再生
 
 読み込みが完了した動画リワード広告を再生します。
 動画の再生を行うViewControllerを渡してください。
@@ -164,9 +151,6 @@ if (videoReward.canShow()) {
 {
     /* 他の初期化コード */
 
-    // サーバーサイドで成果通知を受け取る場合、メディアユーザーIDを設定します。
-    [AdstirVideoAds setMediaUserID:[[UIDevice currentDevice].identifierForVendor UUIDString]]; // ここでは例として、Vendor IDを指定していますが、任意のIDが利用可能です。
-
     // メディアIDと、このアプリ内で利用する動画インセンティブメニューの枠IDとインタースティシャル広告の枠IDをすべて指定します。
     // 動画リワードとインタースティシャルを併用する場合はどちらの枠Noも指定してください。
     [AdstirVideoAds prepareWithMedia:@"メディアID" spots:@[@枠No, @枠No]];
@@ -183,8 +167,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 // ...
    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         /* 他の初期化コード */
-        // サーバーサイドで成果通知を受け取る場合、メディアユーザーID(半角英数記号)を設定します。
-        AdstirVideoAds.setMediaUserID(UIDevice.currentDevice().identifierForVendor?.UUIDString) // ここでは例として、Vendor IDを指定していますが、任意のIDが利用可能です。
         
         // メディアIDと、このアプリ内で利用する動画インセンティブメニューの枠IDとインタースティシャル広告の枠IDをすべて指定します。
         // 動画リワードとインタースティシャルを併用する場合はどちらの枠Noも指定してください。
@@ -395,16 +377,3 @@ class ViewController: UIViewController, AdstirVideoRewardDelegate {
     }
 }
 ```
-
-### 成果のコールバックURLへの通知
-
-adstirでは、インセンティブ付与の通知を、任意のコールバックURLに行うことが可能です。
-付与するインセンティブの単位と額は、任意の値に変更可能です。
-`AdstirVideoReward.setMediaUserID` でユーザーIDを設定していない場合には通知されませんので、ご注意ください。
-
-[動画インセンティブ付与をコールバックURLに通知する](callback.md)
-
-
-## ライブラリ詳細
-
-[APIリファレンス](../../api/index.md#動画リワード広告)をご覧ください。
