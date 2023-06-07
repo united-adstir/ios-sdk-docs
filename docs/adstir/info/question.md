@@ -46,4 +46,4 @@ adstirのプレイヤー                |MEDIA-2e366f20|1
 
 * [動画リワード広告のエラーコード](../api/video/AdstirVideoRewardDelegate-Protocol-Reference.md#error-code)
 * [全画面インタースティシャル広告のエラーコード](../api/interstitial/AdstirInterstitialDelegate-Protocol-Reference.md#adstirinterstitialerror)
-* [ネイティブ動画広告のエラーコード](../api/native/video/AdstirNativeVideoViewDelegate-Protocol-Reference.md#adstirnativevideoerror)
+
