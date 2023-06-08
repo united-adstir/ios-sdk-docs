@@ -23,12 +23,6 @@ adstir SDKのAPIリファレンスです。
 * [AdstirLoadImageDeledateDelegate](native/AdstirLoadImageDeledate-Protocol-Reference.md)
 * [AdstirLoadSmallImageDeledateDelegate](native/AdstirLoadSmallImageDeledate-Protocol-Reference.md)
 
-### ネイティブ動画広告
-
-* [AdstirNativeVideoAd](native/video/AdstirNativeVideoAd-Class-Reference.md)
-* [AdstirNativeVideoView](native/video/AdstirNativeVideoView-Class-Reference.md)
-* [AdstirNativeVideoViewDelegate](native/video/AdstirNativeVideoViewDelegate-Protocol-Reference.md)
-
 ## 動画リワード広告及び全画面インタースティシャル広告の初期化
 
 * [AdstirVideoAds](AdstirVideoAds-Class-Reference.md)
