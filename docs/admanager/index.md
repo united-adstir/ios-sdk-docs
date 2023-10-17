@@ -3,7 +3,7 @@
 ## 前提条件
 
 * Xcode 14.1以上
-* iOS 11.0以上
+* iOS 12.0以上
 
 ## 事前準備
 
@@ -26,7 +26,6 @@ pod 'AdStir-Ads-SDK/AppLovin'
 pod 'AdStir-Ads-SDK/IMobile'
 pod 'AdStir-Ads-SDK/Maio'
 pod 'AdStir-Ads-SDK/Nend'
-pod 'AdStir-Ads-SDK/TapJoy'
 pod 'AdStir-Ads-SDK/TikTok'
 pod 'AdStir-Ads-SDK/UnityAds'
 ```

@@ -69,7 +69,7 @@ CoreLocation.framework[^2]|Required
 libresolv.9.tbd | Required
 libz.tbd | Required
 
-[^1]: CoreMotion.frameworkはTapJoy、TikTokを利用する際に設定してください。  
+[^1]: CoreMotion.frameworkはTikTokを利用する際に設定してください。  
 [^2]: CoreLocation.frameworkはTikTokを利用する際に設定してください。  
 
 ## iOS 14以降への対応

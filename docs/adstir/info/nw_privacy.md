@@ -23,10 +23,6 @@
 
 * [https://github.com/fan-ADN/nendSDK-iOS/wiki/nendSDK-%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E9%A0%85%E7%9B%AE](https://github.com/fan-ADN/nendSDK-iOS/wiki/nendSDK-%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E9%A0%85%E7%9B%AE)
 
-## TapJoy
-
-* [https://dev.tapjoy.com/jp/support/App-Privacy?fbclid=IwAR3Ow3aQTdki7Qr-UyJg-lE7zegCaCnPt39sLdzw_s6ilttQgYloaRDdKRk](https://dev.tapjoy.com/jp/support/App-Privacy?fbclid=IwAR3Ow3aQTdki7Qr-UyJg-lE7zegCaCnPt39sLdzw_s6ilttQgYloaRDdKRk)
-
 ## TikTok
 
 * [https://www.pangleglobal.com/integration/app-privacy-details](https://www.pangleglobal.com/integration/app-privacy-details)

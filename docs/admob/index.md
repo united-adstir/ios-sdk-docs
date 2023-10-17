@@ -3,7 +3,7 @@
 ## 前提条件
 
 * Xcode 14.1以上
-* iOS 11.0以上
+* iOS 12.0以上
 
 ## 事前準備
 
@@ -30,7 +30,6 @@ pod 'AdStir-Ads-SDK/AdMob-Package'
     * [AppLovin](https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-{{config.version.applovin}}.0.zip)
     * [maio](https://dl.google.com/googleadmobadssdk/mediation/ios/maio/MaioAdapter-{{config.version.maio}}.0.zip)
     * [nend](https://dl.google.com/googleadmobadssdk/mediation/ios/nend/NendAdapter-{{config.version.nend}}.0.zip)
-    * [TapJoy](https://dl.google.com/googleadmobadssdk/mediation/ios/tapjoy/TapjoyAdapter-{{config.version.tapjoy}}.0.zip)
     * [UnityAds](https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-{{config.version.unityads}}.0.zip)
 1. ダウンロードしたzipファイルを解凍し、各frameworkをプロジェクトへ追加します。
 

@@ -19,19 +19,18 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.33
+      adstir: 2.15.34
       adcolony: 4.8.0
-      applovin: 11.7.1
-      imobile: 2.3.0
-      maio: 1.6.3
-      nend: 8.0.1
-      tapjoy: 12.11.1
-      tiktok: 4.9.1.0
-      unityads: 4.3.0
+      applovin: 11.11.2
+      imobile: 2.3.2
+      maio: 2.0.0
+      nend: 8.1.0
+      tiktok: 5.4.1.0
+      unityads: 4.8.0
       zucks: 4.11.0
-      google: 10.3.0
+      google: 10.10.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2023/06/07'
+    skadnid_updated_at: '2023/10/16'
 
 # CSSの設定
 extra_css:
@@ -70,7 +69,6 @@ nav:
         - imobile: adstir/network/imobile.md
         - maio: adstir/network/maio.md
         - nend: adstir/network/nend.md
-        - TapJoy: adstir/network/tapjoy.md
         - TikTok: adstir/network/tiktok.md
         - UnityAds: adstir/network/unityads.md
         - Zucks: adstir/network/zucks.md

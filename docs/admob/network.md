@@ -8,5 +8,4 @@ AdColony|{{config.version.adcolony}}| o | o | o | o | - | -
 AppLovin|{{config.version.applovin}}| o | o | o | o | o | -
 maio    |{{config.version.maio}}| - | o | o | o | - | -
 nend    |{{config.version.nend}}| o | o | o | o | - | -
-TapJoy  |{{config.version.tapjoy}}| - | o | o | o | - | -
 UnityAds|{{config.version.unityads}}| o | o | o | o | - | -
