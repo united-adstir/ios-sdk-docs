@@ -482,18 +482,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../network/tapjoy.html" title="TapJoy" class="md-nav__link">
-      TapJoy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../network/tiktok.html" title="TikTok" class="md-nav__link">
       TikTok
     </a>
@@ -1534,8 +1522,8 @@
 <p>adstirテストスイートを利用することで、提携対応ネットワークのSDKとそのアダプターが、アプリに組み込まれていることを確認することができます。</p>
 <h2 id="前提条件"><a class="toclink" href="#前提条件">前提条件</a><a class="headerlink" href="#前提条件" title="Permanent link">&para;</a></h2>
 <ul>
-<li>iOS 10.0以上</li>
-<li>Xcode 13.0以上</li>
+<li>iOS 12.0以上</li>
+<li>Xcode 14.1以上</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1555,7 +1543,7 @@
 <h3 id="podfileの編集"><a class="toclink" href="#podfileの編集">Podfileの編集</a><a class="headerlink" href="#podfileの編集" title="Permanent link">&para;</a></h3>
 <p>任意のエディタでPodfileを開き、下記の様にadstir SDKについての記述を追記します。
 platformの行は、プロジェクトに応じて適宜設定してください。</p>
-<div class="codehilite"><pre><span></span><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s2">&quot;10.0&quot;</span>
+<div class="codehilite"><pre><span></span><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s2">&quot;12.0&quot;</span>
 <span class="n">pod</span> <span class="s1">&#39;AdstirTestSuite&#39;</span>
 
 <span class="n">target</span> <span class="s1">&#39;projectname&#39;</span> <span class="k">do</span>
