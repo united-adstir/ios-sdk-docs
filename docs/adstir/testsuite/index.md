@@ -4,8 +4,8 @@ adstirテストスイートを利用することで、提携対応ネットワ�
 
 ## 前提条件
 
-* iOS 10.0以上
-* Xcode 13.0以上
+* iOS 12.0以上
+* Xcode 14.1以上
 
 !!! Info
     アプリケーションをリリースする前にはadstirテストスイートのライブラリを削除をしてリリースをするようにお願いします。
@@ -31,7 +31,7 @@ $ pod init
 platformの行は、プロジェクトに応じて適宜設定してください。
 
 ```ruby
-platform :ios, "10.0"
+platform :ios, "12.0"
 pod 'AdstirTestSuite'
 
 target 'projectname' do

@@ -17,7 +17,6 @@ iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/
 - [x] imobile
 - [x] maio
 - [x] nend
-- [x] TapJoy
 - [x] TikTok
 - [x] UnityAds
 - [x] Zucks

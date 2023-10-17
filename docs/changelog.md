@@ -5,6 +5,22 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.34 (2023/10/17)
+
+* 対応OSバージョンをiOS 12以上に変更
+* TapJoy SDKのバンドル終了
+* bundle SDKの更新
+    * AppLovin 11.11.2
+    * IMobile 2.3.2
+    * Maio 2.0.0
+	    * 広告はiOS 14以上に配信されます
+    * Nend 8.1.0
+    * TikTok 5.4.1.0
+    * UnityAds 4.8.0
+
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 10.10.0
+
 ## v2.15.33 (2023/06/07)     
 
 * 対象開発環境をXcode 14.1以上に変更
