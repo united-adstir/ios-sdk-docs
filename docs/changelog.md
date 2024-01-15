@@ -5,6 +5,11 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.15.36 (2024/01/15)
+
+* AdColony SDKのバンドル終了
+* Nend SDKのバンドル終了
+
 ## v2.15.35 (2023/12/04)
 
 * SKAdNetwork 4.0への対応
