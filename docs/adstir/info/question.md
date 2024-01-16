@@ -32,11 +32,9 @@
 アドネットワーク名|メディアID|枠No
 ---|---|---
 adstirのプレイヤー                |MEDIA-2e366f20|1
-[Nend](../network/nend.md)         |MEDIA-2e366f20|2
 [AppLovin](../network/applovin.md) |MEDIA-2e366f20|3
 [UnityAds](../network/unityads.md) |MEDIA-2e366f20|4
 [Maio](../network/maio.md)         |MEDIA-2e366f20|5
-[AdColony](../network/adcolony.md) |MEDIA-2e366f20|10
 [TikTok](../network/tiktok.md)     |MEDIA-2e366f20|11
 
 ### エラーコードの意味を教えてください。

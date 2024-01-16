@@ -21,11 +21,9 @@ Podfileへ下記のものを記述することで、adstirが利用するアド�
 
 ```
 pod 'AdStir-Ads-SDK/AdMobMediationAdapter'
-pod 'AdStir-Ads-SDK/AdColony'
 pod 'AdStir-Ads-SDK/AppLovin'
 pod 'AdStir-Ads-SDK/IMobile'
 pod 'AdStir-Ads-SDK/Maio'
-pod 'AdStir-Ads-SDK/Nend'
 pod 'AdStir-Ads-SDK/TikTok'
 pod 'AdStir-Ads-SDK/UnityAds'
 ```

@@ -2,10 +2,6 @@
 
 各提携対応ネットワークが取得するプライバシーデータは下記よりご確認いただけます。
 
-## AdColony
-
-* [https://support.adcolony.com/helpdesk/app-privacy-details-adcolonysdk/](https://support.adcolony.com/helpdesk/app-privacy-details-adcolonysdk/)
-
 ## AppLovin
 
 * [https://www.applovin.com/privacy-jp/](https://www.applovin.com/privacy-jp/)
@@ -18,10 +14,6 @@
 ## Maio
 
 * [https://github.com/imobile-maio/maio-iOS-SDK#%E5%8F%8E%E9%9B%86%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6](https://github.com/imobile-maio/maio-iOS-SDK#%E5%8F%8E%E9%9B%86%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-
-## nend
-
-* [https://github.com/fan-ADN/nendSDK-iOS/wiki/nendSDK-%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E9%A0%85%E7%9B%AE](https://github.com/fan-ADN/nendSDK-iOS/wiki/nendSDK-%E3%83%87%E3%83%BC%E3%82%BF%E5%8F%8E%E9%9B%86%E9%A0%85%E7%9B%AE)
 
 ## TikTok
 

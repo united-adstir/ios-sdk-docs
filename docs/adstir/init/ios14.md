@@ -12,11 +12,9 @@ iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/
     SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
 - [x] adstir
-- [x] AdColony
 - [x] AppLovin
 - [x] imobile
 - [x] maio
-- [x] nend
 - [x] TikTok
 - [x] UnityAds
 - [x] Zucks
