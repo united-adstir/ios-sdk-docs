@@ -2,6 +2,17 @@
 
 adstirの広告タグを使用して、WebViewアプリで広告を配信することができます。  
 
+## WKWebViewの設定
+
+広告タグを設置するWKWebviewに
+
+[allowsInlineMediaPlayback](https://developer.apple.com/documentation/webkit/wkwebviewconfiguration/1614793-allowsinlinemediaplayback?language=objc) = YES 
+
+の設定を行う事で動画案件の配信を行うことができますので、設定することを強くお勧めします。
+
+!!! warning
+    allowsInlineMediaPlayback = YES の設定を行わないで広告配信をご希望の場合は営業担当までお知らせください
+
 ## 広告ダグの取得
 
 1. 管理画面にログインして、対象の枠の「タグ/SDK」を選択してください。
