@@ -195,19 +195,6 @@
   
     <li class="md-tabs__item">
       
-        <a href="aps/init.html" class="md-tabs__link">
-          APS
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
         <a href="admanager/index.html" class="md-tabs__link">
           AdManager
         </a>
@@ -1107,18 +1094,6 @@
 
 
   <li class="md-nav__item">
-    <a href="admob/network.html" title="AdMobメディエーション" class="md-nav__link">
-      AdMobメディエーション
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="admob/setting.html" title="AdMob配信設定" class="md-nav__link">
       AdMob配信設定
     </a>
@@ -1152,82 +1127,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      APS
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        APS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/init.html" title="APSの初期設定" class="md-nav__link">
-      APSの初期設定
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/banner.html" title="AdMobバナー" class="md-nav__link">
-      AdMobバナー
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
-      AdMobインタースティシャル
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="aps/interstitialv8.html" title="AdMobインタースティシャル(v8 SDK)" class="md-nav__link">
-      AdMobインタースティシャル(v8 SDK)
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
       AdManager
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         AdManager
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1257,13 +1160,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       MAX
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         MAX
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1317,6 +1220,13 @@
   
     <label class="md-nav__title" for="__toc">目次</label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v2160-20240313" class="md-nav__link">
+    v2.16.0 (2024/03/13)
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v21536-20240115" class="md-nav__link">
@@ -1609,6 +1519,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v2160-20240313" class="md-nav__link">
+    v2.16.0 (2024/03/13)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v21536-20240115" class="md-nav__link">
     v2.15.36 (2024/01/15)
   </a>
@@ -1890,8 +1807,44 @@
 <p><a href="adstir/init/ios14.html#infoplistの更新">こちら</a>を参考にInfo.plistの更新をお願いします。</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>SKAdNetworkIdsの最終更新日 : 2024/01/15</p>
+<p>SKAdNetworkIdsの最終更新日 : 2024/03/13</p>
 </div>
+</li>
+</ul>
+<h2 id="v2160-20240313"><a class="toclink" href="#v2160-20240313">v2.16.0 (2024/03/13)</a><a class="headerlink" href="#v2160-20240313" title="Permanent link">&para;</a></h2>
+<ul>
+<li>adstir SDKおよびメディエーションアダプタをxcframeworkに変更</li>
+<li>Privacy Manifestへの対応</li>
+<li>SKAdNetworkに関する修正</li>
+<li>対象開発環境をXcode 15.1以上に変更</li>
+<li>bitcodeの廃止</li>
+<li>CocoaPods用パッケージのAdMob-Packageの廃止<ul>
+<li>AdMobアダプタは引き続きご利用いただけます</li>
+</ul>
+</li>
+<li>bundle SDKの更新<ul>
+<li><a href="https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_12_2_1">AppLovin 12.2.1</a><ul>
+<li>12.0.0/12.2.0でPrivacyManifestへの対応が含まれております</li>
+</ul>
+</li>
+<li>IMobile 2.3.3<ul>
+<li>2.3.3でPrivacyManifestへの対応が含まれております</li>
+</ul>
+</li>
+<li><a href="https://github.com/imobile/MaioSDK-v2-iOS/releases/tag/v2.1.3">Maio 2.1.3</a><ul>
+<li>2.1.3でPrivacyManifestへの対応が含まれております</li>
+</ul>
+</li>
+<li>TikTok 5.8.0.7<ul>
+<li>5.7.0.8/5.8.0.6でPrivacyManifestへの対応が含まれております</li>
+</ul>
+</li>
+<li><a href="https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.9.3">UnityAds 4.9.3</a></li>
+</ul>
+</li>
+<li>AdMobアダプタ ビルド・テスト<ul>
+<li>Google Mobile Ads SDK version 11.0.1</li>
+</ul>
 </li>
 </ul>
 <h2 id="v21536-20240115"><a class="toclink" href="#v21536-20240115">v2.15.36 (2024/01/15)</a><a class="headerlink" href="#v21536-20240115" title="Permanent link">&para;</a></h2>

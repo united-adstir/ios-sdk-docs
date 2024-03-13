@@ -197,19 +197,6 @@
   
     <li class="md-tabs__item">
       
-        <a href="../aps/init.html" class="md-tabs__link">
-          APS
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
         <a href="../admanager/index.html" class="md-tabs__link">
           AdManager
         </a>
@@ -1223,18 +1210,6 @@
 
 
   <li class="md-nav__item">
-    <a href="network.html" title="AdMobメディエーション" class="md-nav__link">
-      AdMobメディエーション
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="setting.html" title="AdMob配信設定" class="md-nav__link">
       AdMob配信設定
     </a>
@@ -1268,82 +1243,10 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      APS
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        APS
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../aps/init.html" title="APSの初期設定" class="md-nav__link">
-      APSの初期設定
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../aps/banner.html" title="AdMobバナー" class="md-nav__link">
-      AdMobバナー
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../aps/interstitial.html" title="AdMobインタースティシャル" class="md-nav__link">
-      AdMobインタースティシャル
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../aps/interstitialv8.html" title="AdMobインタースティシャル(v8 SDK)" class="md-nav__link">
-      AdMobインタースティシャル(v8 SDK)
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
       AdManager
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-4">
         AdManager
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1373,13 +1276,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       MAX
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         MAX
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1535,30 +1438,28 @@
                 <h1 id="admob広告について"><a class="toclink" href="#admob広告について">AdMob広告について</a><a class="headerlink" href="#admob広告について" title="Permanent link">&para;</a></h1>
 <h2 id="前提条件"><a class="toclink" href="#前提条件">前提条件</a><a class="headerlink" href="#前提条件" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Xcode 14.1以上</li>
+<li>Xcode 15.1以上</li>
 <li>iOS 12.0以上</li>
 </ul>
 <h2 id="事前準備"><a class="toclink" href="#事前準備">事前準備</a><a class="headerlink" href="#事前準備" title="Permanent link">&para;</a></h2>
 <p><a href="https://developers.google.com/admob/ios/quick-start?hl=ja">AdMobのスタートガイド</a>を参考に、AdMobの設定をおこなってください。
-AdMobアダプタは<a href="https://developers.google.com/admob/ios/rel-notes">Google Mobile Ads SDK version 10.10.0</a>でビルドおよびテストを行なっています。</p>
+AdMobアダプタは<a href="https://developers.google.com/admob/ios/rel-notes">Google Mobile Ads SDK version 11.0.1</a>でビルドおよびテストを行なっています。</p>
 <h3 id="メディエーションの準備"><a class="toclink" href="#メディエーションの準備">メディエーションの準備</a><a class="headerlink" href="#メディエーションの準備" title="Permanent link">&para;</a></h3>
 <p><a href="https://developers.google.com/admob/ios/mediate?hl=ja">AdMobメディエーション</a>を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。</p>
 <h4 id="cocoapodsを利用している場合"><a class="toclink" href="#cocoapodsを利用している場合">CocoaPodsを利用している場合</a><a class="headerlink" href="#cocoapodsを利用している場合" title="Permanent link">&para;</a></h4>
 <p>Podfileへ下記のものを記述することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。</p>
-<div class="codehilite"><pre><span></span><span class="err">pod &#39;AdStir-Ads-SDK/AdMob-Package&#39;</span>
+<div class="codehilite"><pre><span></span><span class="err">pod &#39;AdStir-Ads-SDK/AdMobMediationAdapter&#39;</span>
+<span class="err">pod &#39;AdStir-Ads-SDK/AppLovin&#39;</span>
+<span class="err">pod &#39;AdStir-Ads-SDK/IMobile&#39;</span>
+<span class="err">pod &#39;AdStir-Ads-SDK/Maio&#39;</span>
+<span class="err">pod &#39;AdStir-Ads-SDK/TikTok&#39;</span>
+<span class="err">pod &#39;AdStir-Ads-SDK/UnityAds&#39;</span>
 </pre></div>
 
 <h4 id="手動で導入する場合"><a class="toclink" href="#手動で導入する場合">手動で導入する場合</a><a class="headerlink" href="#手動で導入する場合" title="Permanent link">&para;</a></h4>
 <ol>
 <li><a href="../adstir/init/manual_integration.html#sdkの手動組み込み">こちら</a>を参考にadstirの動画パッケージを組み込みます。</li>
 <li><a href="https://developers.google.com/admob/ios/quick-start?hl=ja#manual_download">AdMobのスタートガイド</a>を参考にGoogleMobileAds SDKを導入します。</li>
-<li>AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードします。<ul>
-<li><a href="https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-11.11.2.0.zip">AppLovin</a></li>
-<li><a href="https://dl.google.com/googleadmobadssdk/mediation/ios/maio/MaioAdapter-2.0.0.0.zip">maio</a></li>
-<li><a href="https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-4.8.0.0.zip">UnityAds</a></li>
-</ul>
-</li>
-<li>ダウンロードしたzipファイルを解凍し、各frameworkをプロジェクトへ追加します。</li>
 </ol>
 <h3 id="ios-14以降への対応"><a class="toclink" href="#ios-14以降への対応">iOS 14以降への対応</a><a class="headerlink" href="#ios-14以降への対応" title="Permanent link">&para;</a></h3>
 <p><a href="../adstir/init/ios14.html">こちら</a>のページを参考にiOS 14以降へのご対応をお願いいたします。</p>
