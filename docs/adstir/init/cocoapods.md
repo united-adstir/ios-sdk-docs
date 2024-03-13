@@ -21,7 +21,7 @@ platform :ios, "12.0"
 pod 'AdStir-Ads-SDK'
 
 # AdMobメディエーションを利用する場合は、下記のコメントを外します。
-# pod 'AdStir-Ads-SDK/AdMob-Package'
+# pod 'AdStir-Ads-SDK/AdMobMediationAdapter'
 
 target 'projectname' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -47,7 +47,6 @@ AdStir-Ads-SDK/All-Incentivized| adstir SDK / 動画リワード対応してい�
 AdStir-Ads-SDK/All-Interstitial| adstir SDK / 全画面インタースティシャル対応しているSDKとアダプター
 AdStir-Ads-SDK/All-Swipeinterstitial| adstir SDK / スワイプインタースティシャル対応しているSDKとアダプター
 AdStir-Ads-SDK/All-adstir| adstir SDK / [adstirと提携しているアドネットワーク](../network/index.md#提携対応アドネットワーク)のSDKとアダプター
-AdStir-Ads-SDK/AdMob-Package| adstir SDK / [AdMobメディエーション](../../admob/network.md#admobメディエーションで利用できるアドネットワーク)で利用するアドネットワーク / [APS](../../aps/init.md#amazon-publisher-servicesapsの初期設定)のSDKとアダプター
 
 ## SDKのインストール
 
