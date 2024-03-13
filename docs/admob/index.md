@@ -2,7 +2,7 @@
 
 ## 前提条件
 
-* Xcode 14.1以上
+* Xcode 15.1以上
 * iOS 12.0以上
 
 ## 事前準備
@@ -18,18 +18,18 @@ AdMobアダプタは[Google Mobile Ads SDK version {{config.version.google}}](ht
 Podfileへ下記のものを記述することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。
 
 ```
-pod 'AdStir-Ads-SDK/AdMob-Package'
+pod 'AdStir-Ads-SDK/AdMobMediationAdapter'
+pod 'AdStir-Ads-SDK/AppLovin'
+pod 'AdStir-Ads-SDK/IMobile'
+pod 'AdStir-Ads-SDK/Maio'
+pod 'AdStir-Ads-SDK/TikTok'
+pod 'AdStir-Ads-SDK/UnityAds'
 ```
 
 #### 手動で導入する場合
 
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込みます。
 1. [AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを導入します。
-1. AdMobメディエーションで利用できる各アドネットワークのアダプターをダウンロードします。
-    * [AppLovin](https://dl.google.com/googleadmobadssdk/mediation/ios/applovin/AppLovinAdapter-{{config.version.applovin}}.0.zip)
-    * [maio](https://dl.google.com/googleadmobadssdk/mediation/ios/maio/MaioAdapter-{{config.version.maio}}.0.zip)
-    * [UnityAds](https://dl.google.com/googleadmobadssdk/mediation/ios/unity/UnityAdapter-{{config.version.unityads}}.0.zip)
-1. ダウンロードしたzipファイルを解凍し、各frameworkをプロジェクトへ追加します。
 
 ### iOS 14以降への対応
 

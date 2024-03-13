@@ -5,6 +5,28 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.0 (2024/03/13)
+
+* adstir SDKおよびメディエーションアダプタをxcframeworkに変更
+* Privacy Manifestへの対応
+* SKAdNetworkに関する修正
+* 対象開発環境をXcode 15.1以上に変更
+* bitcodeの廃止
+* CocoaPods用パッケージのAdMob-Packageの廃止
+    * AdMobアダプタは引き続きご利用いただけます
+* bundle SDKの更新
+    * [AppLovin 12.2.1](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_12_2_1)
+        * 12.0.0/12.2.0でPrivacyManifestへの対応が含まれております
+    * IMobile 2.3.3
+        * 2.3.3でPrivacyManifestへの対応が含まれております
+    * [Maio 2.1.3](https://github.com/imobile/MaioSDK-v2-iOS/releases/tag/v2.1.3)
+	    * 2.1.3でPrivacyManifestへの対応が含まれております
+    * TikTok 5.8.0.7
+        * 5.7.0.8/5.8.0.6でPrivacyManifestへの対応が含まれております
+    * [UnityAds 4.9.3](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.9.3)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 11.0.1
+
 ## v2.15.36 (2024/01/15)
 
 * AdColony SDKのバンドル終了

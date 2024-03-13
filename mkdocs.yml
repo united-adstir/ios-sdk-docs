@@ -19,16 +19,16 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.15.36
-      applovin: 11.11.2
-      imobile: 2.3.2
-      maio: 2.0.0
-      tiktok: 5.4.1.0
-      unityads: 4.8.0
+      adstir: 2.16.0
+      applovin: 12.2.1
+      imobile: 2.3.3
+      maio: 2.1.3
+      tiktok: 5.8.0.7
+      unityads: 4.9.3
       zucks: 4.11.0
-      google: 10.10.0
+      google: 11.0.1
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2024/01/15'
+    skadnid_updated_at: '2024/03/13'
 
 # CSSの設定
 extra_css:
@@ -108,14 +108,8 @@ nav:
         - よくある質問: adstir/info/question.md
   - AdMob:
       - はじめに: admob/index.md
-      - AdMobメディエーション: admob/network.md
       - AdMob配信設定: admob/setting.md
       - よくある質問: admob/question.md
-  - APS:
-      - APSの初期設定: aps/init.md
-      - AdMobバナー: aps/banner.md
-      - AdMobインタースティシャル: aps/interstitial.md
-      - AdMobインタースティシャル(v8 SDK): aps/interstitialv8.md
   - AdManager:
       - はじめに: admanager/index.md
   - MAX:
