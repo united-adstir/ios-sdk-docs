@@ -20,7 +20,7 @@
     * IMobile 2.3.3
         * 2.3.3でPrivacyManifestへの対応が含まれております
     * [Maio 2.1.3](https://github.com/imobile/MaioSDK-v2-iOS/releases/tag/v2.1.3)
-	    * 2.1.3でPrivacyManifestへの対応が含まれております
+        * 2.1.3でPrivacyManifestへの対応が含まれております
     * TikTok 5.8.0.7
         * 5.7.0.8/5.8.0.6でPrivacyManifestへの対応が含まれております
     * [UnityAds 4.9.3](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.9.3)
