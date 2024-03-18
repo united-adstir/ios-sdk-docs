@@ -5,6 +5,11 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.1 (2024/03/18)
+* bundle SDKの更新
+    * [Maio 2.1.4](https://github.com/imobile/MaioSDK-v2-iOS/releases/tag/v2.1.4)
+        * PrivacyManifestに関する修正が含まれております
+
 ## v2.16.0 (2024/03/13)
 
 * adstir SDKおよびメディエーションアダプタをxcframeworkに変更
