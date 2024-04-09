@@ -19,14 +19,14 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.16.1
-      applovin: 12.2.1
-      imobile: 2.3.3
+      adstir: 2.16.2
+      applovin: 12.4.1
+      imobile: 2.3.4
       maio: 2.1.4
-      tiktok: 5.8.0.7
-      unityads: 4.9.3
+      tiktok: 5.8.0.8
+      unityads: 4.10.0
       zucks: 4.11.0
-      google: 11.0.1
+      google: 11.2.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
     skadnid_updated_at: '2024/03/13'
 
