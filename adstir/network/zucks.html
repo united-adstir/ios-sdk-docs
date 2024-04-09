@@ -534,13 +534,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#ビルド設定の変更" class="md-nav__link">
-    ビルド設定の変更
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1363,13 +1356,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#ビルド設定の変更" class="md-nav__link">
-    ビルド設定の変更
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1434,17 +1420,6 @@
 <li><code>Copy items if needed</code>にチェックを入れます。</li>
 <li><code>Add to targets</code>欄で、AdStir SDKを利用するすべてのターゲットにチェックを入れます。</li>
 <li><code>Finish</code>をクリックします。</li>
-</ol>
-<h4 id="ビルド設定の変更"><a class="toclink" href="#ビルド設定の変更">ビルド設定の変更</a><a class="headerlink" href="#ビルド設定の変更" title="Permanent link">&para;</a></h4>
-<ol>
-<li>プロジェクトファイル設定画面を開きます。</li>
-<li>動画広告を組み込むビルドターゲットを選択します。</li>
-<li><strong>Build Target</strong>タブを選択します。</li>
-<li>画面右側の検索窓に<strong>Other Linker Flags</strong>と入力し、検索します。</li>
-<li><strong>Other Linker Flags</strong>欄に、<strong>-ObjC</strong>と設定します。
-Zucks広告を利用するためには、この設定が必須となり、設定がされていない場合は、案件切れ扱いとなってしまいます。</li>
-<li>組み込む対象の全てのビルドターゲットに、同じ設定を行います。
-もしくは、この設定はプロジェクト単位で設定することも可能です。</li>
 </ol>
 <h2 id="infoplistの更新"><a class="toclink" href="#infoplistの更新">Info.plistの更新</a><a class="headerlink" href="#infoplistの更新" title="Permanent link">&para;</a></h2>
 <p>iOS 14以降で<a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a>を利用するために、Info.plistに下記の内容を追加します。</p>
