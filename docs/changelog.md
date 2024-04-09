@@ -5,6 +5,21 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.2 (2024/04/09)
+* 動画リワード広告、全画面インタースティシャル広告で利用する動画プレイヤーを改良
+* App Store ConnectでPrivacyManifestsが正常に検出できるようにSDKを更新
+* Maioアダプタの安定性向上
+* IMobileアダプタの安定性向上
+* bundle SDKの更新
+    * [AppLovin 12.4.1](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_12_4_1)
+        * 12.4.0/12.4.1でPrivacyManifestに関する対応が含まれております
+    * IMobile 2.3.4
+    * TikTok 5.8.0.8
+    * [UnityAds 4.10.0](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.10.0)
+        * 4.10.0でPrivacyManifestへの対応が含まれております
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 11.2.0
+
 ## v2.16.1 (2024/03/18)
 * bundle SDKの更新
     * [Maio 2.1.4](https://github.com/imobile/MaioSDK-v2-iOS/releases/tag/v2.1.4)

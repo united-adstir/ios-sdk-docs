@@ -34,7 +34,9 @@
 
 1. プロジェクトファイル設定画面を開きます
 1. 動画広告を組み込むビルドターゲットを選択します
-1. `Build Target`タブを選択します
+1. `General`タブを選択します
+1. `Frameworks, Libraries, and Embedded Content`内にある`AdstirAds.xcframework`を`Embed and Sign`に変更します
+1. `Build Settings`タブを選択します
 1. 画面右側の検索窓に`Other Linker Flags`と入力し、検索します
 1. `Other Linker Flags`欄に、`-ObjC`と設定します  
 提携アドネットワークのSDKを呼び出すためには、この設定が必須となり、設定がされていない場合は、案件切れ扱いとなってしまいます
