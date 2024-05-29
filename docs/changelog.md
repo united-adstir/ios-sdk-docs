@@ -5,6 +5,19 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.3 (2024/05/29)
+* SKAdNetworkの安定性向上
+* バナー広告、スワイプインタースティシャル広告、動画リワード広告、全画面インタースティシャル広告の安定性向上
+* AdMobネイティブアダプタの安定性向上
+* bundle SDKの更新
+    * [AppLovin 12.5.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_12_5_0)
+    * TikTok 5.9.0.8
+    * [UnityAds 4.11.3](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.11.3)
+    * [Zucks 5.0.0](https://github.com/zucks/ZucksAdNetworkSDK-iOS/releases/tag/5.0.0)
+        * 5.0.0でPrivacyManifestへの対応が含まれております
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 11.5.0
+
 ## v2.16.2 (2024/04/09)
 * 動画リワード広告、全画面インタースティシャル広告で利用する動画プレイヤーを改良
 * App Store ConnectでPrivacyManifestsが正常に検出できるようにSDKを更新
