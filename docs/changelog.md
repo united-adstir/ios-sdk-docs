@@ -5,6 +5,10 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.4 (2024/06/25)
+
+* SKOverlayへの対応
+
 ## v2.16.3 (2024/05/29)
 * SKAdNetworkの安定性向上
 * バナー広告、スワイプインタースティシャル広告、動画リワード広告、全画面インタースティシャル広告の安定性向上
