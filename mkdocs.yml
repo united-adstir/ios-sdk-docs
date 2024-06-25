@@ -19,7 +19,7 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.16.3
+      adstir: 2.16.4
       applovin: 12.5.0
       imobile: 2.3.4
       maio: 2.1.4
