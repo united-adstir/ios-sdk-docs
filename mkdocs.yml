@@ -19,11 +19,11 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.16.4
+      adstir: 2.16.5
       applovin: 12.5.0
       imobile: 2.3.4
       maio: 2.1.4
-      tiktok: 5.9.0.8
+      tiktok: 6.2.0.7
       unityads: 4.11.3
       zucks: 5.0.0
       google: 11.5.0

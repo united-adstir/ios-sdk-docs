@@ -5,6 +5,11 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.5 (2024/09/13)
+* bundle SDKの更新
+    * TikTok 6.2.0.7
+        * iOS 18に関する修正が含まれております
+
 ## v2.16.4 (2024/06/25)
 
 * SKOverlayへの対応
