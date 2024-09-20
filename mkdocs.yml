@@ -19,16 +19,17 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.16.5
+      adstir: 2.16.6
       applovin: 12.5.0
       imobile: 2.3.4
+      ironsource: 8.3.0.0
       maio: 2.1.4
       tiktok: 6.2.0.7
       unityads: 4.11.3
       zucks: 5.0.0
       google: 11.5.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2024/09/13'
+    skadnid_updated_at: '2024/09/24'
 
 # CSSの設定
 extra_css:
@@ -64,6 +65,7 @@ nav:
         - 対応ネットワーク一覧: adstir/network/index.md
         - AppLovin: adstir/network/applovin.md
         - imobile: adstir/network/imobile.md
+        - ironSource: adstir/network/ironsource.md
         - maio: adstir/network/maio.md
         - TikTok: adstir/network/tiktok.md
         - UnityAds: adstir/network/unityads.md

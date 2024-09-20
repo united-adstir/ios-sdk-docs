@@ -5,6 +5,11 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.6 (2024/09/24)
+
+* ironSource SDK (8.3.0.0) とのバナー/動画リワード/全画面インタースティシャル 接続
+    * Xcode 15.1, 15.2ではビルドできませんのでXcode 15.3以上をお使いください
+
 ## v2.16.5 (2024/09/13)
 * bundle SDKの更新
     * TikTok 6.2.0.7
