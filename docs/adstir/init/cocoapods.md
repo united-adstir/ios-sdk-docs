@@ -40,6 +40,7 @@ AdStir-Ads-SDK|adstir SDK
 AdStir-Ads-SDK/AdMobMediationAdapter| adstir SDK / adstirのAdMobアダプター
 AdStir-Ads-SDK/AppLovin| adstir SDK / AppLovin SDKとアダプター
 AdStir-Ads-SDK/IMobile| adstir SDK / IMobile SDKとアダプター
+AdStir-Ads-SDK/IronSource| adstir SDK / IronSource SDKとアダプター
 AdStir-Ads-SDK/Maio| adstir SDK / Maio SDKとアダプター
 AdStir-Ads-SDK/TikTok| adstir SDK / TikTok SDKとアダプター
 AdStir-Ads-SDK/UnityAds| adstir SDK / UnityAds SDKとアダプター

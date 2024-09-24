@@ -21,6 +21,7 @@ Podfileへ下記のものを記述することで、adstirが利用するアド�
 pod 'AdStir-Ads-SDK/AdMobMediationAdapter'
 pod 'AdStir-Ads-SDK/AppLovin'
 pod 'AdStir-Ads-SDK/IMobile'
+pod 'AdStir-Ads-SDK/IronSource'
 pod 'AdStir-Ads-SDK/Maio'
 pod 'AdStir-Ads-SDK/TikTok'
 pod 'AdStir-Ads-SDK/UnityAds'
@@ -29,6 +30,7 @@ pod 'AdStir-Ads-SDK/UnityAds'
 #### 手動で導入する場合
 
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージを組み込みます。
+    * バナー広告のみをご利用される場合は営業担当までお問い合わせください
 1. [AdMobのスタートガイド](https://developers.google.com/admob/ios/quick-start?hl=ja#manual_download)を参考にGoogleMobileAds SDKを導入します。
 
 ### iOS 14以降への対応
