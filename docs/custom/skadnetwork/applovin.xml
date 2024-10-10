@@ -287,6 +287,10 @@
     </dict>
     <dict>
         <key>SKAdNetworkIdentifier</key>
+        <string>cwn433xbcr.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
         <string>dbu4b84rxf.skadnetwork</string>
     </dict>
     <dict>
