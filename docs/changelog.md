@@ -5,6 +5,13 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.16.7 (2024/10/11)
+
+* AppLovin SDKのAPI変更に伴うAppLovin MAXアダプターの改修
+    * AppLovin SDK v13.0.0以上をご利用の方はadstir SDK v2.16.7以上をご利用ください
+* bundle SDKの更新
+    * [AppLovin 13.0.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_13_0_0)
+
 ## v2.16.6 (2024/09/24)
 
 * ironSource SDK (8.3.0.0) とのバナー/動画リワード/全画面インタースティシャル 接続
