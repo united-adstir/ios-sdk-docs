@@ -5,6 +5,10 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.17.0 (2024/11/07)
+
+* アプリ起動時広告に対応
+
 ## v2.16.7 (2024/10/11)
 
 * AppLovin SDKのAPI変更に伴うAppLovin MAXアダプターの改修

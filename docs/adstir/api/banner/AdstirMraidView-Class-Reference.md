@@ -116,7 +116,7 @@ YESを設定すると、AdstirMraidViewがWindowに追加される際に自動�
 * _media_
     * メディアID
 * _spot_
-    * スポットID
+    * 枠No
 
 ***
 
@@ -136,7 +136,7 @@ YESを設定すると、AdstirMraidViewがWindowに追加される際に自動�
 * _media_
     * メディアID
 * _spot_
-    * スポットID
+    * 枠No
 
 ***
 

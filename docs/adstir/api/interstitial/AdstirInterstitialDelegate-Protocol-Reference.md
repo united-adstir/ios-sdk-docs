@@ -50,7 +50,7 @@
 ```
 
 #### Parameters
-* _Interstitial_
+* _interstitial_
     * インタースティシャル広告を表示したインスタンス
 
 ***

@@ -98,7 +98,7 @@ YESを設定すると、AdstirFullscreenViewがWindowに追加される際に自
 * _media_
     * メディアID
 * _spot_
-    * スポットID
+    * 枠No
 
 ***
 
@@ -116,7 +116,7 @@ YESを設定すると、AdstirFullscreenViewがWindowに追加される際に自
 * _media_
     * メディアID
 * _spot_
-    * スポットID
+    * 枠No
 
 ***
 
