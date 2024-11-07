@@ -706,6 +706,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="appopen.html" title="アプリ起動時広告" class="md-nav__link">
+      アプリ起動時広告
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1033,6 +1045,54 @@
   <li class="md-nav__item">
     <a href="../api/interstitial/AdstirInterstitialDelegate-Protocol-Reference.html" title="AdstirInterstitialDelegate" class="md-nav__link">
       AdstirInterstitialDelegate
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5-8" type="checkbox" id="nav-2-5-8">
+    
+    <label class="md-nav__link" for="nav-2-5-8">
+      アプリ起動時広告
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-5-8">
+        アプリ起動時広告
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/appopen/AdstirAppOpenAd-Class-Reference.html" title="AdstirAppOpenAd" class="md-nav__link">
+      AdstirAppOpenAd
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../api/appopen/AdstirAppOpenAdDelegate-Protocol-Reference.html" title="AdstirAppOpenAdDelegate" class="md-nav__link">
+      AdstirAppOpenAdDelegate
     </a>
   </li>
 
@@ -1416,7 +1476,7 @@
         <span class="c1">// 広告表示位置: タブバーの下でセンタリング、広告サイズ: 320,50 の場合</span>
         <span class="kd">var</span> <span class="nv">originY</span> <span class="p">=</span> <span class="bp">UIApplication</span><span class="p">.</span><span class="n">sharedApplication</span><span class="p">().</span><span class="n">statusBarFrame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">height</span>
         <span class="kd">var</span> <span class="nv">originX</span> <span class="p">=</span> <span class="p">(</span><span class="kc">self</span><span class="p">.</span><span class="n">view</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">kAdstirAdSize320x50</span><span class="p">.</span><span class="n">size</span><span class="p">.</span><span class="n">width</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-        <span class="kd">var</span> <span class="nv">adView</span> <span class="p">=</span> <span class="n">AdstirMraidView</span><span class="p">(</span><span class="n">adSize</span><span class="p">:</span> <span class="n">kAdstirAdSize320x50</span><span class="p">,</span> <span class="n">origin</span><span class="p">:</span> <span class="n">CGPointMake</span><span class="p">(</span><span class="n">originX</span><span class="p">,</span> <span class="n">originY</span><span class="p">),</span> <span class="n">media</span><span class="p">:</span> <span class="s">&quot;MEDIA-899477da&quot;</span><span class="p">,</span> <span class="n">spot</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="kd">var</span> <span class="nv">adView</span> <span class="p">=</span> <span class="n">AdstirMraidView</span><span class="p">(</span><span class="n">adSize</span><span class="p">:</span> <span class="n">kAdstirAdSize320x50</span><span class="p">,</span> <span class="n">origin</span><span class="p">:</span> <span class="n">CGPointMake</span><span class="p">(</span><span class="n">originX</span><span class="p">,</span> <span class="n">originY</span><span class="p">),</span> <span class="n">media</span><span class="p">:</span> <span class="s">&quot;メディアID&quot;</span><span class="p">,</span> <span class="n">spot</span><span class="p">:</span> <span class="err">枠</span><span class="n">No</span><span class="p">)</span>
 
         <span class="c1">// リフレッシュ秒数を設定します。</span>
         <span class="n">adView</span><span class="p">.</span><span class="n">intervalTime</span> <span class="p">=</span> <span class="err">広告リフレッシュ秒</span><span class="p">[</span><span class="err">整数</span><span class="p">]</span>
