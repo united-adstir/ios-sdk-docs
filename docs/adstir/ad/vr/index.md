@@ -86,7 +86,7 @@ func adstirVideoRewardDidLoad(_ videoReward: AdstirVideoReward) {
 }
 
 /** 動画の再生準備に失敗した際に呼び出されます */
-func adstirVideoReward(_ videoReward: AdstirVideoReward, didFailToLoadWithError error: NSError) {
+func adstirVideoReward(_ videoReward: AdstirVideoReward, didFailToLoadWithError error: Error) {
 }
 
 /** 動画の再生開始イベントを受け取ります */

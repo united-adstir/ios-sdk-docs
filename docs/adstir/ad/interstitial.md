@@ -76,13 +76,13 @@ override func viewDidLoad() {
 func adstirInterstitialDidLoad(_ interstitial: AdstirInterstitial) {
 }
 /** インタースティシャル広告の準備に失敗した際に呼び出されます */
-func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToLoadWithError error: NSError) {
+func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToLoadWithError error: Error) {
 }
 /** インタースティシャル広告が表示された際に呼び出されます */
 func adstirInterstitialDidShow(_ interstitial: AdstirInterstitial) {
 }
 /** インタースティシャル広告の表示に失敗した際に呼び出されます */
-func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToShowWithError error: NSError) {
+func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToShowWithError error: Error) {
 }
 /** インタースティシャル広告が閉じられたときに呼び出されます */
 func adstirInterstitialDidClose(_ interstitial: AdstirInterstitial) {
@@ -342,7 +342,7 @@ class ViewController: UIViewController, AdstirInterstitialDelegate {
      
      インタースティシャル広告の準備に失敗した際に呼び出されます
      */
-    func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToLoadWithError error: NSError) {
+    func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToLoadWithError error: Error) {
         NSLog("広告の読み込みに失敗しました")
         
         // 15秒待ってから再読み込みします
@@ -366,7 +366,7 @@ class ViewController: UIViewController, AdstirInterstitialDelegate {
      
      インタースティシャル広告の表示に失敗した際に呼び出されます
      */
-    func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToShowWithError error: NSError) {
+    func adstirInterstitial(_ interstitial: AdstirInterstitial, didFailToShowWithError error: Error) {
         NSLog("広告の表示に失敗しました")
 
         // 15秒待ってから再読み込みします

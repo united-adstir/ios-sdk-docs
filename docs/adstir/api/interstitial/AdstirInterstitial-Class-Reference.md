@@ -54,7 +54,7 @@
     * メディアID
 
 * _spot_
-    * スポットID
+    * 枠No
 
 
 #### Returns

@@ -70,7 +70,7 @@ class FooViewController: UIViewController, AdstirMraidViewDelegate {
         // 広告表示位置: タブバーの下でセンタリング、広告サイズ: 320,50 の場合
         var originY = UIApplication.sharedApplication().statusBarFrame.size.height
         var originX = (self.view.frame.size.width - kAdstirAdSize320x50.size.width) / 2
-        var adView = AdstirMraidView(adSize: kAdstirAdSize320x50, origin: CGPointMake(originX, originY), media: "MEDIA-899477da", spot: 2)
+        var adView = AdstirMraidView(adSize: kAdstirAdSize320x50, origin: CGPointMake(originX, originY), media: "メディアID", spot: 枠No)
 
         // リフレッシュ秒数を設定します。
         adView.intervalTime = 広告リフレッシュ秒[整数]
