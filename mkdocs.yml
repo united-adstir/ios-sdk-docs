@@ -19,7 +19,7 @@ extra:
   language: 'jp'
   config:
     version:
-      adstir: 2.17.0
+      adstir: 2.17.1
       applovin: 13.0.0
       imobile: 2.3.4
       ironsource: 8.3.0.0
@@ -29,7 +29,7 @@ extra:
       zucks: 5.0.0
       google: 11.5.0
     sample_url: 'https://dl.ad-stir.com/sample/AdstirAdsSdkiOS-2.15.26-SampleApp.zip'
-    skadnid_updated_at: '2024/11/07'
+    skadnid_updated_at: '2024/11/26'
 
 # CSSの設定
 extra_css:
