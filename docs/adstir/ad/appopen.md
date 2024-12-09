@@ -126,11 +126,11 @@ if (adstirAppOpenAd.canShow()) {
 
 - (void)sceneDidBecomeActive:(UIScene *)scene {
     // アプリ復帰時に広告の表示を試みます
-    [self showAdAvailable];
+    [self showIfAvailable];
 }
 
 
-- (void)showAdAvailable {
+- (void)showIfAvailable {
     // アプリ起動時広告の初期化を行います
     if (self.adstirAppOpenAd == nil) {
         self.adstirAppOpenAd = [[AdstirAppOpenAd alloc] initWithMedia:@"メディアID" spot:枠No];
@@ -191,10 +191,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, AdstirAppOpenAdDelegate
     // ...
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        showAdAvailable()
+        showIfAvailable()
     }
 
-    func showAdAvailable() {
+    func showIfAvailable() {
         // アプリ起動時広告の読み込みが完了している場合は表示、そうでない場合は読み込みを行います
         if (adstirAppOpenAd.canShow()) {
             adstirAppOpenAd.show()
