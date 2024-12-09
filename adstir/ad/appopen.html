@@ -1546,11 +1546,11 @@
 
 <span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sceneDidBecomeActive:</span><span class="p">(</span><span class="n">UIScene</span> <span class="o">*</span><span class="p">)</span><span class="nv">scene</span> <span class="p">{</span>
     <span class="c1">// アプリ復帰時に広告の表示を試みます</span>
-    <span class="p">[</span><span class="nb">self</span> <span class="n">showAdAvailable</span><span class="p">];</span>
+    <span class="p">[</span><span class="nb">self</span> <span class="n">showIfAvailable</span><span class="p">];</span>
 <span class="p">}</span>
 
 
-<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showAdAvailable</span> <span class="p">{</span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">showIfAvailable</span> <span class="p">{</span>
     <span class="c1">// アプリ起動時広告の初期化を行います</span>
     <span class="k">if</span> <span class="p">(</span><span class="nb">self</span><span class="p">.</span><span class="n">adstirAppOpenAd</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
         <span class="nb">self</span><span class="p">.</span><span class="n">adstirAppOpenAd</span> <span class="o">=</span> <span class="p">[[</span><span class="n">AdstirAppOpenAd</span> <span class="n">alloc</span><span class="p">]</span> <span class="nl">initWithMedia</span><span class="p">:</span><span class="s">@&quot;メディアID&quot;</span> <span class="nl">spot</span><span class="p">:</span><span class="err">枠</span><span class="n">No</span><span class="p">];</span>
@@ -1611,10 +1611,10 @@
     <span class="c1">// ...</span>
 
     <span class="kd">func</span> <span class="nf">sceneDidBecomeActive</span><span class="p">(</span><span class="kc">_</span> <span class="n">scene</span><span class="p">:</span> <span class="n">UIScene</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">showAdAvailable</span><span class="p">()</span>
+        <span class="n">showIfAvailable</span><span class="p">()</span>
     <span class="p">}</span>
 
-    <span class="kd">func</span> <span class="nf">showAdAvailable</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">showIfAvailable</span><span class="p">()</span> <span class="p">{</span>
         <span class="c1">// アプリ起動時広告の読み込みが完了している場合は表示、そうでない場合は読み込みを行います</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">adstirAppOpenAd</span><span class="p">.</span><span class="n">canShow</span><span class="p">())</span> <span class="p">{</span>
             <span class="n">adstirAppOpenAd</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
