@@ -5,6 +5,11 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.17.2 (2024/12/16)
+
+* bundle SDKの更新
+    * [ironSource 8.5.0](https://developers.is.com/ironsource-mobile/ios/sdk-change-log/)
+
 ## v2.17.1 (2024/11/26)
 
 * 動画リワード広告、全画面インタースティシャル広告、アプリ起動時広告の安定性向上
