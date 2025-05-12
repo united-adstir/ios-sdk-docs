@@ -317,5 +317,29 @@
         <key>SKAdNetworkIdentifier</key>
         <string>vhf287vqwu.skadnetwork</string>
     </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>s39g8k73mm.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>a8cz6cu7e5.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>5tjdwbrq8w.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>v275upjj5gd.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>a2p9lx4jpn.skadnetwork</string>
+    </dict>
+    <dict>
+        <key>SKAdNetworkIdentifier</key>
+        <string>fq6vru337s.skadnetwork</string>
+    </dict>
 </array>
 </plist>
