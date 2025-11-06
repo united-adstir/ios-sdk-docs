@@ -5,6 +5,18 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.17.4 (2025/11/06)
+
+* AppLovinアダプタの安定性向上
+* bundle SDKの更新
+    * [AppLovin 13.4.0](https://github.com/AppLovin/AppLovin-MAX-SDK-iOS/releases/tag/release_13_4_0)
+    * [Maio 2.1.6](https://github.com/imobile/MaioSDK-v2-iOS/releases/tag/v2.1.6)
+    * TikTok 7.7.0.4
+    * [UnityAds 4.15.1](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.15.1)
+    * Zucks 6.0.0
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 12.12.0
+
 ## v2.17.3 (2025/02/05)
 
 * 動画リワード広告、全画面インタースティシャル広告、アプリ起動時広告の安定性向上
