@@ -648,6 +648,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#osバージョンの使用" class="md-nav__link">
+    OSバージョンの使用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#よくある質問" class="md-nav__link">
     よくある質問
   </a>
@@ -1395,6 +1402,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#osバージョンの使用" class="md-nav__link">
+    OSバージョンの使用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#よくある質問" class="md-nav__link">
     よくある質問
   </a>
@@ -1551,6 +1565,41 @@ iOS 14以降では isAdvertisingTrackingEnabled はDeprecatedとなっている�
   <span class="nx">lmt</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// ユーザーがオプトアウトしている場合は、trueを設定してください</span>
   <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子の種類(Apple - IDFA)</span>
   <span class="nx">uid</span><span class="o">:</span> <span class="s2">&quot;{ここに広告識別子を書き出す}&quot;</span><span class="p">,</span> <span class="c1">// 広告識別子</span>
+<span class="p">};</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+
+<h2 id="osバージョンの使用"><a class="toclink" href="#osバージョンの使用">OSバージョンの使用</a><a class="headerlink" href="#osバージョンの使用" title="Permanent link">&para;</a></h2>
+<p>アプリに掲載する広告は、OSバージョンを送信することでさらなる収益化が可能になる場合があります。</p>
+<p>OSバージョンの取得方法は、下記取得サンプルまたは<a href="https://developer.apple.com/documentation/uikit/uidevice/systemversion/">公式ドキュメント(英語)</a>をご覧下さい。</p>
+<div class="superfences-tabs">
+<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
+<label for="__tab_2_0">swift</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="kd">let</span> <span class="nv">osVersion</span> <span class="p">=</span> <span class="bp">UIDevice</span><span class="p">.</span><span class="n">current</span><span class="p">.</span><span class="n">systemVersion</span>
+</pre></div></div>
+<input name="__tabs_2" type="radio" id="__tab_2_1" />
+<label for="__tab_2_1">objective-c</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><span class="bp">NSString</span> <span class="o">*</span><span class="n">osVersion</span> <span class="o">=</span> <span class="bp">UIDevice</span><span class="p">.</span><span class="n">currentDevice</span><span class="p">.</span><span class="n">systemVersion</span><span class="p">;</span>
+</pre></div></div>
+</div>
+<p>HTMLを生成する際に<code>{ここにOSバージョンを書き出す}</code>の部分を、取得したOSバージョンで置換してください。</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">style</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">&gt;</span>
+<span class="nt">html</span><span class="o">,</span><span class="nt">body</span> <span class="p">{</span> <span class="k">margin</span><span class="p">:</span><span class="mi">0</span><span class="p">;</span> <span class="k">padding</span><span class="p">:</span><span class="mi">0</span> <span class="p">}</span> <span class="c">/* marginとpaddingを0に */</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+<span class="kd">var</span> <span class="nx">adstir_vars</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">ver</span><span class="o">:</span> <span class="s2">&quot;4.0&quot;</span><span class="p">,</span>
+  <span class="nx">platform</span><span class="o">:</span> <span class="s2">&quot;webview&quot;</span><span class="p">,</span>
+  <span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;native&quot;</span><span class="p">,</span>
+  <span class="nx">app_id</span><span class="o">:</span> <span class="s2">&quot;MEDIA-aeeaa332&quot;</span><span class="p">,</span>
+  <span class="nx">ad_spot</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="nx">async</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">origin</span><span class="o">:</span> <span class="s2">&quot;com.foo.bar.baz&quot;</span><span class="p">,</span>
+  <span class="nx">lmt</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nx">id</span><span class="o">:</span> <span class="s2">&quot;apple&quot;</span><span class="p">,</span>
+  <span class="nx">uid</span><span class="o">:</span> <span class="s2">&quot;{ここに広告識別子を書き出す}&quot;</span><span class="p">,</span>
+  <span class="nx">os_version</span><span class="o">:</span> <span class="s2">&quot;{ここにOSバージョンを書き出す}&quot;</span> <span class="c1">// 取得したOSバージョン</span>
 <span class="p">};</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://js.ad-stir.com/js/adstir_native.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
