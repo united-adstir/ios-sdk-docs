@@ -5,6 +5,14 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.17.5 (2025/12/12)
+
+* API変更に伴うironSourceアダプタの修正
+* スワイプインタースティシャル広告のAPIを非推奨に変更
+    * こちらの広告フォーマットは廃止予定になります
+* bundle SDKの更新
+    * [ironSource 9.2.0](https://developers.is.com/ironsource-mobile/ios/sdk-change-log/)
+
 ## v2.17.4 (2025/11/06)
 
 * AppLovinアダプタの安定性向上

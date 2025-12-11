@@ -7,7 +7,7 @@
 
 ## 対応OS
 
-iOS 12.0以上
+iOS 12.0以上 (バナー広告はiOS14.0以上)
 
 ## SDKの準備
 
@@ -15,6 +15,10 @@ IronSourceのSDKは、VideoAdSDKBundledのパッケージに同梱されてお�
 作成された動画枠の`動画SDK (iOS)`より取得いただけます。
 
 バナー広告を利用し、CocoaPodsを利用していない場合は営業担当までお問い合わせください。
+
+!!! info
+    IronSource SDKはSwiftが使用されています。  
+    プロジェクトでSwiftを使用していない場合はプロジェクトに空のSwiftファイルを追加してください。
 
 ### CocoaPodsを利用して組み込む場合
 
