@@ -12,6 +12,10 @@ iOS 12.0以上
 AppLovinのSDKは、VideoAdSDKBundledのパッケージに同梱されております。
 作成された動画枠の`動画SDK (iOS)`より取得いただけます。
 
+!!! info
+    AppLovin SDKはSwiftが使用されています。  
+    プロジェクトでSwiftを使用していない場合はプロジェクトに空のSwiftファイルを追加してください。
+
 ### CocoaPodsを利用して組み込む場合
 
 CocoaPodsでの導入については[こちら](../init/cocoapods.md)をご覧ください。
