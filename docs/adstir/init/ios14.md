@@ -18,7 +18,6 @@ iOS 14以降で[SKAdNetwork](https://developer.apple.com/documentation/storekit/
 - [x] maio
 - [x] TikTok
 - [x] UnityAds
-- [x] Zucks
 
 [更新](javascript:update_items()){: .md-button .md-button--primary }
 

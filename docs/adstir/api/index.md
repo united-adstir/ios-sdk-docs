@@ -7,14 +7,6 @@ adstir SDKのAPIリファレンスです。
 * [AdstirMraidView](banner/AdstirMraidView-Class-Reference.md)
 * [AdstirMraidViewDelegate](banner/AdstirMraidViewDelegate-Protocol-Reference.md)
 
-## スワイプインタースティシャル広告
-
-* [AdstirFullscreenView](swipe/AdstirFullscreenView-Class-Reference.md)
-* [AdstirMraidViewDelegate](banner/AdstirMraidViewDelegate-Protocol-Reference.md)
-
-!!! note    
-    スワイプインタースティシャル広告はバナー広告と同じDelegateを利用できます。
-
 ## ネイティブ広告
 
 * [AdstirNativeAd](native/AdstirNativeAd-Class-Reference.md)

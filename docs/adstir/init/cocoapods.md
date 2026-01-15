@@ -46,7 +46,6 @@ AdStir-Ads-SDK/TikTok| adstir SDK / TikTok SDKとアダプター
 AdStir-Ads-SDK/UnityAds| adstir SDK / UnityAds SDKとアダプター
 AdStir-Ads-SDK/All-Incentivized| adstir SDK / 動画リワード対応しているSDKとアダプター
 AdStir-Ads-SDK/All-Interstitial| adstir SDK / 全画面インタースティシャル対応しているSDKとアダプター
-AdStir-Ads-SDK/All-Swipeinterstitial| adstir SDK / スワイプインタースティシャル対応しているSDKとアダプター
 AdStir-Ads-SDK/All-adstir| adstir SDK / [adstirと提携しているアドネットワーク](../network/index.md#提携対応アドネットワーク)のSDKとアダプター
 
 ## SDKのインストール
