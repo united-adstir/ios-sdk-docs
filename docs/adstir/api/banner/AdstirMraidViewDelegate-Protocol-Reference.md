@@ -1,6 +1,6 @@
 # AdstirMraidViewDelegate Protocol Reference
 
-バナー広告とスワイプインタースティシャル広告のデリゲートです。
+バナー広告のデリゲートです。
 
 ## Instance Methods
 * [-adstirMraidViewWillPresentScreen:](#-adstirmraidviewwillpresentscreen)
@@ -51,7 +51,6 @@
 
 ### -adstirMraidViewWillLeaveApplication:
 広告がクリックされ、遷移する前に呼び出されます。
-`スワイプインタースティシャル広告はこちらのDelegateのみ呼び出されます。`
 
 ```objc
 - (void)adstirMraidViewWillLeaveApplication:(AdstirMraidView *)mraidView;

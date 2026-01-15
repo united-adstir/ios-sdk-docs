@@ -27,7 +27,4 @@
 
 * [https://unityads.unity3d.com/help/ios/apple-privacy-survey](https://unityads.unity3d.com/help/ios/apple-privacy-survey)
 
-## Zucks
-
-* [https://ms.zucksadnetwork.com/media/sdk/manual/ios/#app-review](https://ms.zucksadnetwork.com/media/sdk/manual/ios/#app-review)
 
