@@ -5,7 +5,7 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
-## v2.17.6 (2025/01/15)
+## v2.17.6 (2026/01/15)
 
 * スワイプインタースティシャル広告の廃止
 * Zucks SDKのバンドル終了
