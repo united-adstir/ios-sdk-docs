@@ -2,11 +2,6 @@
 
 各提携対応ネットワークが取得するプライバシーデータは下記よりご確認いただけます。
 
-## AppLovin
-
-* [https://www.applovin.com/privacy-jp/](https://www.applovin.com/privacy-jp/)
-    * 「情報の収集および使用」に記載があります
-
 ## imobile
 
 * [https://sppartner.i-mobile.co.jp/webdoc/index.html#objective-c/collected-data.html](https://sppartner.i-mobile.co.jp/webdoc/index.html#objective-c/collected-data.html)
@@ -25,6 +20,6 @@
 
 ## UnityAds
 
-* [https://unityads.unity3d.com/help/ios/apple-privacy-survey](https://unityads.unity3d.com/help/ios/apple-privacy-survey)
+* [https://docs.unity.com/en-us/grow/ads/privacy/apple-privacy-survey](https://docs.unity.com/en-us/grow/ads/privacy/apple-privacy-survey)
 
 
