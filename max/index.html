@@ -1247,6 +1247,26 @@
     SDKの導入
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cocoapodsでの導入" class="md-nav__link">
+    CocoaPodsでの導入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swift-package-managerでの導入" class="md-nav__link">
+    Swift Package Managerでの導入
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1384,6 +1404,26 @@
     SDKの導入
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cocoapodsでの導入" class="md-nav__link">
+    CocoaPodsでの導入
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swift-package-managerでの導入" class="md-nav__link">
+    Swift Package Managerでの導入
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1475,12 +1515,20 @@ AppLovin MAXアダプタは<a href="https://github.com/AppLovin/AppLovin-MAX-SDK
 <h2 id="カスタムsdkネットワーク導入"><a class="toclink" href="#カスタムsdkネットワーク導入">カスタムSDKネットワーク導入</a><a class="headerlink" href="#カスタムsdkネットワーク導入" title="Permanent link">&para;</a></h2>
 <p><a href="https://dash.applovin.com/documentation/mediation/ios/mediation-setup/custom-sdk">カスタムSDKネットワーク導入</a>を行うために、adstirのSDKとメディエーションアダプターを追加します。  </p>
 <h3 id="sdkの導入"><a class="toclink" href="#sdkの導入">SDKの導入</a><a class="headerlink" href="#sdkの導入" title="Permanent link">&para;</a></h3>
+<h4 id="cocoapodsでの導入"><a class="toclink" href="#cocoapodsでの導入">CocoaPodsでの導入</a><a class="headerlink" href="#cocoapodsでの導入" title="Permanent link">&para;</a></h4>
 <p>Podfileへ下記のものを記述することで、adstir SDKとアダプターを一括で導入することができます。</p>
 <div class="codehilite"><pre><span></span><span class="err">pod &#39;AdStir-Ads-SDK/AppLovinMaxMediationAdapter&#39;</span>
 </pre></div>
 
 <p>そのほか、AppLovin MAXメディエーションで利用していないネットワークを追加することをおすすめします。
 導入する場合は<a href="../adstir/init/cocoapods.html#podfileの編集">こちら</a>を参考にpodfileに記載していただくか、営業担当までご連絡ください。</p>
+<h4 id="swift-package-managerでの導入"><a class="toclink" href="#swift-package-managerでの導入">Swift Package Managerでの導入</a><a class="headerlink" href="#swift-package-managerでの導入" title="Permanent link">&para;</a></h4>
+<p>Xcodeのメニューの <code>File &gt; Add Package Dependencies...</code> から、下記のGitHubリポジトリを検索し、パッケージを追加してください。</p>
+<div class="codehilite"><pre><span></span><span class="c">https://github.com/united-adstir/adstirsdk-maxadapter-swift-package.git</span>
+</pre></div>
+
+<p>そのほか、AppLovin MAXメディエーションで利用していないネットワークを追加することをおすすめします。
+導入する場合は<a href="../init/spm.md">こちら</a>を参考にメディエーションアダプタを追加していただくか、営業担当までご連絡ください。</p>
 <h3 id="ios-14以降への対応"><a class="toclink" href="#ios-14以降への対応">iOS 14以降への対応</a><a class="headerlink" href="#ios-14以降への対応" title="Permanent link">&para;</a></h3>
 <p><a href="../adstir/init/ios14.html">こちら</a>のページを参考にiOS 14以降へのご対応をお願いいたします。</p>
 <h2 id="カスタムsdkネットワークを追加する"><a class="toclink" href="#カスタムsdkネットワークを追加する">カスタムSDKネットワークを追加する</a><a class="headerlink" href="#カスタムsdkネットワークを追加する" title="Permanent link">&para;</a></h2>
