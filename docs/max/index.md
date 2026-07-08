@@ -16,6 +16,8 @@ AppLovin MAXアダプタは[Applovin SDK version {{config.version.applovin}}](ht
 
 ### SDKの導入
 
+#### CocoaPodsでの導入
+
 Podfileへ下記のものを記述することで、adstir SDKとアダプターを一括で導入することができます。
 
 ```
@@ -24,6 +26,17 @@ pod 'AdStir-Ads-SDK/AppLovinMaxMediationAdapter'
 
 そのほか、AppLovin MAXメディエーションで利用していないネットワークを追加することをおすすめします。
 導入する場合は[こちら](../adstir/init/cocoapods.md#podfileの編集)を参考にpodfileに記載していただくか、営業担当までご連絡ください。
+
+#### Swift Package Managerでの導入
+
+Xcodeのメニューの `File > Add Package Dependencies...` から、下記のGitHubリポジトリを検索し、パッケージを追加してください。
+
+```
+https://github.com/united-adstir/adstirsdk-maxadapter-swift-package.git
+```
+
+そのほか、AppLovin MAXメディエーションで利用していないネットワークを追加することをおすすめします。
+導入する場合は[こちら](../init/spm.md)を参考にメディエーションアダプタを追加していただくか、営業担当までご連絡ください。
 
 ### iOS 14以降への対応
 
