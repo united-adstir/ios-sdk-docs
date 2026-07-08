@@ -22,7 +22,17 @@ IMobileを利用される場合、Podfileに下記の記述を追記します。
 pod 'AdStir-Ads-SDK/IMobile'
 ```
 
-### CocoaPodsを利用せず組み込む場合
+### Swift Package Managerを利用して組み込む場合
+
+Swift Package Managerでの導入については[こちら](../init/spm.md)をご覧ください。
+
+IMobileを利用される場合、下記のGitHubリポジトリを検索し、パッケージを追加してください。
+
+```
+https://github.com/united-adstir/adstirsdk-mediationadapter-imobile-swift-package.git
+```
+
+### 手動で組み込む場合
 
 #### プロジェクトへのSDKの追加
 

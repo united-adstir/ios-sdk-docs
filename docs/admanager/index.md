@@ -28,6 +28,19 @@ pod 'AdStir-Ads-SDK/TikTok'
 pod 'AdStir-Ads-SDK/UnityAds'
 ```
 
+#### Swift Package Managerを利用している場合
+
+Xcodeのメニューの `File > Add Package Dependencies...` から、下記のGitHubリポジトリを検索し、パッケージを追加してください。
+
+```
+https://github.com/united-adstir/adstirsdk-admobadapter-swift-package.git
+https://github.com/united-adstir/adstirsdk-mediationadapter-imobile-swift-package.git
+https://github.com/united-adstir/adstirsdk-mediationadapter-ironsource-swift-package.git
+https://github.com/united-adstir/adstirsdk-mediationadapter-maio-swift-package.git
+https://github.com/united-adstir/adstirsdk-mediationadapter-tiktok-swift-package.git
+https://github.com/united-adstir/adstirsdk-mediationadapter-unityads-swift-package.git
+```
+
 #### 手動で導入する場合
 
 1. [こちら](../adstir/init/manual_integration.md#sdkの手動組み込み)を参考にadstirの動画パッケージとGoogleMobileAds用アダプターを組み込みます。
