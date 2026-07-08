@@ -17,7 +17,7 @@ platformの行は、プロジェクトに応じて適宜設定してください
 
 ```ruby
 # Uncomment the next line to define a global platform for your project
-platform :ios, "12.0"
+platform :ios, "13.0"
 pod 'AdStir-Ads-SDK'
 
 # AdMobメディエーションを利用する場合は、下記のコメントを外します。
@@ -38,7 +38,6 @@ pod | 導入されるもの
 ---|---
 AdStir-Ads-SDK|adstir SDK
 AdStir-Ads-SDK/AdMobMediationAdapter| adstir SDK / adstirのAdMobアダプター
-AdStir-Ads-SDK/AppLovin| adstir SDK / AppLovin SDKとアダプター
 AdStir-Ads-SDK/IMobile| adstir SDK / IMobile SDKとアダプター
 AdStir-Ads-SDK/IronSource| adstir SDK / IronSource SDKとアダプター
 AdStir-Ads-SDK/Maio| adstir SDK / Maio SDKとアダプター

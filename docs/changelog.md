@@ -5,6 +5,17 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.17.7 (2026/07/08)
+
+* 対応OSバージョンをiOS 13.0以上に変更
+* AppLovin SDKのバンドル終了
+* bundle SDKの更新
+    * [ironSource 9.4.1](https://docs.unity.com/en-us/grow/levelplay/sdk/ios/changelog)
+    * TikTok 8.1.0.6
+    * [UnityAds 4.17.0](https://github.com/Unity-Technologies/unity-ads-ios/releases/tag/4.17.0)
+* AdMobアダプタ ビルド・テスト
+    * Google Mobile Ads SDK version 13.3.0
+
 ## v2.17.6 (2026/01/15)
 
 * スワイプインタースティシャル広告の廃止

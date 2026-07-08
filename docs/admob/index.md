@@ -3,7 +3,7 @@
 ## 前提条件
 
 * Xcode 15.1以上
-* iOS 12.0以上
+* iOS 13.0以上
 
 ## 事前準備
 
@@ -19,7 +19,6 @@ Podfileへ下記のものを記述することで、adstirが利用するアド�
 
 ```
 pod 'AdStir-Ads-SDK/AdMobMediationAdapter'
-pod 'AdStir-Ads-SDK/AppLovin'
 pod 'AdStir-Ads-SDK/IMobile'
 pod 'AdStir-Ads-SDK/IronSource'
 pod 'AdStir-Ads-SDK/Maio'
