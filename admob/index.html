@@ -342,6 +342,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../adstir/init/spm.html" title="Swift Package Manager" class="md-nav__link">
+      Swift Package Manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../adstir/init/manual_integration.html" title="手動組み込み" class="md-nav__link">
       手動組み込み
     </a>
@@ -397,18 +409,6 @@
   <li class="md-nav__item">
     <a href="../adstir/network/index.html" title="対応ネットワーク一覧" class="md-nav__link">
       対応ネットワーク一覧
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../adstir/network/applovin.html" title="AppLovin" class="md-nav__link">
-      AppLovin
     </a>
   </li>
 
@@ -1451,17 +1451,16 @@
 <h2 id="前提条件"><a class="toclink" href="#前提条件">前提条件</a><a class="headerlink" href="#前提条件" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Xcode 15.1以上</li>
-<li>iOS 12.0以上</li>
+<li>iOS 13.0以上</li>
 </ul>
 <h2 id="事前準備"><a class="toclink" href="#事前準備">事前準備</a><a class="headerlink" href="#事前準備" title="Permanent link">&para;</a></h2>
 <p><a href="https://developers.google.com/admob/ios/quick-start?hl=ja">AdMobのスタートガイド</a>を参考に、AdMobの設定をおこなってください。
-AdMobアダプタは<a href="https://developers.google.com/admob/ios/rel-notes">Google Mobile Ads SDK version 12.12.0</a>でビルドおよびテストを行なっています。</p>
+AdMobアダプタは<a href="https://developers.google.com/admob/ios/rel-notes">Google Mobile Ads SDK version 13.3.0</a>でビルドおよびテストを行なっています。</p>
 <h3 id="メディエーションの準備"><a class="toclink" href="#メディエーションの準備">メディエーションの準備</a><a class="headerlink" href="#メディエーションの準備" title="Permanent link">&para;</a></h3>
 <p><a href="https://developers.google.com/admob/ios/mediate?hl=ja">AdMobメディエーション</a>を行うために、アドネットワークのSDKとアダプターをプロジェクトへ導入します。</p>
 <h4 id="cocoapodsを利用している場合"><a class="toclink" href="#cocoapodsを利用している場合">CocoaPodsを利用している場合</a><a class="headerlink" href="#cocoapodsを利用している場合" title="Permanent link">&para;</a></h4>
 <p>Podfileへ下記のものを記述することで、adstirが利用するアドネットワークのSDKとアダプターを一括で導入することができます。</p>
 <div class="codehilite"><pre><span></span><span class="err">pod &#39;AdStir-Ads-SDK/AdMobMediationAdapter&#39;</span>
-<span class="err">pod &#39;AdStir-Ads-SDK/AppLovin&#39;</span>
 <span class="err">pod &#39;AdStir-Ads-SDK/IMobile&#39;</span>
 <span class="err">pod &#39;AdStir-Ads-SDK/IronSource&#39;</span>
 <span class="err">pod &#39;AdStir-Ads-SDK/Maio&#39;</span>
