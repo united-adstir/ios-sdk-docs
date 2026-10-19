@@ -5,6 +5,10 @@
     !!! info
         SKAdNetworkIdsの最終更新日 : {{config.skadnid_updated_at}}
 
+## v2.17.8 (2026/10/19)
+* 対象開発環境をXcode 26.2以上に変更
+* 各種アダプタのinfo.plistを修正
+
 ## v2.17.7 (2026/07/08)
 
 * 対応OSバージョンをiOS 13.0以上に変更
